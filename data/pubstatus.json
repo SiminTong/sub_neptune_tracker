@@ -1,4 +1,284 @@
 {
+ "1010.2451": {
+  "checked": "2026-10-15",
+  "doi": "10.1088/0004-637X/727/2/65",
+  "j": null,
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1304.0459": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/201220837",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1607.05248": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8205/829/1/L9",
+  "j": null,
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1709.01957": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/aaa292",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1801.00412": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/aaa008",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1808.00485": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/aaf1b1",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1901.09932": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/201834384",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "1907.00449": {
+  "checked": "2026-10-15",
+  "doi": "10.1038/s41550-019-0800-5",
+  "j": "Nature Astronomy",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2003.01140": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202037867",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2003.05354": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staa724",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2004.12475": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staa1198",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2006.09941": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ab9df3",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2009.08338": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202039455",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2009.11290": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/abbfb1",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2011.03221": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/abc3c8",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2011.08815": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/abc6a5",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2012.11426": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202039663",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2102.11640": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202140618",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2104.01873": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/abf3c3",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2105.08077": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ac0432",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2107.13097": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ac2f3a",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2108.03323": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202140728",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2110.00403": {
+  "checked": "2026-10-15",
+  "doi": "10.1016/j.jqsrt.2021.108013",
+  "j": null,
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2112.05059": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stab3612",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2202.00970": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202142653",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2203.00370": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202142912",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2203.01656": {
+  "checked": "2026-10-15",
+  "doi": "10.1007/s11214-022-00876-5",
+  "j": null,
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2203.04173": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ac5b6f",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2204.05971": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stac1066",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2204.10261": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202243834",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2205.01690": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stac1277",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2208.06333": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ac7cea",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2208.07287": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202244426",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2210.11809": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/acbf39",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2211.03582": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202244894",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2211.16123": {
+  "checked": "2026-10-15",
+  "doi": "10.1088/1538-3873/acbc49",
+  "j": "PASP",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2301.10866": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ada5f6",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2302.07874": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2304.07792": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/accf10",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2305.00868": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/accb9c",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
  "2305.05697": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-4357/acd16f",
@@ -13,12 +293,194 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2305.18542": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202346370",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2306.08179": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/acdee8",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2306.10100": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/acdef2",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2306.11826": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnrasl/slad056",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2306.13645": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/acea77",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2306.15095": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "A&A",
+  "ps": "acc",
+  "src": "arXiv comment"
+ },
+ "2307.06085": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202346050",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2308.08687": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202244946",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2309.04137": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stad2756",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
  "2309.05566": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/acf577",
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2309.07047": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/acf7c4",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2310.02452": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ad0045",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2310.10711": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad054f",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2310.16888": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "Astronomy & Astrophysics",
+  "ps": "acc",
+  "src": "arXiv comment"
+ },
+ "2311.04675": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnrasl/slad045",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2401.05864": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad206e",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2401.11082": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad2616",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2401.15548": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad20e4",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2403.00676": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202347127",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2403.03244": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202348238",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2403.03325": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2403.12617": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "proceedings of the Pontifical Academy of Science workshop on",
+  "ps": "acc",
+  "src": "arXiv comment"
+ },
+ "2403.13265": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad5204",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2403.13946": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stae841",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2403.14805": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad3801",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2403.18891": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad3828",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2404.00093": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ad32c9",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
  },
  "2404.01264": {
   "checked": "2026-10-15",
@@ -27,12 +489,102 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2404.12722": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202347981",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2405.04744": {
+  "checked": "2026-10-15",
+  "doi": "10.1038/s41586-024-07432-x",
+  "j": "Nature",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2405.08998": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad6f03",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2405.14895": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad5b52",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2406.00111": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad5004",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2406.01955": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad6b25",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2406.04450": {
+  "checked": "2026-10-15",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2406.12794": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2406.15136": {
   "checked": "2026-10-15",
   "doi": null,
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2407.07869": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad61dc",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2407.09009": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad76ac",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2407.12079": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad615b",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2407.12898": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202450748",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2408.15123": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
  },
  "2408.15707": {
   "checked": "2026-10-15",
@@ -48,12 +600,109 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2409.03683": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad6c38",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2409.06258": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad9eb1",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2409.07552": {
+  "checked": "2026-10-15",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2409.08318": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adb490",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2409.16374": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adc0fe",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2409.19333": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ada381",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
  "2410.03527": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/ad6f00",
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2410.07313": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ad8cda",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2410.10183": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ad7fef",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2410.10186": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ada02c",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2410.11048": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202452611",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2411.03154": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ad8eb5",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2412.03411": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/addb40",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2412.05188": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae2ffa",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2412.05423": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202451180",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
  },
  "2501.01498": {
   "checked": "2026-10-15",
@@ -62,12 +711,131 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2501.08301": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/addfd0",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2501.09963": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/adabbe",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2501.14596": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adad64",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2501.17272": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202451044",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2501.18477": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae019a",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2501.18700": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/addf2d",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2502.04433": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ada9eb",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2502.07074": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "Astronomy and Astrophysics",
+  "ps": "acc",
+  "src": "arXiv comment"
+ },
+ "2502.07872": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf094",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2502.12234": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf267",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2502.13856": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adb558",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2502.17418": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adba46",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2502.19932": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202453163",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
  "2502.20501": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-3881/adb975",
   "j": "AJ",
   "ps": "pub",
   "src": "Crossref"
+ },
+ "2503.03895": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adc684",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2503.09698": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adbe75",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2503.22608": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adb7e8",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2504.09752": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/adced4",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
  },
  "2504.12267": {
   "checked": "2026-10-15",
@@ -76,12 +844,305 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2504.13039": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555194",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2504.17585": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202554427",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2504.18223": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202554161",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
  "2504.20428": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/add010",
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2505.10123": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555523",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2505.10324": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adea46",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2505.10539": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae5dcc",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2505.10647": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/add71c",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2505.11960": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf674",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2505.12152": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555595",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2505.13407": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555580",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2505.24462": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf894",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2507.02052": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adee0d",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2507.06288": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202556322",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2507.07165": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adee92",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2507.09048": {
+  "checked": "2026-10-15",
+  "doi": "10.1016/j.ascom.2025.100982",
+  "j": "Published in Astronomy and Computing Volume 53",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2507.09343": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adef59",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2507.12622": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2507.13439": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202554916",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2507.14983": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555496",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2508.01885": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae11a6",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2508.05961": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae0338",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2508.07161": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adfa87",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2508.08416": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/adf207",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2508.10386": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/rasti/rzag047",
+  "j": "RAS Techniques and Instruments",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2508.10579": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adf198",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2508.12865": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag1163",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2508.14210": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adfc51",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2508.15117": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adfcc8",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2508.19235": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag133",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.02120": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202554243",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2509.02128": {
+  "checked": "2026-10-15",
+  "j": "Nature Astronomy",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2509.03455": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf1476",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2509.05038": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202556293",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.05407": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adf62e",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.10947": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae7a67",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.13932": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202556905",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.14224": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/adfc6a",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.14782": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202557304",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2509.17231": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae0a4c",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2509.19247": {
+  "checked": "2026-10-15",
+  "doi": "10.1073/pnas.2416194122",
+  "j": "Proceedings of the National Academy of Sciences",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2510.04863": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae4494",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2510.07367": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae17c8",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
  },
  "2510.11397": {
   "checked": "2026-10-15",
@@ -97,6 +1158,13 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
+ "2510.12794": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/adf282",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
  "2510.14927": {
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202555684",
@@ -109,7 +1177,7 @@
   "doi": null,
   "j": null,
   "ps": "pre",
-  "src": "OpenAlex 2026-10-15 (manual lookup)"
+  "src": "OpenAlex"
  },
  "2510.24224": {
   "checked": "2026-10-15",
@@ -118,10 +1186,31 @@
   "ps": "pub",
   "src": "Crossref"
  },
+ "2510.25896": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae2a27",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2511.08691": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202557240",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
  "2511.13830": {
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202452192",
   "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2511.16142": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/psj/ae593b",
+  "j": "PSJ",
   "ps": "pub",
   "src": "Crossref"
  },
@@ -146,6 +1235,13 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
+ "2512.07695": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae28cb",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
  "2512.10876": {
   "checked": "2026-10-15",
   "doi": "10.1038/s41550-025-02723-3",
@@ -159,6 +1255,20 @@
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2601.02621": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202556358",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2601.05799": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag070",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
  },
  "2601.14254": {
   "checked": "2026-10-15",
@@ -181,6 +1291,13 @@
   "ps": "pub",
   "src": "Crossref"
  },
+ "2601.18769": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2601.21774": {
   "checked": "2026-10-15",
   "doi": "10.1093/mnras/stag710",
@@ -192,6 +1309,13 @@
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202558308",
   "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2601.23235": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae3f21",
+  "j": "ApJ",
   "ps": "pub",
   "src": "arXiv metadata"
  },
@@ -220,6 +1344,13 @@
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202558426",
   "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2602.17777": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae47fa",
+  "j": "AJ",
   "ps": "pub",
   "src": "Crossref"
  },
@@ -258,6 +1389,13 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
+ "2603.19803": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2603.26474": {
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202659251",
@@ -267,17 +1405,24 @@
  },
  "2603.28238": {
   "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202557841",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Semantic Scholar"
+ },
+ "2603.29700": {
+  "checked": "2026-10-15",
   "doi": null,
-  "j": "A&A",
-  "ps": "acc",
-  "src": "arXiv comment"
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
  },
  "2604.02332": {
-  "ps": "pub",
-  "j": "AJ",
-  "src": "seed",
   "checked": "2026-10-15",
-  "doi": "10.3847/1538-3881/ae4c45"
+  "doi": "10.3847/1538-3881/ae4c45",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "seed"
  },
  "2604.07987": {
   "checked": "2026-10-15",
@@ -321,10 +1466,31 @@
   "ps": "pub",
   "src": "Crossref"
  },
+ "2605.14101": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/psj/ae6cef",
+  "j": "PSJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
  "2605.15003": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-3881/ae6c26",
   "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2605.17803": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2605.26694": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202554392",
+  "j": "Astronomy &amp; Astrophysics",
   "ps": "pub",
   "src": "Crossref"
  },
@@ -342,12 +1508,32 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
+ "2606.07511": {
+  "checked": "2026-10-15",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "seed"
+ },
+ "2606.11866": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2606.20249": {
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202660017",
   "j": "Astronomy &amp; Astrophysics",
   "ps": "pub",
   "src": "Crossref"
+ },
+ "2606.20464": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
  },
  "2607.00950": {
   "checked": "2026-10-15",
@@ -363,10 +1549,59 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2608.06207": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2608.13470": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/aeaa39",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
+ "2608.13473": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2608.17207": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae990a",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2608.18290": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae9a76",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "OpenAlex"
+ },
  "2608.19100": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-4357/ae9a84",
   "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2608.19120": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2608.21519": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae9763",
+  "j": "AJ",
   "ps": "pub",
   "src": "Crossref"
  },
@@ -377,6 +1612,13 @@
   "ps": "pub",
   "src": "Crossref"
  },
+ "2609.03144": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2609.05264": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/ae8c2d",
@@ -384,19 +1626,61 @@
   "ps": "pub",
   "src": "Crossref"
  },
+ "2609.09893": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2609.14704": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
  "2609.17792": {
   "checked": "2026-10-15",
   "doi": null,
   "j": null,
   "ps": "pre",
-  "src": "OpenAlex 2026-10-15 (manual lookup)"
+  "src": "OpenAlex"
+ },
+ "2609.34635": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
  },
  "2609.35607": {
   "checked": "2026-10-15",
   "doi": null,
   "j": null,
   "ps": "pre",
-  "src": "OpenAlex 2026-10-15 (manual lookup)"
+  "src": "OpenAlex"
+ },
+ "2609.35721": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2609.36206": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
+ },
+ "2609.37722": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex"
  },
  "2609.37982": {
   "checked": "2026-10-15",
@@ -405,70 +1689,11 @@
   "ps": "acc",
   "src": "arXiv comment"
  },
- "2305.00868": {
-  "ps": "pub",
-  "j": "ApJL",
-  "doi": "10.3847/2041-8213/accb9c",
-  "src": "seed",
-  "checked": "2026-10-15"
- },
- "2509.02128": {
-  "ps": "pub",
-  "j": "Nature Astronomy",
-  "src": "seed",
-  "checked": "2026-10-15"
- },
- "2405.04744": {
-  "ps": "pub",
-  "j": "Nature",
-  "src": "seed",
+ "2610.07202": {
   "checked": "2026-10-15",
-  "doi": "10.1038/s41586-024-07432-x"
- },
- "2406.04450": {
-  "ps": "pub",
-  "j": "ApJL",
-  "src": "seed",
-  "checked": "2026-10-15"
- },
- "2502.17418": {
-  "ps": "pub",
-  "j": "ApJL",
-  "src": "seed",
-  "checked": "2026-10-15",
-  "doi": "10.3847/2041-8213/adba46"
- },
- "2509.17231": {
-  "ps": "pub",
-  "j": "ApJL",
-  "src": "seed",
-  "checked": "2026-10-15",
-  "doi": "10.3847/2041-8213/ae0a4c"
- },
- "2401.15548": {
-  "ps": "pub",
-  "j": "ApJL",
-  "src": "seed",
-  "checked": "2026-10-15",
-  "doi": "10.3847/2041-8213/ad20e4"
- },
- "2409.07552": {
-  "ps": "pub",
-  "j": "AJ",
-  "src": "seed",
-  "checked": "2026-10-15"
- },
- "2410.11048": {
-  "ps": "pub",
+  "doi": "10.1051/0004-6361/202662567",
   "j": "A&A",
-  "src": "seed",
-  "checked": "2026-10-15",
-  "doi": "10.1051/0004-6361/202452611"
- },
- "2606.07511": {
   "ps": "pub",
-  "j": "ApJL",
-  "src": "seed",
-  "checked": "2026-10-15"
+  "src": "OpenAlex"
  }
 }
