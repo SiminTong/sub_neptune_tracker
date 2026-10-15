@@ -6,7 +6,7 @@
 :root{--bg:#f7f6f2;--card:#fff;--fg:#1c1b19;--mut:#6b6860;--line:#e3e0d8;--acc:#1f5f8b;--ok:#1f7a4d;--flat:#8a6d1c;--new:#a23b72;--tag:#eef3f7}
 @media (prefers-color-scheme:dark){:root{--bg:#15171a;--card:#1d2024;--fg:#ecebe7;--mut:#9a978f;--line:#2e3238;--acc:#7ab8e3;--ok:#5fcf97;--flat:#e0b95a;--new:#e48fbd;--tag:#262b31}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+main{max-width:min(1800px,98vw);margin:0 auto;padding:20px 16px 48px}
 h1{font-size:22px;margin:0 0 4px}p.sub{color:var(--mut);margin:0 0 16px}
 .bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
 input,select,button{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
@@ -15,11 +15,12 @@ label.chk{color:var(--mut);font-size:13.5px;display:flex;gap:6px;align-items:cen
 .stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px}.stat b{font-size:20px;display:block}.stat span{color:var(--mut);font-size:12px}
 .wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
-table{border-collapse:collapse;width:100%;min-width:860px}
+table{border-collapse:collapse;width:100%;min-width:1350px}
 th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px}
 th{cursor:pointer;color:var(--mut);font-weight:600;white-space:nowrap;user-select:none}th:hover{color:var(--acc)}
 tr:last-child td{border-bottom:0}td.n{white-space:nowrap}.pl{font-weight:600}.host{color:var(--mut);font-size:12px}
 .obs{font-size:12.5px;margin-bottom:4px;min-width:190px}.obs small{color:var(--mut)}.obs summary{font-weight:400;color:var(--acc)}
+.src{white-space:nowrap;min-width:160px}td.fnd{min-width:260px}
 .pill{display:inline-block;border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600;background:var(--tag);white-space:nowrap}
 .pill.mol{color:var(--ok)}.pill.flat{color:var(--flat)}.pill.new{color:var(--new)}.pill.none{color:var(--mut)}
 a{color:var(--acc)}.note{color:var(--mut);font-size:12.5px;margin-top:14px}
@@ -72,8 +73,8 @@ function draw(){
   pid=e.pid?`<a href="https://www.stsci.edu/jwst/science-execution/program-information?id=${encodeURIComponent(e.pid)}" target="_blank" rel="noopener">PID ${esc(e.pid)}</a>`:'';
   return `<div class="obs"><b>${esc(e.mode)}</b><br>${w}<br><small>${[pid,e.d?'obs. '+e.d:'',st,e.host?'host-level match':''].filter(Boolean).join(' · ')}</small></div>`};
  const obsCell=x=>{if(!x.obs||!x.obs.length)return '—';const h=x.obs.slice(0,3).map(one).join('');return x.obs.length>3?h+`<details><summary>+${x.obs.length-3} more</summary>${x.obs.slice(3).map(one).join('')}</details>`:h};
- $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,src=x.url&&/^https:\/\//.test(x.url)?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.ref||'link')}</a>`:esc(x.ref||'—');
- return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${obsCell(x)}</td><td>${esc(x.ins||'—')}</td><td>${esc(x.res||'—')}</td><td>${src}</td></tr>`}).join('')||'<tr><td colspan="9">No matches.</td></tr>';
+ $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,lk=(t,u)=>/^https:\/\//.test(u||'')?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`:esc(t),src=x.refs&&x.refs.length?x.refs.map(r=>lk(r.t,r.u)).join('<br>'):x.ref?lk(x.ref,x.url):'—';
+ return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${obsCell(x)}</td><td>${esc(x.ins||'—')}</td><td class="fnd">${esc(x.res||'—')}</td><td class="src">${src}</td></tr>`}).join('')||'<tr><td colspan="9">No matches.</td></tr>';
  $('more').hidden=a.length<=limit;
  $('foot').textContent=`Showing ${shown.length} of ${a.length}. Click a column header to sort.`;
 }
