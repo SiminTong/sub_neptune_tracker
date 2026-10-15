@@ -104,6 +104,13 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
+ "2510.18098": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex 2026-10-15 (manual lookup)"
+ },
  "2510.24224": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-4357/ae18d7",
@@ -376,6 +383,20 @@
   "j": "ApJL",
   "ps": "pub",
   "src": "Crossref"
+ },
+ "2609.17792": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex 2026-10-15 (manual lookup)"
+ },
+ "2609.35607": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "OpenAlex 2026-10-15 (manual lookup)"
  },
  "2609.37982": {
   "checked": "2026-10-15",
