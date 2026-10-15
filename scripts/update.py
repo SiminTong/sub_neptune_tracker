@@ -32,7 +32,7 @@ UA = {"User-Agent": "subneptune-tracker/1.0 (GitHub Actions)"}
 
 TAP = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
 TAP_QUERY = (
-    "select pl_name,hostname,pl_rade,pl_bmasse,pl_eqt,pl_orbper,disc_year "
+    "select pl_name,hostname,pl_rade,pl_bmasse,pl_eqt,pl_orbper,disc_year,st_mass "
     f"from pscomppars where pl_rade>={R_MIN} and pl_rade<={R_MAX}"
 )
 ARXIV = "https://export.arxiv.org/api/query"
@@ -88,7 +88,7 @@ def get_catalog():
         out[norm(x["pl_name"])] = {
             "n": x["pl_name"], "h": x.get("hostname") or "",
             "r": f("pl_rade"), "m": f("pl_bmasse"), "t": f("pl_eqt", 0),
-            "p": f("pl_orbper", 3), "y": x.get("disc_year"),
+            "p": f("pl_orbper", 3), "sm": f("st_mass", 2), "y": x.get("disc_year"),
         }
     if len(out) < 100:
         raise RuntimeError(f"catalog suspiciously small ({len(out)} planets); refusing to publish")
@@ -419,7 +419,7 @@ def main():
         reviewed.add(k)
         base = rows.get(k, {})
         row = dict(c)
-        for f in ("h", "r", "m", "t", "p", "y"):  # catalog values win when present
+        for f in ("h", "r", "m", "t", "p", "y", "sm"):  # catalog values win when present
             if base.get(f) is not None and base.get(f) != "":
                 row[f] = base[f]
         rows[k] = row

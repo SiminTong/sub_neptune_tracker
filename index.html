@@ -45,7 +45,7 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 <select id="rr"><option value="">Any radius</option><option value="a">&lt; 1.6 R⊕ (super-Earth)</option><option value="b">1.6–4 R⊕ (sub-Neptune)</option><option value="c">&gt; 4 R⊕ (Neptune-size and larger)</option></select>
 <select id="pub"><option value="pub">With published JWST results</option><option value="none">No published JWST results</option><option value="all">All planets</option></select>
 </div>
-<div class="wrap"><table><thead><tr id="hd"></tr></thead><tbody id="tb"><tr><td colspan="9">Loading…</td></tr></tbody></table></div>
+<div class="wrap"><table><thead><tr id="hd"></tr></thead><tbody id="tb"><tr><td colspan="10">Loading…</td></tr></tbody></table></div>
 <button id="more" hidden>Show more</button>
 <p class="note" id="foot"></p>
 <details><summary>How this works</summary>
@@ -56,7 +56,7 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 </main>
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const cols=[['n','Planet'],['r','R (R⊕)'],['m','M (M⊕)'],['t','Teq (K)'],['cl','Classification'],['st','JWST outcome'],['ins','Instruments'],['res','Composition / finding'],['ref','Source']];
+const cols=[['n','Planet'],['r','R (R⊕)'],['m','M (M⊕)'],['t','Teq (K)'],['sm','Host mass (M☉)'],['cl','Classification'],['st','JWST outcome'],['ins','Instruments'],['res','Composition / finding'],['ref','Source']];
 const lab={mol:['Molecules detected','mol'],flat:['Featureless / aerosols','flat'],amb:['Ambiguous / debated','none'],new:['New paper (unreviewed)','new']};
 const doiOk=d=>/^10\.\d{4,9}\/\S+$/.test(d||'');
 const badge=r=>{const j=esc(r.j||'journal'),l=doiOk(r.doi)?`<a href="https://doi.org/${encodeURI(r.doi)}" target="_blank" rel="noopener">✓ Published · ${j}</a>`:`✓ Published · ${j}`;
@@ -76,7 +76,7 @@ function draw(){
  a.sort((x,y)=>{const u=x[sk],v=y[sk];if(u==null)return 1;if(v==null)return -1;return (u>v?1:u<v?-1:0)*sd});
  const shown=a.slice(0,limit),n=v=>v==null?'—':v;
  $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,lk=(t,u)=>/^https:\/\//.test(u||'')?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`:esc(t),src=x.refs&&x.refs.length?x.refs.map(r=>lk(r.t,r.u)+badge(r)).join('<br>'):x.ref?lk(x.ref,x.url)+badge(x):'—';
- return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td class="cls">${x.cls?`<b>${esc(x.cls)}</b><br><small>from literature</small>`:`${esc(x.cl)}<br><small>by radius</small>`}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${esc(x.ins||'—')}</td><td class="fnd">${esc(x.res||'—')}</td><td class="src">${src}</td></tr>`}).join('')||'<tr><td colspan="9">No matches.</td></tr>';
+ return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td class="n">${n(x.sm)}</td><td class="cls">${x.cls?`<b>${esc(x.cls)}</b><br><small>from literature</small>`:`${esc(x.cl)}<br><small>by radius</small>`}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${esc(x.ins||'—')}</td><td class="fnd">${esc(x.res||'—')}</td><td class="src">${src}</td></tr>`}).join('')||'<tr><td colspan="10">No matches.</td></tr>';
  $('more').hidden=a.length<=limit;
  $('foot').textContent=`Showing ${shown.length} of ${a.length}. Click a column header to sort.`;
 }
@@ -84,5 +84,5 @@ fetch('data/data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.js
  D=d;d.rows.forEach(x=>{x.cl=x.cls||sizeClass(x.r)});const R=d.rows,c=s=>R.filter(x=>x.st===s).length;
  $('asof').textContent=d.asof;const rg=(d.r_range||[1.6,4]).join('–');document.querySelectorAll('.rg').forEach(e=>e.textContent=rg);$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');$('s7').textContent=R.filter(x=>pstat(x).includes('pub')).length;
  $('s5').textContent=d.catalog_count?d.catalog_count:'not loaded yet';draw();
-}).catch(()=>{$('tb').innerHTML='<tr><td colspan="9">Could not load data/data.json.</td></tr>'});
+}).catch(()=>{$('tb').innerHTML='<tr><td colspan="10">Could not load data/data.json.</td></tr>'});
 </script></body></html>
