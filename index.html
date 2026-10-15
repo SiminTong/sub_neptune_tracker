@@ -3,16 +3,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sub-Neptune × JWST Tracker</title>
 <style>
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f7f6f2;--card:#fff;--fg:#1c1b19;--mut:#6b6860;--line:#e3e0d8;--acc:#1f5f8b;--ok:#1f7a4d;--flat:#8a6d1c;--tag:#eef3f7}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--card:#1d2024;--fg:#ecebe7;--mut:#9a978f;--line:#2e3238;--acc:#7ab8e3;--ok:#5fcf97;--flat:#e0b95a;--tag:#262b31}}
-:root[data-theme="dark"]{--bg:#15171a;--card:#1d2024;--fg:#ecebe7;--mut:#9a978f;--line:#2e3238;--acc:#7ab8e3;--ok:#5fcf97;--flat:#e0b95a;--tag:#262b31}
+:root{--bg:#f7f6f2;--card:#fff;--fg:#1c1b19;--mut:#6b6860;--line:#e3e0d8;--acc:#1f5f8b;--ok:#1f7a4d;--flat:#8a6d1c;--new:#a23b72;--tag:#eef3f7}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--card:#1d2024;--fg:#ecebe7;--mut:#9a978f;--line:#2e3238;--acc:#7ab8e3;--ok:#5fcf97;--flat:#e0b95a;--new:#e48fbd;--tag:#262b31}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
 h1{font-size:22px;margin:0 0 4px}p.sub{color:var(--mut);margin:0 0 16px}
-.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
 input,select,button{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-input[type=search]{flex:1;min-width:180px}button{cursor:pointer}button:hover{border-color:var(--acc)}
+input[type=search]{flex:1;min-width:180px}input[type=checkbox]{padding:0}button{cursor:pointer}button:hover{border-color:var(--acc)}
+label.chk{color:var(--mut);font-size:13.5px;display:flex;gap:6px;align-items:center}
 .stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px}.stat b{font-size:20px;display:block}.stat span{color:var(--mut);font-size:12px}
 .wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
@@ -20,75 +19,56 @@ table{border-collapse:collapse;width:100%;min-width:860px}
 th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px}
 th{cursor:pointer;color:var(--mut);font-weight:600;white-space:nowrap;user-select:none}th:hover{color:var(--acc)}
 tr:last-child td{border-bottom:0}td.n{white-space:nowrap}.pl{font-weight:600}.host{color:var(--mut);font-size:12px}
-.pill{display:inline-block;border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600;background:var(--tag)}
-.pill.mol{color:var(--ok)}.pill.flat{color:var(--flat)}.pill.none{color:var(--mut)}
-.note{color:var(--mut);font-size:12.5px;margin-top:14px}.note a{color:var(--acc)}
+.pill{display:inline-block;border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600;background:var(--tag);white-space:nowrap}
+.pill.mol{color:var(--ok)}.pill.flat{color:var(--flat)}.pill.new{color:var(--new)}.pill.none{color:var(--mut)}
+a{color:var(--acc)}.note{color:var(--mut);font-size:12.5px;margin-top:14px}
 details{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}summary{cursor:pointer;font-weight:600}
-code{background:var(--tag);padding:1px 5px;border-radius:4px}
+#more{margin-top:10px}
 </style></head><body><main>
 <h1>Sub-Neptunes × JWST</h1>
-<p class="sub">Published JWST characterization of planets between ~1.6 and ~4 R⊕. Snapshot data through <b id="asof"></b>.</p>
-<div class="stats"><div class="stat"><b id="s1">0</b><span>planets tracked</span></div><div class="stat"><b id="s2">0</b><span>with molecules detected</span></div><div class="stat"><b id="s3">0</b><span>featureless / aerosol-limited</span></div><div class="stat"><b id="s4">–</b><span id="s4l">catalog planets loaded</span></div></div>
+<p class="sub">Planets of ~1.6–4 R⊕ and what JWST has found. Updated weekly; last refresh <b id="asof">…</b>.</p>
+<div class="stats">
+<div class="stat"><b id="s1">–</b><span>planets with JWST results</span></div>
+<div class="stat"><b id="s2">–</b><span>molecules detected</span></div>
+<div class="stat"><b id="s3">–</b><span>featureless / aerosols</span></div>
+<div class="stat"><b id="s4">–</b><span>new papers to review</span></div>
+<div class="stat"><b id="s5">–</b><span>catalog planets (1.6–4 R⊕)</span></div>
+</div>
 <div class="bar">
 <input type="search" id="q" placeholder="Search planet, host, molecule (e.g. CH4, K2-18)…">
-<select id="f"><option value="">All results</option><option value="mol">Molecules detected</option><option value="flat">Featureless / aerosols</option><option value="amb">Ambiguous / debated</option></select>
-<button id="csvbtn">Import NASA catalog CSV</button><input type="file" id="csv" accept=".csv" hidden>
+<select id="f"><option value="">All results</option><option value="mol">Molecules detected</option><option value="flat">Featureless / aerosols</option><option value="amb">Ambiguous / debated</option><option value="new">New paper (unreviewed)</option></select>
+<label class="chk"><input type="checkbox" id="all"> Include planets with no published JWST result</label>
 </div>
-<div class="wrap"><table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="wrap"><table><thead><tr id="hd"></tr></thead><tbody id="tb"><tr><td colspan="8">Loading…</td></tr></tbody></table></div>
+<button id="more" hidden>Show more</button>
 <p class="note" id="foot"></p>
-<details><summary>How updates work &amp; data sources</summary>
-<p class="note" style="margin-top:8px">This is a static snapshot: the page cannot fetch new papers by itself. Each week the table is refreshed by re-running a literature search (arXiv astro-ph.EP, ADS, MAST) and republishing with new rows. Rows are a curated set of sub-Neptunes with <i>published</i> JWST results; many more have approved JWST programs but no paper yet, so absence here does not mean “not observed”.</p>
-<p class="note">For the full detected population (1,000+ planets), download a CSV from the <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" rel="noopener">NASA Exoplanet Archive</a> with columns <code>pl_name, hostname, pl_rade, pl_bmasse, pl_orbper, pl_eqt</code> and use “Import” above; planets with 1.6 ≤ R ≤ 4 R⊕ are added and matched to JWST results by name. JWST proposals: <a href="https://archive.stsci.edu/" target="_blank" rel="noopener">MAST</a>. Values are rounded and some are from my recollection of the papers; verify against the cited source before use. Only what the papers report is listed; “debated” marks results with competing interpretations.</p></details>
+<details><summary>How this works</summary>
+<p class="note" style="margin-top:8px">Every Monday a GitHub Action downloads all planets with 1.6 ≤ R ≤ 4 R⊕ from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener">NASA Exoplanet Archive</a> and searches arXiv (astro-ph.EP) for new JWST papers that name those planets. Hand-reviewed results (instruments, composition, source) come from <code>data/jwst_results.json</code>. A planet flagged <b>New paper</b> was found automatically and has not been reviewed yet; its composition is not summarized until someone adds it to that file.</p>
+<p class="note">“No published JWST result” only means this tracker has none: many planets have approved JWST programs (see <a href="https://archive.stsci.edu/" target="_blank" rel="noopener">MAST</a>) but no paper yet. Some curated masses and temperatures are rounded; verify against the cited source before relying on a row.</p></details>
 </main>
-<script id="data" type="application/json">
-{"asof":"2026-10-15","rows":[
-{"n":"K2-18 b","h":"K2-18","r":2.61,"m":8.63,"t":284,"c":"mol","ins":"NIRISS SOSS, NIRSpec G395H, MIRI","res":"CH4 and CO2 in an H2-rich atmosphere, no NH3. Possible DMS/DMDS claims are tentative and disputed; hycean vs. mini-Neptune still debated.","ref":"Madhusudhan+2023; Madhusudhan+2025","st":"amb"},
-{"n":"TOI-270 d","h":"TOI-270","r":2.1,"m":4.8,"t":387,"c":"mol","ins":"NIRISS, NIRSpec","res":"CH4, CO2, H2O; metal-enriched atmosphere, consistent with a miscible envelope.","ref":"Benneke+2024","st":"mol"},
-{"n":"LHS 1140 b","h":"LHS 1140","r":1.7,"m":5.6,"t":226,"c":"amb","ins":"NIRISS, NIRSpec","res":"Hints of a N2-rich secondary atmosphere; not a firm detection. Candidate water world / temperate rocky planet.","ref":"Cadieux+2024","st":"amb"},
-{"n":"GJ 1214 b","h":"GJ 1214","r":2.7,"m":8.4,"t":567,"c":"flat","ins":"NIRSpec, MIRI (phase curve)","res":"High-metallicity atmosphere with reflective aerosols; muted spectral features.","ref":"Kempton+2023; Gao+2023","st":"flat"},
-{"n":"TOI-836 c","h":"TOI-836","r":2.59,"m":9.6,"t":665,"c":"flat","ins":"NIRSpec G395H","res":"Featureless; rules out metallicities below ~175× solar unless aerosols sit at ≲1 mbar.","ref":"Wallack+2024 (COMPASS)","st":"flat"},
-{"n":"HD 15337 c","h":"HD 15337","r":2.53,"m":6.79,"t":656,"c":"flat","ins":"NIRSpec G395H","res":"Featureless; high metallicity and/or high-altitude aerosols. Also gave precise transit timings (TTVs).","ref":"Wallack+2026 (COMPASS)","st":"flat"},
-{"n":"TOI-732 c","h":"TOI-732","r":null,"m":null,"t":null,"c":"mol","ins":"NIRISS, NIRSpec G395H, MIRI LRS","res":"Evidence for CH4 (~1% mixing ratio) in an H2-rich atmosphere; no NH3 or HCN.","ref":"arXiv, Dec 2025","st":"mol"},
-{"n":"TOI-1231 b","h":"TOI-1231","r":3.6,"m":15,"t":330,"c":"mol","ins":"NIRISS SOSS, NIRSpec G395H","res":"Strong CH4, moderate-to-strong CO2; no significant sulfur species. Consistent with a deep H2-rich atmosphere.","ref":"arXiv, Jul 2026","st":"mol"},
-{"n":"TOI-776 c","h":"TOI-776","r":2.0,"m":6.9,"t":420,"c":"amb","ins":"NIRSpec G395H","res":"3–5 µm spectrum obtained (shown in 2025 review); see the original paper for the retrieved composition.","ref":"Madhusudhan+2025 review","st":"amb"},
-{"n":"TOI-421 b","h":"TOI-421","r":2.68,"m":6.7,"t":920,"c":"amb","ins":"NIRSpec G395H","res":"Hot sub-Neptune spectrum obtained; see Davenport et al. for the retrieved composition.","ref":"Davenport+2025","st":"amb"},
-{"n":"GJ 9827 d","h":"GJ 9827","r":1.96,"m":3.0,"t":620,"c":"amb","ins":"NIRSpec (with HST)","res":"Compatible with a water-rich (steam) atmosphere; H2-dominated solutions disfavored.","ref":"Piaulet-Ghorayeb+2024","st":"amb"},
-{"n":"L 98-59 d","h":"L 98-59","r":1.58,"m":1.9,"t":416,"c":"amb","ins":"NIRSpec G395H","res":"Hints of sulfur-bearing volatiles (SO2/H2S), volatile-rich interior. At the super-Earth/sub-Neptune boundary.","ref":"Gressier+2024; Banerjee+2024","st":"amb"},
-{"n":"GJ 3090 b","h":"GJ 3090","r":2.13,"m":3.3,"t":693,"c":"flat","ins":"NIRSpec G395H","res":"Largely featureless, consistent with high mean molecular weight and/or aerosols.","ref":"Ahrer+2025","st":"flat"}
-]}
-</script>
 <script>
-const D=JSON.parse(document.getElementById('data').textContent);
-let rows=D.rows.slice(),cat=[],sk='n',sd=1;
-const cols=[['n','Planet'],['r','R (R⊕)'],['m','M (M⊕)'],['t','Teq (K)'],['st','JWST outcome'],['ins','Instruments'],['res','Composition / finding'],['ref','Source']];
-const lab={mol:['Molecules detected','mol'],flat:['Featureless / aerosols','flat'],amb:['Ambiguous / debated','none']};
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-$('asof').textContent=D.asof;
+const cols=[['n','Planet'],['r','R (R⊕)'],['m','M (M⊕)'],['t','Teq (K)'],['st','JWST outcome'],['ins','Instruments'],['res','Composition / finding'],['ref','Source']];
+const lab={mol:['Molecules detected','mol'],flat:['Featureless / aerosols','flat'],amb:['Ambiguous / debated','none'],new:['New paper (unreviewed)','new']};
+let D=null,sk='n',sd=1,limit=200;
 $('hd').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
-$('hd').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sd=sk===k?-sd:1;sk=k;draw()};
-['q','f'].forEach(i=>$(i).oninput=draw);
+$('hd').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sd=sk===k?-sd:1;sk=k;limit=200;draw()};
+['q','f','all'].forEach(i=>$(i).oninput=()=>{limit=200;draw()});
+$('more').onclick=()=>{limit+=300;draw()};
 function draw(){
- const q=$('q').value.toLowerCase(),f=$('f').value;
- let a=rows.filter(x=>(!f||x.st===f)&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
+ if(!D)return;
+ const q=$('q').value.toLowerCase(),f=$('f').value,all=$('all').checked;
+ let a=D.rows.filter(x=>(all||x.st)&&(!f||x.st===f)&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
  a.sort((x,y)=>{const u=x[sk],v=y[sk];if(u==null)return 1;if(v==null)return -1;return (u>v?1:u<v?-1:0)*sd});
- $('tb').innerHTML=a.map(x=>{const l=x.st?lab[x.st]:null,f=v=>v==null?'—':v;
- return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${f(x.r)}</td><td class="n">${f(x.m)}</td><td class="n">${f(x.t)}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${esc(x.ins||'—')}</td><td>${esc(x.res||'—')}</td><td>${esc(x.ref||'—')}</td></tr>`}).join('')||'<tr><td colspan="8">No matches.</td></tr>';
- $('s1').textContent=rows.length;$('s2').textContent=rows.filter(x=>x.st==='mol').length;$('s3').textContent=rows.filter(x=>x.st==='flat').length;
- $('foot').textContent=`Showing ${a.length} of ${rows.length}. Click a column header to sort.`;
+ const shown=a.slice(0,limit),n=v=>v==null?'—':v;
+ $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,src=x.url&&/^https:\/\//.test(x.url)?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.ref||'link')}</a>`:esc(x.ref||'—');
+ return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${esc(x.ins||'—')}</td><td>${esc(x.res||'—')}</td><td>${src}</td></tr>`}).join('')||'<tr><td colspan="8">No matches.</td></tr>';
+ $('more').hidden=a.length<=limit;
+ $('foot').textContent=`Showing ${shown.length} of ${a.length}. Click a column header to sort.`;
 }
-$('csvbtn').onclick=()=>$('csv').click();
-$('csv').onchange=async e=>{
- const t=await e.target.files[0].text(),ls=t.split(/\r?\n/).filter(l=>l&&!l.startsWith('#'));
- const sp=l=>{const o=[];let c='',q=false;for(const ch of l){if(ch=='"')q=!q;else if(ch==','&&!q){o.push(c);c=''}else c+=ch}o.push(c);return o};
- const h=sp(ls[0]).map(s=>s.trim()),ix=n=>h.indexOf(n);
- if(ix('pl_name')<0||ix('pl_rade')<0){alert('CSV needs pl_name and pl_rade columns.');return}
- const norm=s=>s.toLowerCase().replace(/[\s-]/g,''),have=new Set(D.rows.map(x=>norm(x.n)));let added=0;
- rows=D.rows.slice();
- for(const l of ls.slice(1)){const p=sp(l),r=parseFloat(p[ix('pl_rade')]);
-  if(!(r>=1.6&&r<=4)||have.has(norm(p[ix('pl_name')])))continue;have.add(norm(p[ix('pl_name')]));
-  const g=n=>{const v=parseFloat(p[ix(n)]);return isNaN(v)?null:+v.toFixed(2)};
-  rows.push({n:p[ix('pl_name')],h:p[ix('hostname')]||'',r:+r.toFixed(2),m:g('pl_bmasse'),t:g('pl_eqt'),st:null});added++}
- $('s4').textContent=added+D.rows.length;$('s4l').textContent='catalog planets loaded';draw();
-};
-draw();
+fetch('data/data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+ D=d;const R=d.rows,c=s=>R.filter(x=>x.st===s).length;
+ $('asof').textContent=d.asof;$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');
+ $('s5').textContent=d.catalog_count?d.catalog_count:'not loaded yet';draw();
+}).catch(()=>{$('tb').innerHTML='<tr><td colspan="8">Could not load data/data.json.</td></tr>'});
 </script></body></html>
