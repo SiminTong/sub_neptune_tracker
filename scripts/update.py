@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -54,6 +55,11 @@ def fetch(url, tries=3):
             req = urllib.request.Request(url, headers=UA)
             with urllib.request.urlopen(req, timeout=90) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 404, 410):
+                raise  # definitive answer, do not retry
+            last = e
+            time.sleep(10 * (i + 1))  # 429 / 5xx: back off
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(5 * (i + 1))
@@ -124,8 +130,9 @@ def get_papers(catalog_names):
 # ---------------------------------------------------------------------------
 # Peer-review status of cited arXiv papers
 #   "pub" = a journal version exists, "acc" = accepted/in press, "pre" = preprint only (none found)
-# Order of evidence: NASA ADS (needs ADS_API_TOKEN; counts publisher full-text links or the REFEREED
-# flag), then arXiv's own journal_ref / DOI / "accepted" comment, then a Crossref title match.
+# Order of evidence (stops at the first journal version found): NASA ADS (needs ADS_API_TOKEN; publisher
+# full-text links or the REFEREED flag), arXiv's own journal_ref / DOI / "accepted" comment, OpenAlex
+# (merges preprint and journal records), Crossref (preprint relation, then title match), Semantic Scholar.
 # Results live in data/pubstatus.json; a "pub" result is final, everything else is re-checked weekly.
 # ---------------------------------------------------------------------------
 ADS_TOKEN = os.environ.get("ADS_API_TOKEN", "").strip()
@@ -162,7 +169,8 @@ def short_journal(name=None, doi=None):
 
 
 def norm_title(t):
-    return re.sub(r"[^a-z0-9]", "", (t or "").lower())
+    t = re.sub(r"<[^>]+>", "", t or "")  # Crossref titles can contain <sub>, <i>, MathML ...
+    return re.sub(r"[^a-z0-9]", "", t.lower())
 
 
 def arxiv_meta(ids):
@@ -214,17 +222,49 @@ def ads_status(aid):
     return {"ps": "pre", "j": None, "doi": None, "src": "NASA ADS"}
 
 
-def crossref_status(m):
+def openalex_status(aid):
+    """OpenAlex merges the arXiv record with the journal record; a journal-type location means published."""
+    url = f"https://api.openalex.org/works/https://doi.org/10.48550/arXiv.{aid}?select=doi,type,locations"
+    try:
+        w = json.loads(fetch(url))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
+    for loc in w.get("locations") or []:
+        src = loc.get("source") or {}
+        if src.get("type") != "journal":
+            continue
+        doi = None
+        for cand in (loc.get("landing_page_url"), w.get("doi")):
+            m = re.search(r"10\.\d{4,9}/\S+", cand or "")
+            if m and not m.group(0).lower().startswith("10.48550"):
+                doi = m.group(0)
+                break
+        return {"ps": "pub", "j": short_journal(src.get("display_name"), doi), "doi": doi, "src": "OpenAlex"}
+    return {"ps": "pre", "j": None, "doi": None, "src": "OpenAlex"}
+
+
+def crossref_status(aid, m):
+    base = "https://api.crossref.org/works?"
+    # 1) publishers often deposit a "has-preprint" link to the arXiv DOI
+    q = {"filter": f"relation.type:has-preprint,relation.object:10.48550/arXiv.{aid}", "rows": 1,
+         "select": "DOI,container-title,type"}
+    items = json.loads(fetch(base + urllib.parse.urlencode(q))).get("message", {}).get("items", [])
+    for it in items:
+        cont = (it.get("container-title") or [""])[0]
+        if it.get("type") == "journal-article" and cont and "arxiv" not in cont.lower():
+            return {"ps": "pub", "j": short_journal(cont, it.get("DOI")), "doi": it.get("DOI"), "src": "Crossref"}
+    # 2) fall back to a title + first-author match
     if not m.get("title"):
         return None
-    url = "https://api.crossref.org/works?" + urllib.parse.urlencode({
-        "query.bibliographic": m["title"], "rows": 3, "select": "title,DOI,container-title,type,author"})
-    items = json.loads(fetch(url)).get("message", {}).get("items", [])
+    q = {"query.bibliographic": m["title"], "rows": 5, "select": "title,DOI,container-title,type,author"}
+    items = json.loads(fetch(base + urllib.parse.urlencode(q))).get("message", {}).get("items", [])
     want, fa = norm_title(m["title"]), (m.get("author") or "").lower()
     for it in items:
         if it.get("type") != "journal-article":
             continue
-        if difflib.SequenceMatcher(None, want, norm_title((it.get("title") or [""])[0])).ratio() < 0.9:
+        if difflib.SequenceMatcher(None, want, norm_title((it.get("title") or [""])[0])).ratio() < 0.88:
             continue
         cont = (it.get("container-title") or [""])[0]
         if not cont or "arxiv" in cont.lower():
@@ -233,6 +273,21 @@ def crossref_status(m):
         if fa and fam and fa not in fam:
             continue
         return {"ps": "pub", "j": short_journal(cont, it.get("DOI")), "doi": it.get("DOI"), "src": "Crossref"}
+    return None
+
+
+def s2_status(aid):
+    url = f"https://api.semanticscholar.org/graph/v1/paper/arXiv:{aid}?fields=externalIds,venue,journal"
+    try:
+        d = json.loads(fetch(url, tries=2))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
+    doi = (d.get("externalIds") or {}).get("DOI")
+    if doi and not doi.lower().startswith("10.48550"):
+        name = (d.get("journal") or {}).get("name") or d.get("venue")
+        return {"ps": "pub", "j": short_journal(name, doi), "doi": doi, "src": "Semantic Scholar"}
     return None
 
 
@@ -248,34 +303,35 @@ def update_pubstatus(ids, offline, today):
         print(f"WARNING: arXiv metadata lookup failed: {e}", file=sys.stderr)
         meta = {}
     for i in todo:
-        m, found, errors = meta.get(i, {}), [], 0
+        m = meta.get(i, {})
         steps = []
         if ADS_TOKEN:
-            steps.append(lambda i=i: ads_status(i))
-        steps.append(lambda m=m: meta_status(m) if m else None)
-        for step in steps:
+            steps.append(("ADS", lambda i=i: ads_status(i)))
+        steps += [
+            ("arXiv metadata", lambda m=m: meta_status(m) if m else None),
+            ("OpenAlex", lambda i=i: openalex_status(i)),
+            ("Crossref", lambda i=i, m=m: crossref_status(i, m)),
+            ("Semantic Scholar", lambda i=i: s2_status(i)),
+        ]
+        found, errors = [], 0
+        for name, step in steps:
             try:
                 r = step()
-                if r:
-                    found.append(r)
             except Exception as e:  # noqa: BLE001
                 errors += 1
-                print(f"WARNING: status check failed for {i}: {e}", file=sys.stderr)
-        if not any(r["ps"] == "pub" for r in found) and m:
-            try:
-                r = crossref_status(m)
-                if r:
-                    found.append(r)
-            except Exception as e:  # noqa: BLE001
-                errors += 1
-                print(f"WARNING: Crossref check failed for {i}: {e}", file=sys.stderr)
-            time.sleep(1)
-        best = next((r for r in found if r["ps"] == "pub"), None) or next((r for r in found if r["ps"] == "acc"), None)
-        if best is None and found:
-            best = found[0]
+                print(f"WARNING: {name} check failed for {i}: {e}", file=sys.stderr)
+                continue
+            if r:
+                found.append(r)
+                if r["ps"] == "pub":
+                    break  # a journal version is final; no need to ask further
+            time.sleep(0.5)
+        best = (next((r for r in found if r["ps"] == "pub"), None)
+                or next((r for r in found if r["ps"] == "acc"), None)
+                or (found[0] if found else None))
         if best is None:
-            if errors and i in cache:
-                continue  # every check failed: keep the earlier result
+            if errors:
+                continue  # checks failed: leave unchecked / keep the earlier result rather than guess
             best = {"ps": "pre", "j": None, "doi": None, "src": "no journal version found"}
         cache[i] = {**best, "checked": today}
     path.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True))
