@@ -1,235 +1,524 @@
 [
-{
-"n": "K2-18 b",
-"h": "K2-18",
-"r": 2.61,
-"m": 8.63,
-"t": 284,
-"st": "amb",
-"ins": "NIRISS SOSS, NIRSpec G395H, MIRI",
-"res": "CH4 and CO2 in an H2-rich atmosphere, no NH3. Possible DMS/DMDS claims are tentative and disputed; hycean vs. mini-Neptune still debated.",
-"refs": [
-{
-"t": "Madhusudhan+2023",
-"u": "https://arxiv.org/abs/2309.05566"
-},
-{
-"t": "Madhusudhan+2025",
-"u": "https://arxiv.org/abs/2504.12267"
-}
-],
-"cls": "Sub-Neptune; possible Hycean world"
-},
-{
-"n": "TOI-270 d",
-"h": "TOI-270",
-"r": 2.1,
-"m": 4.8,
-"t": 387,
-"st": "mol",
-"ins": "NIRISS, NIRSpec",
-"res": "CH4, CO2, H2O; metal-enriched atmosphere, consistent with a miscible envelope.",
-"refs": [
-{
-"t": "Benneke+2024",
-"u": "https://arxiv.org/abs/2403.03325"
-}
-],
-"cls": "Sub-Neptune (metal-rich miscible envelope)"
-},
-{
-"n": "LHS 1140 b",
-"h": "LHS 1140",
-"r": 1.7,
-"m": 5.6,
-"t": 226,
-"st": "amb",
-"ins": "NIRISS, NIRSpec",
-"res": "Hints of a N2-rich secondary atmosphere; not a firm detection. Candidate water world / temperate rocky planet.",
-"refs": [
-{
-"t": "Cadieux+2024",
-"u": "https://arxiv.org/abs/2406.15136"
-}
-],
-"cls": "Habitable-zone exoplanet"
-},
-{
-"n": "GJ 1214 b",
-"h": "GJ 1214",
-"r": 2.7,
-"m": 8.4,
-"t": 567,
-"st": "flat",
-"ins": "NIRSpec, MIRI (phase curve)",
-"res": "High-metallicity atmosphere with reflective aerosols; muted spectral features.",
-"refs": [
-{
-"t": "Kempton+2023",
-"u": "https://arxiv.org/abs/2305.06240"
-},
-{
-"t": "Gao+2023",
-"u": "https://arxiv.org/abs/2305.05697"
-}
-],
-"cls": "Sub-Neptune"
-},
-{
-"n": "TOI-836 c",
-"h": "TOI-836",
-"r": 2.59,
-"m": 9.6,
-"t": 665,
-"st": "flat",
-"ins": "NIRSpec G395H",
-"res": "Featureless; rules out metallicities below ~175x solar unless aerosols sit at <~1 mbar.",
-"refs": [
-{
-"t": "Wallack+2024 (COMPASS)",
-"u": "https://arxiv.org/abs/2404.01264"
-}
-],
-"cls": "Sub-Neptune"
-},
-{
-"n": "HD 15337 c",
-"h": "HD 15337",
-"r": 2.53,
-"m": 6.79,
-"t": 656,
-"st": "flat",
-"ins": "NIRSpec G395H",
-"res": "Featureless; high metallicity and/or high-altitude aerosols. Also gave precise transit timings (TTVs).",
-"refs": [
-{
-"t": "Wallack+2026 (COMPASS)",
-"u": "https://arxiv.org/abs/2602.22327"
-}
-],
-"cls": "Sub-Neptune"
-},
-{
-"n": "TOI-732 c",
-"h": "TOI-732",
-"r": null,
-"m": null,
-"t": null,
-"st": "mol",
-"ins": "NIRISS, NIRSpec G395H, MIRI LRS",
-"res": "Evidence for CH4 (~1% mixing ratio) in an H2-rich atmosphere; no NH3 or HCN.",
-"refs": [
-{
-"t": "Rigby+2025",
-"u": "https://arxiv.org/abs/2512.15844"
-}
-],
-"cls": "Temperate sub-Neptune"
-},
-{
-"n": "TOI-1231 b",
-"h": "TOI-1231",
-"r": null,
-"m": null,
-"t": null,
-"st": "mol",
-"ins": "NIRISS SOSS, NIRSpec G395H",
-"res": "Strong CH4, moderate-to-strong CO2; no significant sulfur species. Consistent with a deep H2-rich atmosphere.",
-"refs": [
-{
-"t": "Sarkar+2026",
-"u": "https://arxiv.org/abs/2607.00973"
-}
-],
-"cls": "Temperate exo-Neptune"
-},
-{
-"n": "TOI-776 c",
-"h": "TOI-776",
-"r": 2.0,
-"m": 6.9,
-"t": 420,
-"st": "flat",
-"ins": "NIRSpec G395H",
-"res": "No molecular features detected in the 3-5 um spectrum; rules out metallicities below ~180-240x solar for cloud tops above 1 mbar. Planet may sit near the threshold where small-planet atmospheric features become detectable.",
-"refs": [
-{
-"t": "Teske+2025 (COMPASS)",
-"u": "https://arxiv.org/abs/2502.20501"
-}
-],
-"cls": "~2 R⊕ M-dwarf planet"
-},
-{
-"n": "TOI-421 b",
-"h": "TOI-421",
-"r": 2.68,
-"m": 6.7,
-"t": 920,
-"st": "mol",
-"ins": "NIRISS SOSS, NIRSpec G395M",
-"res": "Water detected (consistent with solar metallicity); hints of SO2 and CO; no CO2 or CH4. Low mean molecular weight and no appreciable haze, unlike M-dwarf sub-Neptunes.",
-"refs": [
-{
-"t": "Davenport+2025",
-"u": "https://arxiv.org/abs/2501.01498"
-}
-],
-"cls": "Hot sub-Neptune"
-},
-{
-"n": "GJ 9827 d",
-"h": "GJ 9827",
-"r": 1.96,
-"m": 3.0,
-"t": 620,
-"st": "amb",
-"ins": "NIRSpec (with HST)",
-"res": "Compatible with a water-rich (steam) atmosphere; H2-dominated solutions disfavored.",
-"refs": [
-{
-"t": "Piaulet-Ghorayeb+2024",
-"u": "https://arxiv.org/abs/2410.03527"
-}
-],
-"cls": "Water-rich “steam world”"
-},
-{
-"n": "L 98-59 d",
-"h": "L 98-59",
-"r": 1.58,
-"m": 1.9,
-"t": 416,
-"st": "amb",
-"ins": "NIRSpec G395H",
-"res": "Hints of sulfur-bearing volatiles (SO2/H2S), volatile-rich interior. At the super-Earth/sub-Neptune boundary.",
-"refs": [
-{
-"t": "Gressier+2024",
-"u": "https://arxiv.org/abs/2408.15855"
-},
-{
-"t": "Banerjee+2024",
-"u": "https://arxiv.org/abs/2408.15707"
-}
-],
-"cls": "Super-Earth"
-},
-{
-"n": "GJ 3090 b",
-"h": "GJ 3090",
-"r": 2.13,
-"m": 3.3,
-"t": 693,
-"st": "flat",
-"ins": "NIRSpec G395H",
-"res": "Largely featureless, consistent with high mean molecular weight and/or aerosols.",
-"refs": [
-{
-"t": "Ahrer+2025",
-"u": "https://arxiv.org/abs/2504.20428"
-}
-],
-"cls": "Sub-Neptune"
-}
+ {
+  "n": "K2-18 b",
+  "h": "K2-18",
+  "r": 2.61,
+  "m": 8.63,
+  "t": 284,
+  "st": "amb",
+  "ins": "NIRISS SOSS, NIRSpec G395H, MIRI",
+  "res": "CH4 and CO2 in an H2-rich atmosphere, no NH3. Possible DMS/DMDS claims are tentative and disputed; hycean vs. mini-Neptune still debated.",
+  "refs": [
+   {
+    "t": "Madhusudhan+2023",
+    "u": "https://arxiv.org/abs/2309.05566"
+   },
+   {
+    "t": "Madhusudhan+2025",
+    "u": "https://arxiv.org/abs/2504.12267"
+   }
+  ],
+  "cls": "Sub-Neptune; possible Hycean world"
+ },
+ {
+  "n": "TOI-270 d",
+  "h": "TOI-270",
+  "r": 2.1,
+  "m": 4.8,
+  "t": 387,
+  "st": "mol",
+  "ins": "NIRISS, NIRSpec",
+  "res": "CH4, CO2, H2O; metal-enriched atmosphere, consistent with a miscible envelope.",
+  "refs": [
+   {
+    "t": "Benneke+2024",
+    "u": "https://arxiv.org/abs/2403.03325"
+   }
+  ],
+  "cls": "Sub-Neptune (metal-rich miscible envelope)"
+ },
+ {
+  "n": "LHS 1140 b",
+  "h": "LHS 1140",
+  "r": 1.7,
+  "m": 5.6,
+  "t": 226,
+  "st": "amb",
+  "ins": "NIRISS, NIRSpec",
+  "res": "Hints of a N2-rich secondary atmosphere; not a firm detection. Candidate water world / temperate rocky planet.",
+  "refs": [
+   {
+    "t": "Cadieux+2024",
+    "u": "https://arxiv.org/abs/2406.15136"
+   }
+  ],
+  "cls": "Habitable-zone exoplanet"
+ },
+ {
+  "n": "GJ 1214 b",
+  "h": "GJ 1214",
+  "r": 2.7,
+  "m": 8.4,
+  "t": 567,
+  "st": "flat",
+  "ins": "NIRSpec, MIRI (phase curve)",
+  "res": "High-metallicity atmosphere with reflective aerosols; muted spectral features.",
+  "refs": [
+   {
+    "t": "Kempton+2023",
+    "u": "https://arxiv.org/abs/2305.06240"
+   },
+   {
+    "t": "Gao+2023",
+    "u": "https://arxiv.org/abs/2305.05697"
+   }
+  ],
+  "cls": "Sub-Neptune"
+ },
+ {
+  "n": "TOI-836 c",
+  "h": "TOI-836",
+  "r": 2.59,
+  "m": 9.6,
+  "t": 665,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "Featureless; rules out metallicities below ~175x solar unless aerosols sit at <~1 mbar.",
+  "refs": [
+   {
+    "t": "Wallack+2024 (COMPASS)",
+    "u": "https://arxiv.org/abs/2404.01264"
+   }
+  ],
+  "cls": "Sub-Neptune"
+ },
+ {
+  "n": "HD 15337 c",
+  "h": "HD 15337",
+  "r": 2.53,
+  "m": 6.79,
+  "t": 656,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "Featureless; high metallicity and/or high-altitude aerosols. Also gave precise transit timings (TTVs).",
+  "refs": [
+   {
+    "t": "Wallack+2026 (COMPASS)",
+    "u": "https://arxiv.org/abs/2602.22327"
+   }
+  ],
+  "cls": "Sub-Neptune"
+ },
+ {
+  "n": "TOI-732 c",
+  "h": "TOI-732",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "NIRISS, NIRSpec G395H, MIRI LRS",
+  "res": "Evidence for CH4 (~1% mixing ratio) in an H2-rich atmosphere; no NH3 or HCN.",
+  "refs": [
+   {
+    "t": "Rigby+2025",
+    "u": "https://arxiv.org/abs/2512.15844"
+   }
+  ],
+  "cls": "Temperate sub-Neptune"
+ },
+ {
+  "n": "TOI-1231 b",
+  "h": "TOI-1231",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "NIRISS SOSS, NIRSpec G395H",
+  "res": "Strong CH4, moderate-to-strong CO2; no significant sulfur species. Consistent with a deep H2-rich atmosphere.",
+  "refs": [
+   {
+    "t": "Sarkar+2026",
+    "u": "https://arxiv.org/abs/2607.00973"
+   }
+  ],
+  "cls": "Temperate exo-Neptune"
+ },
+ {
+  "n": "TOI-776 c",
+  "h": "TOI-776",
+  "r": 2.0,
+  "m": 6.9,
+  "t": 420,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "No molecular features detected in the 3-5 um spectrum; rules out metallicities below ~180-240x solar for cloud tops above 1 mbar. Planet may sit near the threshold where small-planet atmospheric features become detectable.",
+  "refs": [
+   {
+    "t": "Teske+2025 (COMPASS)",
+    "u": "https://arxiv.org/abs/2502.20501"
+   }
+  ],
+  "cls": "~2 R⊕ M-dwarf planet"
+ },
+ {
+  "n": "TOI-421 b",
+  "h": "TOI-421",
+  "r": 2.68,
+  "m": 6.7,
+  "t": 920,
+  "st": "mol",
+  "ins": "NIRISS SOSS, NIRSpec G395M",
+  "res": "Water detected (consistent with solar metallicity); hints of SO2 and CO; no CO2 or CH4. Low mean molecular weight and no appreciable haze, unlike M-dwarf sub-Neptunes.",
+  "refs": [
+   {
+    "t": "Davenport+2025",
+    "u": "https://arxiv.org/abs/2501.01498"
+   }
+  ],
+  "cls": "Hot sub-Neptune"
+ },
+ {
+  "n": "GJ 9827 d",
+  "h": "GJ 9827",
+  "r": 1.96,
+  "m": 3.0,
+  "t": 620,
+  "st": "amb",
+  "ins": "NIRSpec (with HST)",
+  "res": "Compatible with a water-rich (steam) atmosphere; H2-dominated solutions disfavored.",
+  "refs": [
+   {
+    "t": "Piaulet-Ghorayeb+2024",
+    "u": "https://arxiv.org/abs/2410.03527"
+   }
+  ],
+  "cls": "Water-rich “steam world”"
+ },
+ {
+  "n": "L 98-59 d",
+  "h": "L 98-59",
+  "r": 1.58,
+  "m": 1.9,
+  "t": 416,
+  "st": "amb",
+  "ins": "NIRSpec G395H",
+  "res": "Hints of sulfur-bearing volatiles (SO2/H2S), volatile-rich interior. At the super-Earth/sub-Neptune boundary.",
+  "refs": [
+   {
+    "t": "Gressier+2024",
+    "u": "https://arxiv.org/abs/2408.15855"
+   },
+   {
+    "t": "Banerjee+2024",
+    "u": "https://arxiv.org/abs/2408.15707"
+   }
+  ],
+  "cls": "Super-Earth"
+ },
+ {
+  "n": "GJ 3090 b",
+  "h": "GJ 3090",
+  "r": 2.13,
+  "m": 3.3,
+  "t": 693,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "Largely featureless, consistent with high mean molecular weight and/or aerosols.",
+  "refs": [
+   {
+    "t": "Ahrer+2025",
+    "u": "https://arxiv.org/abs/2504.20428"
+   }
+  ],
+  "cls": "Sub-Neptune"
+ },
+ {
+  "n": "GJ 3470 b",
+  "h": "GJ 3470",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "NIRCam (with HST, Spitzer)",
+  "res": "H2O, CH4, SO2 and CO2 detected (>3σ); metallicity ~100× solar; CH4 lower than equilibrium predicts, pointing to disequilibrium chemistry.",
+  "refs": [
+   {
+    "t": "Beatty+2024",
+    "u": "https://arxiv.org/abs/2406.04450"
+   }
+  ],
+  "cls": "Sub-Neptune"
+ },
+ {
+  "n": "GJ 436 b",
+  "h": "GJ 436",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "NIRCam F322W2/F444W, MIRI LRS (thermal emission)",
+  "res": "Dayside spectrum with weak molecular features, Tday ≈ 663 K; cloudy metal-rich (≥300× solar) or cloud-free lower-metallicity atmosphere with cold interior both fit.",
+  "refs": [
+   {
+    "t": "Mukherjee+2025",
+    "u": "https://arxiv.org/abs/2502.17418"
+   }
+  ],
+  "cls": "Warm Neptune"
+ },
+ {
+  "n": "GJ 486 b",
+  "h": "GJ 486",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "NIRSpec G395H",
+  "res": "2.2–3.3σ deviation from a flat spectrum: either a water-rich atmosphere or unocculted cool starspots; not a firm detection.",
+  "refs": [
+   {
+    "t": "Moran+2023",
+    "u": "https://arxiv.org/abs/2305.00868"
+   }
+  ],
+  "cls": "Warm super-Earth"
+ },
+ {
+  "n": "TRAPPIST-1 b",
+  "h": "TRAPPIST-1",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "MIRI 15 µm (phase curve)",
+  "res": "Hot dayside, almost no nightside emission: consistent with an airless, low-albedo rocky surface; thick atmospheres disfavored.",
+  "refs": [
+   {
+    "t": "Gillon+2025",
+    "u": "https://arxiv.org/abs/2509.02128"
+   }
+  ],
+  "cls": "Temperate terrestrial planet"
+ },
+ {
+  "n": "TRAPPIST-1 c",
+  "h": "TRAPPIST-1",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "MIRI 15 µm (phase curve)",
+  "res": "Cooler dayside than b; at most a tenuous atmosphere or airless with a reflective surface; thick CO2/greenhouse atmospheres disfavored.",
+  "refs": [
+   {
+    "t": "Gillon+2025",
+    "u": "https://arxiv.org/abs/2509.02128"
+   }
+  ],
+  "cls": "Temperate terrestrial planet"
+ },
+ {
+  "n": "55 Cnc e",
+  "h": "55 Cnc",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "NIRCam, MIRI (thermal emission)",
+  "res": "Not a bare lava world: evidence for a substantial volatile (CO2/CO-rich) atmosphere, possibly outgassed from a magma ocean.",
+  "refs": [
+   {
+    "t": "Hu+2024",
+    "u": "https://arxiv.org/abs/2405.04744"
+   }
+  ],
+  "cls": "Lava world / super-Earth"
+ },
+ {
+  "n": "TOI-561 b",
+  "h": "TOI-561",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "NIRSpec (3–5 µm dayside)",
+  "res": "Dayside too cool for a bare rock: thick volatile atmosphere on an ultrahot super-Earth.",
+  "refs": [
+   {
+    "t": "Teske+2025",
+    "u": "https://arxiv.org/abs/2509.17231"
+   }
+  ],
+  "cls": "Ultrahot super-Earth"
+ },
+ {
+  "n": "GJ 3473 b",
+  "h": "GJ 3473",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "MIRI F1500W (eclipse)",
+  "res": "Eclipse depth 186±45 ppm, below blackbody; bare rock and atmosphere both fit; thick CO2 atmospheres excluded (<1.2–6.5 bar).",
+  "refs": [
+   {
+    "t": "Holmberg+2026 (Hot Rocks V)",
+    "u": "https://arxiv.org/abs/2604.02332"
+   }
+  ],
+  "cls": "Hot rocky planet"
+ },
+ {
+  "n": "LTT 9779 b",
+  "h": "LTT 9779",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "NIRISS SOSS",
+  "res": "Muted features (flat rejected at >5σ), metallicity ~20–850× solar, mbar-level clouds; silicate clouds may explain the high albedo.",
+  "refs": [
+   {
+    "t": "Radica+2024",
+    "u": "https://arxiv.org/abs/2401.15548"
+   }
+  ],
+  "cls": "Ultra-hot Neptune"
+ },
+ {
+  "n": "L 98-59 c",
+  "h": "L 98-59",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "Featureless; rules out H2-He atmospheres and metallicity below ~300× solar; no atmosphere or high-mean-molecular-weight atmosphere remain.",
+  "refs": [
+   {
+    "t": "Scarsdale+2024 (COMPASS)",
+    "u": "https://arxiv.org/abs/2409.07552"
+   }
+  ],
+  "cls": "Super-Earth"
+ },
+ {
+  "n": "GJ 3929 b",
+  "h": "GJ 3929",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "MIRI 15 µm (eclipse)",
+  "res": "Eclipse 118±22 ppm, Tday ≈ 641 K: consistent with bare rock, thin atmosphere possible, thick CO2 ruled out (>3σ).",
+  "refs": [
+   {
+    "t": "Connors+2026 (Rocky Worlds DDT)",
+    "u": "https://arxiv.org/abs/2606.07511"
+   }
+  ],
+  "cls": "Rocky planet"
+ },
+ {
+  "n": "LHS 1478 b",
+  "h": "LHS 1478",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "MIRI 15 µm (eclipse)",
+  "res": "Tentative shallow eclipse (138±53 ppm) in one visit, none in the other; bare dark rock rejected at 3.3σ in visit 1 only. Inconclusive.",
+  "refs": [
+   {
+    "t": "August+2024 (Hot Rocks I)",
+    "u": "https://arxiv.org/abs/2410.11048"
+   }
+  ],
+  "cls": "Hot rocky planet"
+ },
+ {
+  "n": "GJ 1132 b",
+  "h": "GJ 1132",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "NIRSpec G395H/G395M (with HST, LDSS3C)",
+  "res": "Featureless combined spectrum; favors a bare rock, thin obscured atmosphere not excluded.",
+  "refs": [
+   {
+    "t": "Senobar+2026",
+    "u": "https://arxiv.org/abs/2608.24803"
+   }
+  ],
+  "cls": "Rocky super-Earth"
+ },
+ {
+  "n": "LTT 1445 A b",
+  "h": "LTT 1445 A",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "NIRSpec G395H (with HST)",
+  "res": "No significant features; metallicity ≳350× solar (≳500× with HST).",
+  "refs": [
+   {
+    "t": "Batalha+2026 (COMPASS)",
+    "u": "https://arxiv.org/abs/2605.15003"
+   }
+  ],
+  "cls": "Rocky planet"
+ },
+ {
+  "n": "TOI-260 b",
+  "h": "TOI-260",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "flat",
+  "ins": "NIRSpec G395H",
+  "res": "Mostly featureless; metallicity >200× solar if no cloud deck above ~2.5 mbar.",
+  "refs": [
+   {
+    "t": "Meech+2026 (COMPASS)",
+    "u": "https://arxiv.org/abs/2602.22329"
+   }
+  ],
+  "cls": "Radius-valley planet"
+ },
+ {
+  "n": "HD 3167 b",
+  "h": "HD 3167",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "amb",
+  "ins": "MIRI LRS (eclipse)",
+  "res": "Eclipse 38±11 ppm, >5σ below dark bare rock: points to an atmosphere cooling the dayside.",
+  "refs": [
+   {
+    "t": "Coy+2026",
+    "u": "https://arxiv.org/abs/2604.11911"
+   }
+  ],
+  "cls": "Ultra-short-period super-Earth"
+ },
+ {
+  "n": "HD 106315 c",
+  "h": "HD 106315",
+  "r": null,
+  "m": null,
+  "t": null,
+  "st": "mol",
+  "ins": "MIRI LRS (transmission, with HST)",
+  "res": "H2O detected, tentative NH3; strongly metal-enriched; no robust sulfur species.",
+  "refs": [
+   {
+    "t": "Dyrek+2026 (JWST-SUPER I)",
+    "u": "https://arxiv.org/abs/2609.09893"
+   }
+  ],
+  "cls": "Warm Neptune"
+ }
 ]

@@ -404,5 +404,12 @@
   "j": "ApJL on October",
   "ps": "acc",
   "src": "arXiv comment"
+ },
+ "2305.00868": {
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/accb9c",
+  "src": "seed",
+  "checked": "2026-10-15"
  }
 }

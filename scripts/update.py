@@ -100,13 +100,13 @@ def name_regex(name):
     return re.compile(r"(?<![A-Za-z0-9])" + r"[\s\-]?".join(parts) + r"(?![A-Za-z0-9])", re.I)
 
 
-def get_papers(catalog_names):
-    url = ARXIV + "?" + urllib.parse.urlencode({
-        "search_query": ARXIV_QUERY, "sortBy": "submittedDate",
-        "sortOrder": "descending", "max_results": 100,
-    })
-    root = ET.fromstring(fetch(url))
-    regexes = [(n, name_regex(n)) for n in catalog_names]
+OBS_RE = re.compile(r"NIRSpec|NIRCam|NIRISS|MIRI|NIRSpec|eclipse|phase curve|transmission spectr|emission spectr|"
+                    r"we (?:present|report|observe[d]?|analy[sz]e|detect)|observations? (?:of|with|from)|JWST/", re.I)
+THEORY_RE = re.compile(r"we (?:model|simulate|predict|investigate theoretically)|synthetic|forward model|"
+                       r"simulated JWST|prospects|detectability|will be observed|upcoming|proposed", re.I)
+
+
+def parse_entries(root, regexes):
     papers = []
     for e in root.findall("a:entry", ATOM):
         title = " ".join((e.findtext("a:title", "", ATOM)).split())
@@ -120,11 +120,48 @@ def get_papers(catalog_names):
         hits = sorted({n for n, rx in regexes if rx.search(text)})
         if not hits:
             continue
+        # a planet counts as the subject only if named in the title, or the abstract is observational
+        in_title = sorted({n for n, rx in regexes if rx.search(title)})
+        obs = bool(OBS_RE.search(abstract)) and not (THEORY_RE.search(abstract) and not in_title)
+        if len(hits) > 6 and not in_title:      # survey/population papers: don't flag individual planets
+            hits = []
         papers.append({
             "id": aid, "title": title, "url": f"https://arxiv.org/abs/{aid}",
             "published": (e.findtext("a:published", "", ATOM) or "")[:10], "planets": hits,
+            "subject": in_title or (hits if obs else []), "obs": obs,
         })
     return papers
+
+
+def arxiv_query(q, regexes, n=100, start=0):
+    url = ARXIV + "?" + urllib.parse.urlencode({
+        "search_query": q, "sortBy": "submittedDate", "sortOrder": "descending",
+        "max_results": n, "start": start})
+    return parse_entries(ET.fromstring(fetch(url)), regexes)
+
+
+def get_papers(catalog_names, tracked_hosts=()):
+    """Broad scan (3 pages of the keyword query) + one targeted query per host star of the
+    planets already in the table, so older/other-keyword JWST papers on tracked planets are found."""
+    regexes = [(n, name_regex(n)) for n in catalog_names]
+    found = {}
+    for start in (0, 100, 200):
+        try:
+            for p in arxiv_query(ARXIV_QUERY, regexes, 100, start):
+                found[p["id"]] = p
+        except Exception as e:  # noqa: BLE001
+            print("broad scan failed:", e)
+            break
+        time.sleep(3)
+    for host in tracked_hosts:
+        q = f'(abs:JWST OR abs:"James Webb") AND (abs:"{host}" OR ti:"{host}")'
+        try:
+            for p in arxiv_query(q, regexes, 30):
+                found.setdefault(p["id"], p)
+        except Exception as e:  # noqa: BLE001
+            print("host query failed:", host, e)
+        time.sleep(3)
+    return list(found.values())
 
 
 # ---------------------------------------------------------------------------
@@ -368,10 +405,11 @@ def main():
     catalog = {}
     if not offline:
         catalog = get_catalog()
-        for p in get_papers([v["n"] for v in catalog.values()]):
-            if p["id"] not in seen:
-                p["first_seen"] = today
-                seen[p["id"]] = p
+        hosts = sorted({c["h"] for c in curated if c.get("h")})
+        for p in get_papers([v["n"] for v in catalog.values()], hosts):
+            old = seen.get(p["id"])
+            p["first_seen"] = (old or {}).get("first_seen", today)
+            seen[p["id"]] = p
     papers = sorted(seen.values(), key=lambda p: p["published"], reverse=True)
 
     rows = {k: dict(v) for k, v in catalog.items()}
@@ -386,12 +424,24 @@ def main():
                 row[f] = base[f]
         rows[k] = row
 
-    # unreviewed arXiv papers -> flag planets that have no hand-reviewed result yet
+    # Unreviewed observational papers. Reviewed planets: add the paper to their references as an
+    # "unreviewed" entry; other table planets: flag the row as "new".
     for p in papers:
-        for name in p["planets"]:
+        if not p.get("obs"):
+            continue
+        for name in p.get("subject", []):
             k = norm(name)
             row = rows.get(k)
-            if row is None or k in reviewed or row.get("st") == "new":
+            if row is None:
+                continue
+            if k in reviewed:
+                have = {arxiv_id(x.get("u")) for x in row.get("refs") or []}
+                if p["id"] not in have:
+                    short = p["title"][:70] + ("…" if len(p["title"]) > 70 else "")
+                    row.setdefault("refs", []).append(
+                        {"t": f"New, unreviewed ({p['published']}): {short}", "u": p["url"]})
+                continue
+            if row.get("st") == "new":
                 continue
             row["st"] = "new"
             row["ins"] = "JWST (see paper)"
