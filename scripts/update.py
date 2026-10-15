@@ -106,6 +106,20 @@ THEORY_RE = re.compile(r"we (?:model|simulate|predict|investigate theoretically)
                        r"simulated JWST|prospects|detectability|will be observed|upcoming|proposed", re.I)
 
 
+FLAT_RE = re.compile(r"featureless|flat (?:transmission )?spectrum|no (?:significant |clear |obvious |detectable )?"
+                     r"(?:molecular |spectral |atmospheric )?(?:features|signatures|absorption)|muted|bare[- ]rock|"
+                     r"airless|no evidence for an atmosphere|rule[sd]? out|high[- ]altitude (?:clouds|aerosols|hazes)", re.I)
+MOL_RE = re.compile(r"detect(?:ion|ed|s|ing)? (?:of )?(?:\w+,? ){0,4}?(?:H2O|water|CH4|methane|CO2|CO\b|SO2|NH3|H2S|"
+                    r"carbon dioxide|ammonia|sulfur)|evidence for (?:an? |the )?(?:\w+ ){0,3}atmosphere|"
+                    r"thick (?:volatile )?atmosphere|(?:H2O|CH4|CO2|SO2|NH3) (?:and|,) (?:H2O|CH4|CO2|SO2|NH3)", re.I)
+
+
+def auto_class(abstract):
+    """Rough, unreviewed outcome from abstract wording: mol / flat / amb."""
+    mol, flat = bool(MOL_RE.search(abstract)), bool(FLAT_RE.search(abstract))
+    return "mol" if mol and not flat else "flat" if flat and not mol else "amb"
+
+
 def parse_entries(root, regexes):
     papers = []
     for e in root.findall("a:entry", ATOM):
@@ -128,7 +142,7 @@ def parse_entries(root, regexes):
         papers.append({
             "id": aid, "title": title, "url": f"https://arxiv.org/abs/{aid}",
             "published": (e.findtext("a:published", "", ATOM) or "")[:10], "planets": hits,
-            "subject": in_title or (hits if obs else []), "obs": obs,
+            "subject": in_title or (hits if obs else []), "obs": obs, "auto": auto_class(abstract),
         })
     return papers
 
@@ -441,11 +455,12 @@ def main():
                     row.setdefault("refs", []).append(
                         {"t": f"New, unreviewed ({p['published']}): {short}", "u": p["url"]})
                 continue
-            if row.get("st") == "new":
+            if row.get("auto"):
                 continue
-            row["st"] = "new"
+            row["st"] = p.get("auto") or "amb"
+            row["auto"] = True   # outcome guessed from the abstract; shown in a different colour
             row["ins"] = "JWST (see paper)"
-            row["res"] = "New JWST paper, not yet reviewed: " + p["title"]
+            row["res"] = "Auto-classified from the abstract, not yet reviewed: " + p["title"]
             row["ref"] = f"arXiv:{p['id']} ({p['published']})"
             row["url"] = p["url"]
 
