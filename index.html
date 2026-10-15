@@ -27,18 +27,19 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 #more{margin-top:10px}
 </style></head><body><main>
 <h1>Sub-Neptunes × JWST</h1>
-<p class="sub">Planets of ~1.6–4 R⊕ and what JWST has found. Updated weekly; last refresh <b id="asof">…</b>.</p>
+<p class="sub">Planets of <span class="rg">1.6–4</span> R⊕ and what JWST has found. Updated weekly; last refresh <b id="asof">…</b>.</p>
 <div class="stats">
 <div class="stat"><b id="s1">–</b><span>planets with JWST results</span></div>
 <div class="stat"><b id="s2">–</b><span>molecules detected</span></div>
 <div class="stat"><b id="s3">–</b><span>featureless / aerosols</span></div>
 <div class="stat"><b id="s6">–</b><span>planets with JWST data in MAST</span></div>
 <div class="stat"><b id="s4">–</b><span>new papers to review</span></div>
-<div class="stat"><b id="s5">–</b><span>catalog planets (1.6–4 R⊕)</span></div>
+<div class="stat"><b id="s5">–</b><span>catalog planets (<span class="rg">1.6–4</span> R⊕)</span></div>
 </div>
 <div class="bar">
 <input type="search" id="q" placeholder="Search planet, host, molecule (e.g. CH4, K2-18)…">
 <select id="f"><option value="">All results</option><option value="mol">Molecules detected</option><option value="flat">Featureless / aerosols</option><option value="amb">Ambiguous / debated</option><option value="new">New paper (unreviewed)</option></select>
+<select id="rr"><option value="">Any radius</option><option value="a">&lt; 1.6 R⊕ (super-Earth)</option><option value="b">1.6–4 R⊕ (sub-Neptune)</option><option value="c">&gt; 4 R⊕ (Neptune-size and larger)</option></select>
 <select id="o"><option value="">Any observation status</option><option value="obs">Observed with JWST (data in MAST)</option><option value="unp">Observed, no reviewed result yet</option><option value="none">No JWST data found</option></select>
 <label class="chk"><input type="checkbox" id="all"> Include planets with no JWST data or result</label>
 </div>
@@ -46,7 +47,7 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 <button id="more" hidden>Show more</button>
 <p class="note" id="foot"></p>
 <details><summary>How this works</summary>
-<p class="note" style="margin-top:8px">Every Monday a GitHub Action downloads all planets with 1.6 ≤ R ≤ 4 R⊕ from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener">NASA Exoplanet Archive</a> and searches arXiv (astro-ph.EP) for new JWST papers that name those planets. Hand-reviewed results (instruments, composition, source) come from <code>data/jwst_results.json</code>. A planet flagged <b>New paper</b> was found automatically and has not been reviewed yet; its composition is not summarized until someone adds it to that file.</p>
+<p class="note" style="margin-top:8px">Every Monday a GitHub Action downloads all planets of <span class="rg">1.6–4</span> R⊕ from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener">NASA Exoplanet Archive</a> and searches arXiv (astro-ph.EP) for new JWST papers that name those planets. Hand-reviewed results (instruments, composition, source) come from <code>data/jwst_results.json</code>. A planet flagged <b>New paper</b> was found automatically and has not been reviewed yet; its composition is not summarized until someone adds it to that file.</p>
 <p class="note"><b>JWST observations (MAST):</b> each week the script also searches the <a href="https://archive.stsci.edu/" target="_blank" rel="noopener">MAST archive</a> for JWST science observations whose target name matches a planet or its host star. This includes data that is still proprietary and unpublished, shown with its release date. Wavelengths come from the archive's recorded coverage (a “~” marks nominal values for that instrument mode). “Host-level match” means the proposer named the star, not the planet, so the data may be for a different planet in the same system. Only observations that have already been executed appear: approved programs that are scheduled but not yet observed are not listed, and a target filed under an unusual name can be missed.</p>
 <p class="note">“No published result in tracker” only means this tracker has no reviewed paper for that planet. Some curated masses and temperatures are rounded; verify against the cited source before relying on a row.</p></details>
 </main>
@@ -57,13 +58,13 @@ const lab={mol:['Molecules detected','mol'],flat:['Featureless / aerosols','flat
 let D=null,sk='n',sd=1,limit=200;
 $('hd').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
 $('hd').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sd=sk===k?-sd:1;sk=k;limit=200;draw()};
-['q','f','o','all'].forEach(i=>$(i).oninput=()=>{limit=200;draw()});
+['q','f','o','rr','all'].forEach(i=>$(i).oninput=()=>{limit=200;draw()});
 $('more').onclick=()=>{limit+=300;draw()};
 function draw(){
  if(!D)return;
  const q=$('q').value.toLowerCase(),f=$('f').value,all=$('all').checked;
- const o=$('o').value,has=x=>x.obs&&x.obs.length>0;
- let a=D.rows.filter(x=>(all||x.st||has(x))&&(!f||x.st===f)&&(!o||(o==='obs'?has(x):o==='unp'?has(x)&&(!x.st||x.st==='new'):!has(x)))&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
+ const rr=$('rr').value,inr=x=>!rr||x.r!=null&&(rr==='a'?x.r<1.6:rr==='b'?x.r>=1.6&&x.r<=4:x.r>4),o=$('o').value,has=x=>x.obs&&x.obs.length>0;
+ let a=D.rows.filter(x=>(all||x.st||has(x))&&(!f||x.st===f)&&inr(x)&&(!o||(o==='obs'?has(x):o==='unp'?has(x)&&(!x.st||x.st==='new'):!has(x)))&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
  a.sort((x,y)=>{const u=x[sk],v=y[sk];if(u==null)return 1;if(v==null)return -1;return (u>v?1:u<v?-1:0)*sd});
  const shown=a.slice(0,limit),n=v=>v==null?'—':v;
  const one=e=>{const w=e.w?`${e.nom?'~':''}${e.w[0].toFixed(1)}–${e.w[1].toFixed(1)} µm`:'wavelength n/a',
@@ -78,7 +79,7 @@ function draw(){
 }
 fetch('data/data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
  D=d;const R=d.rows,c=s=>R.filter(x=>x.st===s).length;
- $('asof').textContent=d.asof;$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');$('s6').textContent=R.filter(x=>x.obs&&x.obs.length).length;
+ $('asof').textContent=d.asof;const rg=(d.r_range||[1.6,4]).join('–');document.querySelectorAll('.rg').forEach(e=>e.textContent=rg);$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');$('s6').textContent=R.filter(x=>x.obs&&x.obs.length).length;
  $('s5').textContent=d.catalog_count?d.catalog_count:'not loaded yet';draw();
 }).catch(()=>{$('tb').innerHTML='<tr><td colspan="9">Could not load data/data.json.</td></tr>'});
 </script></body></html>

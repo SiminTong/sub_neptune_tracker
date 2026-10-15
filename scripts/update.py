@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Weekly refresh for the sub-Neptune x JWST tracker.
 
-1. Pulls every planet with 1.6 <= R <= 4 Earth radii from the NASA Exoplanet Archive (TAP).
+1. Pulls every planet with R_MIN <= R <= R_MAX Earth radii (see below) from the NASA Exoplanet Archive (TAP).
 2. Searches arXiv (astro-ph.EP) for recent JWST papers and matches them to catalog planets by name.
 3. Looks up JWST observations in MAST (instrument, filters, wavelength range, proposal ID, data
    release date), so planets observed but not yet published still show up.
@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-R_MIN, R_MAX = 1.6, 4.0
+R_MIN, R_MAX = 1.0, 6.0  # Earth radii; widen or narrow the catalog here
 UA = {"User-Agent": "subneptune-tracker/1.0 (GitHub Actions)"}
 
 TAP = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
@@ -309,6 +309,7 @@ def main():
         "mast_checked": mast_checked,
         "catalog_loaded": bool(catalog) or None,
         "catalog_count": len(catalog),
+        "r_range": [R_MIN, R_MAX],
         "rows": out_rows,
         "papers": papers[:60],
     }
