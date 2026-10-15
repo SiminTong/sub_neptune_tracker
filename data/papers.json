@@ -1,5 +1,8 @@
 [
  {
+  "au": "Liu",
+  "nau": 18,
+  "gist": "No significant absorption is detected in the metastable He I $λ1083$ nm triplet during transit, yielding a $3σ$ upper limit of 0.45% on the excess helium absorption depth and supporting previous non-detections that suggest weak ongoing atmospheric escape.",
   "id": "2610.07202",
   "title": "Exploring the ultrahot Neptune LTT 9779 b with CRIRES+. Non-detection of helium transmission spectra and detection of H$_2$O on the dayside",
   "url": "https://arxiv.org/abs/2610.07202",
@@ -18,6 +21,9 @@
   "doi": "10.1051/0004-6361/202662567"
  },
  {
+  "au": "Paragas",
+  "nau": 7,
+  "gist": "",
   "id": "2609.37982",
   "title": "Improved Constraints on the Surface of LHS 3844 b from its Mid-Infrared Spectrum",
   "url": "https://arxiv.org/abs/2609.37982",
@@ -35,6 +41,9 @@
   "j": "ApJL on October"
  },
  {
+  "au": "Rathcke",
+  "nau": 2,
+  "gist": "We calibrate this framework using injection-recovery tests and 17 archival JWST/PRISM transits of the airless sibling TRAPPIST-1 b to quantify the spurious signals that stellar contamination alone produces.",
   "id": "2609.37722",
   "title": "Detecting atmospheres in the presence of stellar contamination: an empirically calibrated framework applied to four JWST/NIRSpec PRISM transits of TRAPPIST-1c",
   "url": "https://arxiv.org/abs/2609.37722",
@@ -52,6 +61,9 @@
   "ps": "pre"
  },
  {
+  "au": "Chai",
+  "nau": 13,
+  "gist": "However, shorter wavelength follow-up observations of both planets are needed to establish whether their spectra are truly muted or feature-rich, with implications for the nature of sub-Neptunes around sun-like stars.",
   "id": "2609.35607",
   "title": "JWST NIRSpec G395H Transmission Spectra of Two Similar Sub-Neptunes in the TOI-125 System",
   "url": "https://arxiv.org/abs/2609.35607",
@@ -67,6 +79,9 @@
   "ps": "pre"
  },
  {
+  "au": "Navarrete",
+  "nau": 1,
+  "gist": "",
   "id": "2609.34635",
   "title": "Beyond gas dwarfs and water worlds: hybrid envelopes among the M-dwarf sub-Neptunes characterised with JWST",
   "url": "https://arxiv.org/abs/2609.34635",
@@ -84,6 +99,9 @@
   "ps": "pre"
  },
  {
+  "au": "Stamer",
+  "nau": 16,
+  "gist": "Through atmospheric retrievals, we find muted spectral features consistent with the presence of clouds and a low terminator temperature ($\\sim560 \\ \\mathrm{K}$ for free chemistry, and $\\sim910-950 \\ \\mathrm{K}$ for equilibrium chemistry), with a range of po…",
   "id": "2609.36206",
   "title": "Cool, Cloudy Nights on an Ultrahot Neptune: A Panchromatic NIRISS/NIRSpec Transmission Spectrum of LTT 9779 b",
   "url": "https://arxiv.org/abs/2609.36206",
@@ -100,6 +118,9 @@
   "ps": "pre"
  },
  {
+  "au": "Porqueras-León",
+  "nau": 22,
+  "gist": "",
   "id": "2609.35721",
   "title": "Correcting stellar contamination in transmission spectroscopy with contemporaneous monitoring: Application to GJ 1214 b",
   "url": "https://arxiv.org/abs/2609.35721",
@@ -116,6 +137,9 @@
   "ps": "pre"
  },
  {
+  "au": "Srivastava",
+  "nau": 27,
+  "gist": "",
   "id": "2609.17792",
   "title": "Uncovering temperate worlds: an updated look at the K2-3 system with ESPRESSO",
   "url": "https://arxiv.org/abs/2609.17792",
@@ -136,6 +160,9 @@
   "ps": "pre"
  },
  {
+  "au": "Vissapragada",
+  "nau": 15,
+  "gist": "To match the muted transmission spectra from JWST and VLT/CRIRES+, GJ 3090b's lower atmosphere is likely covered by aerosols.",
   "id": "2609.14704",
   "title": "WINERED Detects a Strong Atmospheric Outflow on the Sub-Neptune GJ 3090b",
   "url": "https://arxiv.org/abs/2609.14704",
@@ -152,6 +179,9 @@
   "ps": "pre"
  },
  {
+  "au": "Dyrek",
+  "nau": 20,
+  "gist": "",
   "id": "2609.09893",
   "title": "JWST-SUPER I: New insights into irradiated warm Neptunes atmospheres from MIRI observations of HD 106315 c",
   "url": "https://arxiv.org/abs/2609.09893",
@@ -168,6 +198,9 @@
   "ps": "pre"
  },
  {
+  "au": "Binet",
+  "nau": 4,
+  "gist": "We first perform a comparative assessment of the spectra, considering fits with featureless models and pairwise correlations, followed by extensive atmospheric retrievals.",
   "id": "2609.05264",
   "title": "A Homogeneous Survey of JWST MIRI Transmission Spectra of 10 Exoplanets",
   "url": "https://arxiv.org/abs/2609.05264",
@@ -188,6 +221,9 @@
   "doi": "10.3847/2041-8213/ae8c2d"
  },
  {
+  "au": "Postolec",
+  "nau": 13,
+  "gist": "TOI-561 b is a prime example, with a bulk density of $4.3\\pm0.4$ g cm$^{-3}$ and recent JWST observations favoring a thick volatile atmosphere overlying a dayside magma ocean.",
   "id": "2609.03144",
   "title": "Evolutionary pathways toward survival of a thick CO2- or SO2-rich atmosphere on the lava world TOI-561 b",
   "url": "https://arxiv.org/abs/2609.03144",
@@ -204,6 +240,9 @@
   "ps": "pre"
  },
  {
+  "au": "Senobar",
+  "nau": 2,
+  "gist": "We conclude that current spectra show no evidence for an atmosphere on GJ1132b.",
   "id": "2608.24803",
   "title": "Atmospheric Retrieval of Combined JWST, HST, and Ground-Based Observations Reveals a Featureless Transmission Spectrum for GJ 1132 b",
   "url": "https://arxiv.org/abs/2608.24803",
@@ -222,6 +261,9 @@
   "doi": "10.1093/mnras/stag1606"
  },
  {
+  "au": "Boucher",
+  "nau": 18,
+  "gist": "",
   "id": "2608.21519",
   "title": "A Highly Reflective Atmosphere on the Lava World TOI-561b Revealed by JWST/NIRSpec Phase Curve",
   "url": "https://arxiv.org/abs/2608.21519",
@@ -240,6 +282,9 @@
   "doi": "10.3847/1538-3881/ae9763"
  },
  {
+  "au": "Nagpal",
+  "nau": 6,
+  "gist": "",
   "id": "2608.19100",
   "title": "Wet Removal and Cloud Enhancement: The Microphysics of Cloud-Haze Interactions on Sub-Neptunes",
   "url": "https://arxiv.org/abs/2608.19100",
@@ -256,6 +301,9 @@
   "doi": "10.3847/1538-4357/ae9a84"
  },
  {
+  "au": "Gressier",
+  "nau": 7,
+  "gist": "",
   "id": "2608.19120",
   "title": "No Persistent Helium Absorption in LHS 1140 b: Four JWST/NIRISS SOSS Transits and Multi-epoch Stellar He I Variability",
   "url": "https://arxiv.org/abs/2608.19120",
@@ -273,6 +321,9 @@
   "ps": "pre"
  },
  {
+  "au": "Kane",
+  "nau": 2,
+  "gist": "",
   "id": "2608.18290",
   "title": "The Tidal Venus Phenomenon: Demographics and Case Studies",
   "url": "https://arxiv.org/abs/2608.18290",
@@ -291,6 +342,9 @@
   "doi": "10.3847/1538-4357/ae9a76"
  },
  {
+  "au": "Lim",
+  "nau": 28,
+  "gist": "The two innermost planets were found to have little to no atmosphere, barring the presence of high-altitude aerosols.",
   "id": "2608.17207",
   "title": "Atmospheric Reconnaissance of TRAPPIST-1 f with JWST NIRISS SOSS: No Evidence for the Transit Light Source Effect",
   "url": "https://arxiv.org/abs/2608.17207",
@@ -309,6 +363,9 @@
   "doi": "10.3847/1538-3881/ae990a"
  },
  {
+  "au": "Bennett",
+  "nau": 16,
+  "gist": "",
   "id": "2608.13473",
   "title": "No Helium Detected in LHS 1140 b from Four JWST NIRISS/SOSS Transits",
   "url": "https://arxiv.org/abs/2608.13473",
@@ -325,6 +382,9 @@
   "ps": "pre"
  },
  {
+  "au": "Radica",
+  "nau": 1,
+  "gist": "He absorption with an amplitude and width equivalent to that observed by Cherubim et al. (2026) is strongly ruled out by the data with odds ratios from 300--8.6$\\times$10$^4$:1 compared to a flat continuum --- though it should be noted that none of the JWST…",
   "id": "2608.13470",
   "title": "Strict Limits on Helium Absorption from LHS 1140 b from Four JWST NIRISS Transits",
   "url": "https://arxiv.org/abs/2608.13470",
@@ -343,6 +403,9 @@
   "doi": "10.3847/2041-8213/aeaa39"
  },
  {
+  "au": "Rosenthal",
+  "nau": 5,
+  "gist": "",
   "id": "2608.06207",
   "title": "Veiled in Starlight: Impacts of Stellar Contamination on Retrievals of TRAPPIST-1f's Atmospheric Composition",
   "url": "https://arxiv.org/abs/2608.06207",
@@ -359,6 +422,9 @@
   "ps": "pre"
  },
  {
+  "au": "Sarkar",
+  "nau": 7,
+  "gist": "",
   "id": "2607.00973",
   "title": "Transmission Spectrum of the Benchmark Temperate Exo-Neptune TOI-1231 b",
   "url": "https://arxiv.org/abs/2607.00973",
@@ -377,6 +443,9 @@
   "doi": "10.3847/2041-8213/ae6507"
  },
  {
+  "au": "Holmberg",
+  "nau": 6,
+  "gist": "",
   "id": "2607.00950",
   "title": "The Mid-Infrared Transmission Spectrum of the Temperate Sub-Neptune TOI-270 d",
   "url": "https://arxiv.org/abs/2607.00950",
@@ -396,6 +465,9 @@
   "doi": "10.3847/2041-8213/ae6640"
  },
  {
+  "au": "Dorn",
+  "nau": 3,
+  "gist": "Recent JWST detections of CH4 and CO2 in sub-Neptune atmospheres point to a link between atmospheric composition and the nature of planetary building blocks - rock, water, or refractory carbon (\"soot\") - yet this connection remains poorly understood.",
   "id": "2606.20464",
   "title": "Atmospheric diversity of sub-Neptunes from formation with rock, water, and soot",
   "url": "https://arxiv.org/abs/2606.20464",
@@ -413,6 +485,9 @@
   "ps": "pre"
  },
  {
+  "au": "Sastre",
+  "nau": 6,
+  "gist": "",
   "id": "2606.20249",
   "title": "Geophysical and atmospheric implications of $f$O$_{2}$-dependent melting on rocky exoplanets",
   "url": "https://arxiv.org/abs/2606.20249",
@@ -429,6 +504,9 @@
   "doi": "10.1051/0004-6361/202660017"
  },
  {
+  "au": "Snellen",
+  "nau": 7,
+  "gist": "",
   "id": "2606.11866",
   "title": "Strong and variable stratospheric CO emission from lava-planet 55 Cnc e observed with NIRCam/JWST",
   "url": "https://arxiv.org/abs/2606.11866",
@@ -445,6 +523,9 @@
   "ps": "pre"
  },
  {
+  "au": "Connors",
+  "nau": 5,
+  "gist": "While the full data set remains consistent with bare rock scenarios, it also leaves more room for thin atmosphere scenarios.",
   "id": "2606.07511",
   "title": "GJ 3929 b as the First Complete Rocky Worlds DDT Data Set",
   "url": "https://arxiv.org/abs/2606.07511",
@@ -462,6 +543,9 @@
   "j": "ApJL"
  },
  {
+  "au": "Huseby",
+  "nau": 11,
+  "gist": "",
   "id": "2606.06691",
   "title": "Ultraviolet Radiation Effects on the Optical Properties of Water-Dominated Exoplanet Hazes",
   "url": "https://arxiv.org/abs/2606.06691",
@@ -482,6 +566,9 @@
   "doi": "10.3847/1538-4357/ae6cdb"
  },
  {
+  "au": "Murphy",
+  "nau": 19,
+  "gist": "While recent JWST observations of mature super-Earths and sub-Neptunes have frequently revealed featureless transmission spectra, their inflated progenitors offer a unique window into understanding their primordial compositions.",
   "id": "2606.03740",
   "title": "KRONOS I: The $1{-}2.8μ$m JWST Transmission Spectrum of the 23 Myr V1298 Tau c",
   "url": "https://arxiv.org/abs/2606.03740",
@@ -500,6 +587,9 @@
   "doi": "10.3847/1538-3881/ae7a32"
  },
  {
+  "au": "Kleisioti",
+  "nau": 7,
+  "gist": "",
   "id": "2605.26694",
   "title": "Interior-Atmosphere Coupling on TRAPPIST-1 f, g, and h: Cryovolcanic Water Exospheres and Infrared Detectability",
   "url": "https://arxiv.org/abs/2605.26694",
@@ -518,6 +608,9 @@
   "doi": "10.1051/0004-6361/202554392"
  },
  {
+  "au": "Fujisawa",
+  "nau": 4,
+  "gist": "While mini-Neptune scenarios remain viable, our results show that Hycean configurations are likewise consistent with the data, and current CO and CO2 constraints alone are not yet sufficient to rule out Hycean interpretations of K2-18b.",
   "id": "2605.17803",
   "title": "A Hycean Interpretation of K2-18b Supported by Photochemical Atmospheric Compositional",
   "url": "https://arxiv.org/abs/2605.17803",
@@ -534,6 +627,9 @@
   "ps": "pre"
  },
  {
+  "au": "Batalha",
+  "nau": 19,
+  "gist": "We rule out any statistically significant spectral features at this precision and place limits on atmospheric metallicity using a grid of chemical equilibrium models with grey opaque clouds.",
   "id": "2605.15003",
   "title": "JWST COMPASS Program: The 3--5$μ$m transmission spectrum of LTT 1445 A b",
   "url": "https://arxiv.org/abs/2605.15003",
@@ -552,6 +648,9 @@
   "doi": "10.3847/1538-3881/ae6c26"
  },
  {
+  "au": "Gialluca",
+  "nau": 7,
+  "gist": "Available JWST observations TRAPPIST-1 system have suggested that several of the planets are likely airless, or possess a very tenuous atmosphere.",
   "id": "2605.14101",
   "title": "Coupled Photochemical-Climate Modeling of Plausible Tenuous Outgassed Atmospheres on the TRAPPIST-1 Planets",
   "url": "https://arxiv.org/abs/2605.14101",
@@ -568,6 +667,9 @@
   "doi": "10.3847/psj/ae6cef"
  },
  {
+  "au": "Ito",
+  "nau": 2,
+  "gist": "",
   "id": "2605.08752",
   "title": "Coupling magma-ocean and atmospheres in spectral retrievals of sub-Neptunes",
   "url": "https://arxiv.org/abs/2605.08752",
@@ -588,6 +690,9 @@
   "doi": "10.3847/1538-4357/ae6917"
  },
  {
+  "au": "Barat",
+  "nau": 24,
+  "gist": "",
   "id": "2605.02036",
   "title": "JWST unveils a high mean molecular weight atmosphere for mini-Neptune TOI-1130b: Evidence for formation beyond the water ice line",
   "url": "https://arxiv.org/abs/2605.02036",
@@ -606,6 +711,9 @@
   "doi": "10.3847/2041-8213/ae5f8b"
  },
  {
+  "au": "Nicholls",
+  "nau": 4,
+  "gist": "",
   "id": "2604.15891",
   "title": "Beyond the mass-radius plane: Integrated radiative-convective and interior structure simulations of the exoplanet continuum",
   "url": "https://arxiv.org/abs/2604.15891",
@@ -626,6 +734,9 @@
   "doi": "10.1093/mnras/stag1489"
  },
  {
+  "au": "Nortmann",
+  "nau": 16,
+  "gist": "Sub-Neptune exoplanets frequently exhibit muted transmission spectra, with GJ 1214 b being the most prominent example.",
   "id": "2604.15292",
   "title": "Cloudy with a chance of metals: Indications of CO$_2$ in the atmosphere of GJ 1214 b from high-resolution K-band spectroscopy",
   "url": "https://arxiv.org/abs/2604.15292",
@@ -644,6 +755,9 @@
   "doi": "10.1051/0004-6361/202558512"
  },
  {
+  "au": "Coy",
+  "nau": 17,
+  "gist": "HD 3167 b is currently the least irradiated USP super-Earth with evidence for an atmosphere.",
   "id": "2604.11911",
   "title": "Evidence for an Atmosphere on the Ultra-Short Period super-Earth HD 3167 b",
   "url": "https://arxiv.org/abs/2604.11911",
@@ -662,6 +776,9 @@
   "doi": "10.3847/2041-8213/ae7f23"
  },
  {
+  "au": "Liu",
+  "nau": 4,
+  "gist": "",
   "id": "2604.07987",
   "title": "Three-dimensional transport-induced chemistry on temperate sub-Neptune K2-18b, Part II: the combined effects of atmospheric dynamics and chemical reactions",
   "url": "https://arxiv.org/abs/2604.07987",
@@ -680,6 +797,9 @@
   "doi": "10.1093/mnras/stag780"
  },
  {
+  "au": "Holmberg",
+  "nau": 19,
+  "gist": "We model a suite of airless surfaces with varied compositions, textures, and degrees of space weathering, as well as idealised atmospheric scenarios including the possibility of atmospheric collapse.",
   "id": "2604.02332",
   "title": "Hot Rocks Survey V: Secondary Eclipse Photometry of GJ 3473 b with JWST/MIRI",
   "url": "https://arxiv.org/abs/2604.02332",
@@ -698,6 +818,9 @@
   "doi": "10.3847/1538-3881/ae4c45"
  },
  {
+  "au": "Chism",
+  "nau": 8,
+  "gist": "",
   "id": "2603.29700",
   "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
   "url": "https://arxiv.org/abs/2603.29700",
@@ -714,6 +837,9 @@
   "ps": "pre"
  },
  {
+  "au": "Nagel",
+  "nau": 24,
+  "gist": "",
   "id": "2603.28238",
   "title": "Mass determination of the ultra-short-period planet LHS 3844 b. First K-band radial velocity measurements with CRIRES+",
   "url": "https://arxiv.org/abs/2603.28238",
@@ -732,6 +858,9 @@
   "doi": "10.1051/0004-6361/202557841"
  },
  {
+  "au": "Lavvas",
+  "nau": 6,
+  "gist": "",
   "id": "2603.26474",
   "title": "The atmosphere of K2-18 b: The role of hazes, clouds and photoelectrons",
   "url": "https://arxiv.org/abs/2603.26474",
@@ -750,6 +879,9 @@
   "doi": "10.1051/0004-6361/202659251"
  },
  {
+  "au": "Tsai",
+  "nau": 10,
+  "gist": "",
   "id": "2603.19803",
   "title": "Three outstanding physical questions for K2-18 b and other temperate sub-Neptunes",
   "url": "https://arxiv.org/abs/2603.19803",
@@ -766,6 +898,9 @@
   "ps": "pre"
  },
  {
+  "au": "Jordan",
+  "nau": 4,
+  "gist": "",
   "id": "2603.18923",
   "title": "Organosulfur Chemistry on sub-Neptunes: Implications for hazes and biosignatures",
   "url": "https://arxiv.org/abs/2603.18923",
@@ -782,6 +917,9 @@
   "doi": "10.3847/2041-8213/ae6864"
  },
  {
+  "au": "Cheverall",
+  "nau": 4,
+  "gist": "Assuming cloud-free models, super-solar abundances for CH4 and NH3 are ruled out at 3.6$σ$ and $4.6σ$, respectively.",
   "id": "2603.02209",
   "title": "Ground-based Atmospheric Characterization of Super-Earth L 98-59 d at High Spectral Resolution",
   "url": "https://arxiv.org/abs/2603.02209",
@@ -800,6 +938,9 @@
   "doi": "10.1093/mnras/stag484"
  },
  {
+  "au": "Dash",
+  "nau": 3,
+  "gist": "",
   "id": "2602.22830",
   "title": "Probing the Atmospheres of Young Long-Period Sub-Neptune Progenitors with ELT/ANDES",
   "url": "https://arxiv.org/abs/2602.22830",
@@ -816,6 +957,9 @@
   "doi": "10.3847/1538-3881/ae82f1"
  },
  {
+  "au": "Meech",
+  "nau": 19,
+  "gist": "Implementing a 30-pixel-wide ($R\\sim 200$) spectroscopic binning scheme, we find that the transmission spectrum is mostly featureless, with a possible feature around 3.17 $μ$m.",
   "id": "2602.22329",
   "title": "JWST COMPASS: A NIRSpec G395H Transmission Spectrum of Radius Valley-Dweller TOI-260 b",
   "url": "https://arxiv.org/abs/2602.22329",
@@ -834,6 +978,9 @@
   "doi": "10.3847/1538-3881/ae472f"
  },
  {
+  "au": "Wallack",
+  "nau": 20,
+  "gist": "The transmission spectrum of HD 15337 c is featureless and can best be described by a step function with an offset between the NRS1 and NRS2 detectors, likely caused by instrumental systematics.",
   "id": "2602.22327",
   "title": "JWST COMPASS: NIRSpec/G395H Transmission Observations of the Sub-Neptune HD 15337 c",
   "url": "https://arxiv.org/abs/2602.22327",
@@ -852,6 +999,9 @@
   "doi": "10.3847/1538-3881/ae2d12"
  },
  {
+  "au": "Finnerty",
+  "nau": 29,
+  "gist": "",
   "id": "2602.17777",
   "title": "Possible stratospheric emission in the warm Neptune GJ 436 b from high-resolution spectroscopy",
   "url": "https://arxiv.org/abs/2602.17777",
@@ -870,6 +1020,9 @@
   "doi": "10.3847/1538-3881/ae47fa"
  },
  {
+  "au": "Peláez-Torres",
+  "nau": 8,
+  "gist": "We detect no significant H2O, CH4, or CO2 signatures.",
   "id": "2602.14343",
   "title": "Atmospheric constraints on GJ 1214 b from CRIRES+ and prospects for characterisation with ANDES",
   "url": "https://arxiv.org/abs/2602.14343",
@@ -888,6 +1041,9 @@
   "doi": "10.1051/0004-6361/202558426"
  },
  {
+  "au": "Duque-Castaño",
+  "nau": 3,
+  "gist": "",
   "id": "2602.10330",
   "title": "Efficient reduction of stellar contamination and noise in planetary transmission spectra using neural networks",
   "url": "https://arxiv.org/abs/2602.10330",
@@ -904,6 +1060,9 @@
   "doi": "10.1051/0004-6361/202659009"
  },
  {
+  "au": "Tremblay",
+  "nau": 15,
+  "gist": "",
   "id": "2602.09553",
   "title": "A Narrowband Technosignature Search Toward the Hycean Candidate K2-18b Using the VLA and MeerKAT",
   "url": "https://arxiv.org/abs/2602.09553",
@@ -922,6 +1081,9 @@
   "doi": "10.3847/1538-3881/ae448e"
  },
  {
+  "au": "Johnson",
+  "nau": 2,
+  "gist": "",
   "id": "2602.07127",
   "title": "A New Strategy for Using Spectroscopic Phase Curves to Characterize Non-Transiting Planets",
   "url": "https://arxiv.org/abs/2602.07127",
@@ -940,6 +1102,9 @@
   "doi": "10.3847/1538-3881/ae8adf"
  },
  {
+  "au": "Nguyen",
+  "nau": 4,
+  "gist": "",
   "id": "2601.23235",
   "title": "The Effect of Tidal Heating and Volatile Budgets on the Outgassed Atmosphere of 55 Cancri e",
   "url": "https://arxiv.org/abs/2601.23235",
@@ -958,6 +1123,9 @@
   "doi": "10.3847/1538-4357/ae3f21"
  },
  {
+  "au": "Parc",
+  "nau": 30,
+  "gist": "",
   "id": "2601.22115",
   "title": "Densities of small planets around the M dwarfs TOI-4336 A and TOI-4342 with ESPRESSO: Three sub-Neptunes, one super-Earth, and a Neptune-mass candidate",
   "url": "https://arxiv.org/abs/2601.22115",
@@ -980,6 +1148,9 @@
   "doi": "10.1051/0004-6361/202558308"
  },
  {
+  "au": "Timmermans",
+  "nau": 28,
+  "gist": "",
   "id": "2601.21774",
   "title": "Hidden Gems in TESS: sherlock finds two new rocky planets around nearby M dwarfs",
   "url": "https://arxiv.org/abs/2601.21774",
@@ -1002,6 +1173,9 @@
   "doi": "10.1093/mnras/stag710"
  },
  {
+  "au": "Kumar",
+  "nau": 6,
+  "gist": "",
   "id": "2601.18769",
   "title": "The Role of Intrinsic Temperature and Vertical Mixing in Characterizing Sub-Neptune Atmospheres",
   "url": "https://arxiv.org/abs/2601.18769",
@@ -1018,6 +1192,9 @@
   "ps": "pre"
  },
  {
+  "au": "Lai",
+  "nau": 3,
+  "gist": "",
   "id": "2601.18606",
   "title": "Atmospheric Circulation of High-Obliquity Mini-Neptunes",
   "url": "https://arxiv.org/abs/2601.18606",
@@ -1034,6 +1211,9 @@
   "doi": "10.3847/1538-4357/ae3d35"
  },
  {
+  "au": "Janssen",
+  "nau": 6,
+  "gist": "JWST observations provide for the first time evidence for an atmosphere on a rocky exoplanet - 55 Cnc e.",
   "id": "2601.15927",
   "title": "Hot and cloudy: High temperature clouds in super-Earths and sub-Neptunes",
   "url": "https://arxiv.org/abs/2601.15927",
@@ -1050,6 +1230,9 @@
   "doi": "10.1093/mnras/stag180"
  },
  {
+  "au": "Rogers",
+  "nau": 4,
+  "gist": "We formalise this argument within a Bayesian inference model and apply it to the archetypal sub-Neptunes GJ-436 b, TOI-776 b and TOI-776 c, which have all been observed to be losing significant hydrogen content as well as relatively featureless transit spec…",
   "id": "2601.14254",
   "title": "Using observations of escaping H/He to constrain the atmospheric composition of sub-Neptunes",
   "url": "https://arxiv.org/abs/2601.14254",
@@ -1074,6 +1257,9 @@
   "doi": "10.1093/mnras/stag1043"
  },
  {
+  "au": "Scott",
+  "nau": 33,
+  "gist": "",
   "id": "2601.05799",
   "title": "Two temperate Earth- and Neptune-sized planets orbiting fully convective M dwarfs",
   "url": "https://arxiv.org/abs/2601.05799",
@@ -1090,6 +1276,9 @@
   "doi": "10.1093/mnras/stag070"
  },
  {
+  "au": "Sumida",
+  "nau": 4,
+  "gist": "",
   "id": "2601.02621",
   "title": "Where does the simplified Stellar Contamination Model fail in Exoplanet Transmission Spectroscopy?",
   "url": "https://arxiv.org/abs/2601.02621",
@@ -1110,6 +1299,9 @@
   "doi": "10.1051/0004-6361/202556358"
  },
  {
+  "au": "Roy",
+  "nau": 20,
+  "gist": "While we also detect methane on LP 791-18c, its transit spectrum is dominated by strong haze scattering and there is no discernible CO$_2$ absorption.",
   "id": "2512.10876",
   "title": "Diversity in the haziness and chemistry of temperate sub-Neptunes",
   "url": "https://arxiv.org/abs/2512.10876",
@@ -1132,6 +1324,9 @@
   "doi": "10.1038/s41550-025-02723-3"
  },
  {
+  "au": "Allen",
+  "nau": 27,
+  "gist": "Here, we present the motivation and first observations of our JWST multi-cycle program of TRAPPIST-1 e, which utilize close transits of the airless TRAPPIST-1 b to model-independently correct for stellar contamination, with the goal of determining whether T…",
   "id": "2512.07695",
   "title": "JWST TRAPPIST-1 e/b Program: Motivation and first observations",
   "url": "https://arxiv.org/abs/2512.07695",
@@ -1150,6 +1345,9 @@
   "doi": "10.3847/1538-3881/ae28cb"
  },
  {
+  "au": "Jiang",
+  "nau": 20,
+  "gist": "",
   "id": "2512.06817",
   "title": "Multicolour Validation of Two Temperate Mini-Neptunes Around M-dwarf Habitable Zones",
   "url": "https://arxiv.org/abs/2512.06817",
@@ -1170,6 +1368,9 @@
   "doi": "10.1093/mnras/stag367"
  },
  {
+  "au": "Owen",
+  "nau": 2,
+  "gist": "Observations of escaping hydrogen and helium from several of these planets rule out metal dominated atmospheres, while homogeneous distributions of small aerosols cannot produce flat spectra and large particles require unphysically high production rates.",
   "id": "2511.19013",
   "title": "Resolving the flat-spectrum conundrum: clumpy aerosol distributions in sub-Neptune atmospheres",
   "url": "https://arxiv.org/abs/2511.19013",
@@ -1188,6 +1389,9 @@
   "doi": "10.1093/mnras/staf2066"
  },
  {
+  "au": "Rigby",
+  "nau": 2,
+  "gist": "",
   "id": "2511.16722",
   "title": "The Surface and Interior Conditions of Temperate Sub-Neptune TOI-270 d",
   "url": "https://arxiv.org/abs/2511.16722",
@@ -1206,6 +1410,9 @@
   "doi": "10.1093/mnras/staf1969"
  },
  {
+  "au": "Lichtenberg",
+  "nau": 26,
+  "gist": "",
   "id": "2511.16142",
   "title": "Coupled atmospHere Interior modeL Intercomparison (CHILI) Protocol Version 1.0: A CUISINES Intercomparison Project of Magma Ocean Models",
   "url": "https://arxiv.org/abs/2511.16142",
@@ -1222,6 +1429,9 @@
   "doi": "10.3847/psj/ae593b"
  },
  {
+  "au": "Constantinou",
+  "nau": 3,
+  "gist": "",
   "id": "2511.13830",
   "title": "The atmospheric composition of TOI-270 d",
   "url": "https://arxiv.org/abs/2511.13830",
@@ -1240,6 +1450,9 @@
   "doi": "10.1051/0004-6361/202452192"
  },
  {
+  "au": "Vaughan",
+  "nau": 15,
+  "gist": "",
   "id": "2511.08691",
   "title": "No TiO detected in the hot Neptune-desert planet LTT-9779 b in reflected light at high spectral resolution",
   "url": "https://arxiv.org/abs/2511.08691",
@@ -1258,6 +1471,9 @@
   "doi": "10.1051/0004-6361/202557240"
  },
  {
+  "au": "August",
+  "nau": 5,
+  "gist": "We find that moderate-sized impactors ($5-10 \\rm{km}$ diameter) occurring at a frequency of $1-100 \\rm{Gyr}^{-1}$ can regenerate observable transient atmospheres on previously airless planets.",
   "id": "2510.25896",
   "title": "Atmospheric collapse and re-inflation through impacts for terrestrial planets around M dwarfs",
   "url": "https://arxiv.org/abs/2510.25896",
@@ -1276,6 +1492,9 @@
   "doi": "10.3847/2041-8213/ae2a27"
  },
  {
+  "au": "Gao",
+  "nau": 3,
+  "gist": "",
   "id": "2510.24224",
   "title": "Bistability, Oscillations, and Multistability on Hycean Planets",
   "url": "https://arxiv.org/abs/2510.24224",
@@ -1292,6 +1511,9 @@
   "doi": "10.3847/1538-4357/ae18d7"
  },
  {
+  "au": "Fernández-Rodríguez",
+  "nau": 11,
+  "gist": "",
   "id": "2510.18098",
   "title": "The Atmospheric Composition of Sub-Neptune K2-18 b and Implications for its Formation",
   "url": "https://arxiv.org/abs/2510.18098",
@@ -1309,6 +1531,9 @@
   "ps": "pre"
  },
  {
+  "au": "Parc",
+  "nau": 151,
+  "gist": "",
   "id": "2510.14927",
   "title": "NIRPS and TESS reveal a peculiar system around the M dwarf TOI-756: A transiting sub-Neptune and a cold eccentric giant",
   "url": "https://arxiv.org/abs/2510.14927",
@@ -1327,6 +1552,9 @@
   "doi": "10.1051/0004-6361/202555684"
  },
  {
+  "au": "Chen",
+  "nau": 4,
+  "gist": "",
   "id": "2510.12794",
   "title": "Born Dry or Born Wet? A Palette of Water Growth Histories in TRAPPIST-1 Analogs and Compact Planetary Systems",
   "url": "https://arxiv.org/abs/2510.12794",
@@ -1345,6 +1573,9 @@
   "doi": "10.3847/2041-8213/adf282"
  },
  {
+  "au": "Bonomo",
+  "nau": 40,
+  "gist": "",
   "id": "2510.11490",
   "title": "The GAPS programme at TNG LXXI. A sub-Neptune suitable for atmospheric characterization in a multiplanet and mutually inclined system orbiting the bright K dwarf TOI-5789 (HIP 99452)",
   "url": "https://arxiv.org/abs/2510.11490",
@@ -1365,6 +1596,9 @@
   "doi": "10.1051/0004-6361/202557662"
  },
  {
+  "au": "Rochon",
+  "nau": 7,
+  "gist": "We measure an eclipse depth of 271$^{+31}_{-30}$ ppm corresponding to a brightness temperature of $T_B=595^{+33}_{-34}$ K, consistent with a bare rock.",
   "id": "2510.11397",
   "title": "Reanalysis of the eclipses of LHS 1140 c: No evidence of an atmosphere and implications for the internal structure of the planet",
   "url": "https://arxiv.org/abs/2510.11397",
@@ -1383,6 +1617,9 @@
   "doi": "10.3847/2041-8213/ae3da3"
  },
  {
+  "au": "Nixon",
+  "nau": 12,
+  "gist": "",
   "id": "2510.07367",
   "title": "Magma ocean interactions can explain JWST observations of the sub-Neptune TOI-270 d",
   "url": "https://arxiv.org/abs/2510.07367",
@@ -1401,6 +1638,9 @@
   "doi": "10.3847/1538-4357/ae17c8"
  },
  {
+  "au": "Ashtari",
+  "nau": 20,
+  "gist": "We also moderately detect water vapor (H2O) and tentatively detect sulfur dioxide (SO2), providing insight into its chemistry and possible photochemical production under intense stellar irradiation.",
   "id": "2510.04863",
   "title": "Heat Reveals What Clouds Conceal: Global Carbon & Longitudinally Asymmetric Chemistry on LTT 9779 b",
   "url": "https://arxiv.org/abs/2510.04863",
@@ -1419,6 +1659,9 @@
   "doi": "10.3847/1538-3881/ae4494"
  },
  {
+  "au": "Madhusudhan",
+  "nau": 4,
+  "gist": "",
   "id": "2509.19247",
   "title": "Exploring the Sub-Neptune Frontier with JWST",
   "url": "https://arxiv.org/abs/2509.19247",
@@ -1437,6 +1680,9 @@
   "doi": "10.1073/pnas.2416194122"
  },
  {
+  "au": "Teske",
+  "nau": 13,
+  "gist": "Ultrashort-period (USP) exoplanets -- with $R_p \\leq 2~$R$_{\\oplus}$ and periods $\\leq$1 day -- are expected to be stripped of volatile atmospheres by intense host star irradiation, which is corroborated by their nominal bulk densities and previous eclipse…",
   "id": "2509.17231",
   "title": "A Thick Volatile Atmosphere on the Ultrahot Super-Earth TOI-561 b",
   "url": "https://arxiv.org/abs/2509.17231",
@@ -1455,6 +1701,9 @@
   "doi": "10.3847/2041-8213/ae0a4c"
  },
  {
+  "au": "Lacedelli",
+  "nau": 50,
+  "gist": "",
   "id": "2509.14782",
   "title": "Sibling Sub-Neptunes Around Sibling M Dwarfs: TOI-521 and TOI-912",
   "url": "https://arxiv.org/abs/2509.14782",
@@ -1475,6 +1724,9 @@
   "doi": "10.1051/0004-6361/202557304"
  },
  {
+  "au": "Coulombe",
+  "nau": 28,
+  "gist": "The JWST transmission spectrum shows possible spectroscopic evidence for the presence of this water as part of an atmosphere on TOI-270 b, favoring a H$_2$O-rich steam atmosphere model over a flat spectrum ($\\ln\\mathcal{B}$ = $0.3-3.2$, inconclusive to mode…",
   "id": "2509.14224",
   "title": "Possible Evidence for the Presence of Volatiles on the Warm Super-Earth TOI-270 b",
   "url": "https://arxiv.org/abs/2509.14224",
@@ -1494,6 +1746,9 @@
   "doi": "10.3847/1538-3881/adfc6a"
  },
  {
+  "au": "Jaziri",
+  "nau": 2,
+  "gist": "",
   "id": "2509.13932",
   "title": "Investigating aerosols as a way to reconcile K2-18 b JWST MIRI and NIRISS/NIRSpec observations",
   "url": "https://arxiv.org/abs/2509.13932",
@@ -1512,6 +1767,9 @@
   "doi": "10.1051/0004-6361/202556905"
  },
  {
+  "au": "Liu",
+  "nau": 6,
+  "gist": "",
   "id": "2509.10947",
   "title": "Hydrocarbon Hazes on Temperate sub-Neptune K2-18b supported by data from the James Webb Space Telescope",
   "url": "https://arxiv.org/abs/2509.10947",
@@ -1530,6 +1788,9 @@
   "doi": "10.3847/1538-3881/ae7a67"
  },
  {
+  "au": "Glidden",
+  "nau": 28,
+  "gist": "We do not obtain strong evidence for or against an atmosphere.",
   "id": "2509.05407",
   "title": "JWST-TST DREAMS: Secondary Atmosphere Constraints for the Habitable Zone Planet TRAPPIST-1 e",
   "url": "https://arxiv.org/abs/2509.05407",
@@ -1546,6 +1807,9 @@
   "doi": "10.3847/2041-8213/adf62e"
  },
  {
+  "au": "Yalçınkaya",
+  "nau": 65,
+  "gist": "",
   "id": "2509.05038",
   "title": "TOI-1743 b, TOI-5799 b, TOI-5799 c and TOI-6223 b: TESS discovery and validation of four super-Earth to Neptune-sized planets around M dwarfs",
   "url": "https://arxiv.org/abs/2509.05038",
@@ -1570,6 +1834,9 @@
   "doi": "10.1051/0004-6361/202556293"
  },
  {
+  "au": "Radecka",
+  "nau": 2,
+  "gist": "This result combined with the non-detection of ammonia by JWST suggests the planet is not a typical sub-Neptune, but could be indeed a hycean world or magma ocean planet.",
   "id": "2509.03455",
   "title": "Nitrogen chemistry of hycean worlds on the example of K2-18b",
   "url": "https://arxiv.org/abs/2509.03455",
@@ -1588,6 +1855,9 @@
   "doi": "10.1093/mnras/staf1476"
  },
  {
+  "au": "Gillon",
+  "nau": 33,
+  "gist": "We find that TRAPPIST-1 b shows a high dayside brightness temperature (490 $\\pm$ 17 K), no significantly detectable nightside emission ($F_{\\rm b, Night, max}$ = $39_{-27}^{+55}$ ppm), and no phase offset -- features consistent with a low-albedo, airless ul…",
   "id": "2509.02128",
   "title": "First JWST thermal phase curves of temperate terrestrial exoplanets reveal no thick atmosphere around TRAPPIST-1 b and c",
   "url": "https://arxiv.org/abs/2509.02128",
@@ -1606,6 +1876,9 @@
   "j": "Nature Astronomy"
  },
  {
+  "au": "Maurel",
+  "nau": 16,
+  "gist": "However, only a subset of the possible atmosphere types has been explored and ruled out to date.",
   "id": "2509.02120",
   "title": "Constraints on the possible atmospheres on TRAPPIST-1 b: insights from 3D climate modeling",
   "url": "https://arxiv.org/abs/2509.02120",
@@ -1624,6 +1897,9 @@
   "doi": "10.1051/0004-6361/202554243"
  },
  {
+  "au": "Hakim",
+  "nau": 4,
+  "gist": "",
   "id": "2508.19235",
   "title": "Silane-Methane Competition in Sub-Neptune Atmospheres as a Diagnostic of Metallicity and Magma Oceans",
   "url": "https://arxiv.org/abs/2508.19235",
@@ -1640,6 +1916,9 @@
   "doi": "10.1093/mnras/stag133"
  },
  {
+  "au": "Lin",
+  "nau": 2,
+  "gist": "",
   "id": "2508.15117",
   "title": "Carbon-rich Sub-Neptune Interiors Are Compatible with JWST Observations",
   "url": "https://arxiv.org/abs/2508.15117",
@@ -1662,6 +1941,9 @@
   "doi": "10.3847/2041-8213/adfcc8"
  },
  {
+  "au": "Allen",
+  "nau": 22,
+  "gist": "This eclipse depth is consistent with the thermal emission from a bare rock surface, with a dayside temperature of $T_d=1143^{+104}_{-99}$ K, $98\\pm9$ % of the maximum temperature predicted for a zero albedo, zero heat redistribution blackbody.",
   "id": "2508.14210",
   "title": "Hot Rocks Survey IV: Emission from LTT 3780 b is consistent with a bare rock",
   "url": "https://arxiv.org/abs/2508.14210",
@@ -1680,6 +1962,9 @@
   "doi": "10.3847/1538-3881/adfc51"
  },
  {
+  "au": "Meni-Gallardo",
+  "nau": 2,
+  "gist": "",
   "id": "2508.12865",
   "title": "An empirical determination of the Cosmic Shoreline",
   "url": "https://arxiv.org/abs/2508.12865",
@@ -1698,6 +1983,9 @@
   "doi": "10.1093/mnras/stag1163"
  },
  {
+  "au": "Bennett",
+  "nau": 20,
+  "gist": "Therefore, the simplest explanation is that GJ 1132 b is indeed a bare rock.",
   "id": "2508.10579",
   "title": "Additional JWST/NIRSpec Transits of the Rocky M Dwarf Exoplanet GJ 1132 b Reveal a Featureless Spectrum",
   "url": "https://arxiv.org/abs/2508.10579",
@@ -1716,6 +2004,9 @@
   "doi": "10.3847/1538-3881/adf198"
  },
  {
+  "au": "Zhang",
+  "nau": 8,
+  "gist": "",
   "id": "2508.10386",
   "title": "Atmospheric Characterisation with the Twinkle Space Telescope Following Advances from JWST Observations",
   "url": "https://arxiv.org/abs/2508.10386",
@@ -1736,6 +2027,9 @@
   "doi": "10.1093/rasti/rzag047"
  },
  {
+  "au": "Piaulet-Ghorayeb",
+  "nau": 26,
+  "gist": "If TRAPPIST-1 d retains an atmosphere, it is likely extremely thin or contains high-altitude aerosols, with water cloud formation at the terminator predicted by 3D global climate models.",
   "id": "2508.08416",
   "title": "Strict limits on potential secondary atmospheres on the temperate rocky exo-Earth TRAPPIST-1 d",
   "url": "https://arxiv.org/abs/2508.08416",
@@ -1754,6 +2048,9 @@
   "doi": "10.3847/1538-4357/adf207"
  },
  {
+  "au": "Li",
+  "nau": 12,
+  "gist": "The organic haze exhibits strong vibrational absorption bands, notably at 3.0, 4.5, and 6.0 μm, while graphite shows featureless broadband absorption.",
   "id": "2508.07161",
   "title": "The impact of organic hazes and graphite on the observation of CO2-rich sub-Neptune atmospheres",
   "url": "https://arxiv.org/abs/2508.07161",
@@ -1770,6 +2067,9 @@
   "doi": "10.3847/2041-8213/adfa87"
  },
  {
+  "au": "Stevenson",
+  "nau": 10,
+  "gist": "When considering the full, 0.7 - 12 micron transit spectrum, we confirm the detection of CH4 and favor CO2, and find the presence of DMS and C2H4 to be interchangeable.",
   "id": "2508.05961",
   "title": "K2-18b Does Not Meet The Standards of Evidence For Life",
   "url": "https://arxiv.org/abs/2508.05961",
@@ -1788,6 +2088,9 @@
   "doi": "10.3847/1538-3881/ae0338"
  },
  {
+  "au": "Yildiz",
+  "nau": 3,
+  "gist": "",
   "id": "2508.01885",
   "title": "Thermoelastic Contraction as a Suppressor of Atmospheric Escape in Close-in Exoplanets",
   "url": "https://arxiv.org/abs/2508.01885",
@@ -1806,6 +2109,9 @@
   "doi": "10.3847/1538-4357/ae11a6"
  },
  {
+  "au": "Jaziri",
+  "nau": 4,
+  "gist": "Minor species, such as H2O and NH3, may be present but are likely masked by dominant absorbers.",
   "id": "2507.14983",
   "title": "Unraveling the non-equilibrium chemistry of the temperate sub-Neptune K2-18 b",
   "url": "https://arxiv.org/abs/2507.14983",
@@ -1824,6 +2130,9 @@
   "doi": "10.1051/0004-6361/202555496"
  },
  {
+  "au": "Kahle",
+  "nau": 29,
+  "gist": "Previous spectroscopic studies rule out aerosol-free hydrogen-helium-dominated atmospheres for many characterized sub-Neptunes but are inconclusive about their exact atmospheric compositions.",
   "id": "2507.13439",
   "title": "The SPACE Program. I. The featureless spectrum of HD 86226 c challenges sub-Neptune atmosphere trends",
   "url": "https://arxiv.org/abs/2507.13439",
@@ -1842,6 +2151,9 @@
   "doi": "10.1051/0004-6361/202554916"
  },
  {
+  "au": "Hu",
+  "nau": 10,
+  "gist": "The resulting high-precision transmission spectrum robustly detects both CH4 and CO2, precisely measuring their abundances and firmly establishing the planet's water-rich nature: either a thick envelope with >10% H2O by volume or a thin atmosphere above a l…",
   "id": "2507.12622",
   "title": "A water-rich interior in the temperate sub-Neptune K2-18 b revealed by JWST",
   "url": "https://arxiv.org/abs/2507.12622",
@@ -1858,6 +2170,9 @@
   "ps": "pre"
  },
  {
+  "au": "Cadieux",
+  "nau": 15,
+  "gist": "",
   "id": "2507.09343",
   "title": "Detailed Architecture of the L 98-59 System and Confirmation of a Fifth Planet in the Habitable Zone",
   "url": "https://arxiv.org/abs/2507.09343",
@@ -1874,6 +2189,9 @@
   "doi": "10.3847/1538-3881/adef59"
  },
  {
+  "au": "Fauchez",
+  "nau": 5,
+  "gist": "",
   "id": "2507.09048",
   "title": "From Global Climate Models (GCMs) to Exoplanet Spectra with the Global Emission Spectra (GlobES)",
   "url": "https://arxiv.org/abs/2507.09048",
@@ -1890,6 +2208,9 @@
   "doi": "10.1016/j.ascom.2025.100982"
  },
  {
+  "au": "Redai",
+  "nau": 17,
+  "gist": "By comparing the observed spectrum with 1D forward models, we rule out atmospheres with mean molecular weights (MMW) lower than 8 g/mol to $3 σ$, as well as atmospheres with metallicities less than 300x solar.",
   "id": "2507.07165",
   "title": "JWST COMPASS: A NIRSpec G395H Transmission Spectrum of the Super-Earth GJ 357 b",
   "url": "https://arxiv.org/abs/2507.07165",
@@ -1908,6 +2229,9 @@
   "doi": "10.3847/1538-3881/adee92"
  },
  {
+  "au": "Howard",
+  "nau": 4,
+  "gist": "When applying a similar temperature offset on the phase diagram as for K2-18\\,b, we find a partial depletion of water in the atmosphere of TOI-270\\,d, consistent with JWST's detection of water.",
   "id": "2507.06288",
   "title": "The Possibility of Hydrogen-Water Demixing in Uranus, Neptune, K2-18b and TOI-270d",
   "url": "https://arxiv.org/abs/2507.06288",
@@ -1928,6 +2252,9 @@
   "doi": "10.1051/0004-6361/202556322"
  },
  {
+  "au": "Connors",
+  "nau": 4,
+  "gist": "",
   "id": "2507.02052",
   "title": "Uniform Reanalysis of JWST MIRI 15μm Exoplanet Eclipse Observations using Frame-Normalized Principal Component Analysis",
   "url": "https://arxiv.org/abs/2507.02052",
@@ -1954,6 +2281,9 @@
   "doi": "10.3847/2041-8213/adee0d"
  },
  {
+  "au": "Taylor",
+  "nau": 21,
+  "gist": "",
   "id": "2505.24462",
   "title": "JWST NIRISS Transmission Spectroscopy of the Super-Earth GJ 357b, a Favourable Target for Atmospheric Retention",
   "url": "https://arxiv.org/abs/2505.24462",
@@ -1972,6 +2302,9 @@
   "doi": "10.1093/mnras/staf894"
  },
  {
+  "au": "Luque",
+  "nau": 8,
+  "gist": "",
   "id": "2505.13407",
   "title": "Insufficient evidence for DMS and DMDS in the atmosphere of K2-18 b. From a joint analysis of JWST NIRISS, NIRSpec, and MIRI observations",
   "url": "https://arxiv.org/abs/2505.13407",
@@ -1990,6 +2323,9 @@
   "doi": "10.1051/0004-6361/202555580"
  },
  {
+  "au": "Veillet",
+  "nau": 9,
+  "gist": "The detection of SO2 in both WASP-39 b and WASP-107 b recently brought more attention to the modeling of photochemistry in exoplanets.",
   "id": "2505.12152",
   "title": "Inclusion of sulfur chemistry in a validated C/H/O/N chemical network: identification of key C/S coupling pathways",
   "url": "https://arxiv.org/abs/2505.12152",
@@ -2012,6 +2348,9 @@
   "doi": "10.1051/0004-6361/202555595"
  },
  {
+  "au": "Zhou",
+  "nau": 14,
+  "gist": "",
   "id": "2505.11960",
   "title": "HST/WFC3 Constraints on the Abundances of OH and FeH in the Atmosphere of the Ultra-Hot Neptune LTT-9779 b",
   "url": "https://arxiv.org/abs/2505.11960",
@@ -2030,6 +2369,9 @@
   "doi": "10.1093/mnras/staf674"
  },
  {
+  "au": "Miles",
+  "nau": 8,
+  "gist": "",
   "id": "2505.10647",
   "title": "Interior and Climate Modeling of the Venus Zone Planet TOI-2285 b",
   "url": "https://arxiv.org/abs/2505.10647",
@@ -2048,6 +2390,9 @@
   "doi": "10.3847/1538-3881/add71c"
  },
  {
+  "au": "Pica-Ciamarra",
+  "nau": 5,
+  "gist": "",
   "id": "2505.10539",
   "title": "A Systematic Search for Trace Molecules in the Atmosphere of Exoplanet K2-18 b",
   "url": "https://arxiv.org/abs/2505.10539",
@@ -2066,6 +2411,9 @@
   "doi": "10.3847/2041-8213/ae5dcc"
  },
  {
+  "au": "Jenkins",
+  "nau": 34,
+  "gist": "",
   "id": "2505.10324",
   "title": "An Eccentric Sub-Neptune Moving Into the Evaporation Desert",
   "url": "https://arxiv.org/abs/2505.10324",
@@ -2084,6 +2432,9 @@
   "doi": "10.3847/2041-8213/adea46"
  },
  {
+  "au": "Naponiello",
+  "nau": 40,
+  "gist": "",
   "id": "2505.10123",
   "title": "The Hot-Neptune Initiative (HONEI) I. Two hot sub-Neptunes on a close-in, eccentric orbit (TOI-5800 b) and a farther-out, circular orbit (TOI-5817 b)",
   "url": "https://arxiv.org/abs/2505.10123",
@@ -2104,6 +2455,9 @@
   "doi": "10.1051/0004-6361/202555523"
  },
  {
+  "au": "Ahrer",
+  "nau": 30,
+  "gist": "Free retrieval analyses on the NIRSpec/G395H spectrum find tentative evidence for highly muted features and a lack of CH4.",
   "id": "2504.20428",
   "title": "Escaping Helium and a Highly Muted Spectrum Suggest a Metal-Enriched Atmosphere on Sub-Neptune GJ3090b from JWST Transit Spectroscopy",
   "url": "https://arxiv.org/abs/2504.20428",
@@ -2122,6 +2476,9 @@
   "doi": "10.3847/2041-8213/add010"
  },
  {
+  "au": "Lacedelli",
+  "nau": 27,
+  "gist": "",
   "id": "2504.18223",
   "title": "A transiting rocky super-Earth and a non-transiting sub-Neptune orbiting the M dwarf TOI-771",
   "url": "https://arxiv.org/abs/2504.18223",
@@ -2142,6 +2499,9 @@
   "doi": "10.1051/0004-6361/202554161"
  },
  {
+  "au": "Ferraz-Mello",
+  "nau": 2,
+  "gist": "",
   "id": "2504.17585",
   "title": "The tidal heating of the exoplanet 55 Cnc e. The role of the orbital eccentricity",
   "url": "https://arxiv.org/abs/2504.17585",
@@ -2160,6 +2520,9 @@
   "doi": "10.1051/0004-6361/202554427"
  },
  {
+  "au": "Felix",
+  "nau": 4,
+  "gist": "",
   "id": "2504.13039",
   "title": "Competing chemical signatures in the atmosphere of TOI-270 d: Inference of sulfur and carbon chemistry",
   "url": "https://arxiv.org/abs/2504.13039",
@@ -2178,6 +2541,9 @@
   "doi": "10.1051/0004-6361/202555194"
  },
  {
+  "au": "Madhusudhan",
+  "nau": 6,
+  "gist": "The spectrum shows distinct features and is inconsistent with a featureless spectrum at 3.4-$σ$ significance compared to our canonical model.",
   "id": "2504.12267",
   "title": "New Constraints on DMS and DMDS in the Atmosphere of K2-18 b from JWST MIRI",
   "url": "https://arxiv.org/abs/2504.12267",
@@ -2196,6 +2562,9 @@
   "doi": "10.3847/2041-8213/adc1c8"
  },
  {
+  "au": "Glein",
+  "nau": 3,
+  "gist": "",
   "id": "2504.09752",
   "title": "Deciphering Sub-Neptune Atmospheres: New Insights from Geochemical Models of TOI-270 d",
   "url": "https://arxiv.org/abs/2504.09752",
@@ -2214,6 +2583,9 @@
   "doi": "10.3847/1538-4357/adced4"
  },
  {
+  "au": "Malsky",
+  "nau": 13,
+  "gist": "The sub-Neptune GJ 1214b has an infamously flat transmission spectrum, likely due to thick aerosols in its atmosphere.",
   "id": "2503.22608",
   "title": "Clouds and Hazes in GJ 1214b's Metal-Rich Atmosphere",
   "url": "https://arxiv.org/abs/2503.22608",
@@ -2232,6 +2604,9 @@
   "doi": "10.3847/1538-3881/adb7e8"
  },
  {
+  "au": "Monaghan",
+  "nau": 16,
+  "gist": "Exposed to more than 2000 times the irradiation of Earth, dayside temperatures of up to 2400K are expected if the planet is a dark bare-rock without a significant atmosphere.",
   "id": "2503.09698",
   "title": "Low 4.5 μm Dayside Emission Disfavors a Dark Bare-Rock scenario for the Hot Super-Earth TOI-431 b",
   "url": "https://arxiv.org/abs/2503.09698",
@@ -2250,6 +2625,9 @@
   "doi": "10.3847/1538-3881/adbe75"
  },
  {
+  "au": "Murphy",
+  "nau": 4,
+  "gist": "One key outcome of HST/WFC3 observations has been the consistent detection of water but no methane in Neptunian atmospheres, though recent James Webb Space Telescope (JWST) observations are potentially starting to overturn this \"missing methane\" paradigm.",
   "id": "2503.03895",
   "title": "HST Transmission Spectra of the Hot-Neptune HD 219666 b: Detection of Water and the Challenge of Constraining Both Water and Methane",
   "url": "https://arxiv.org/abs/2503.03895",
@@ -2268,6 +2646,9 @@
   "doi": "10.3847/1538-3881/adc684"
  },
  {
+  "au": "Teske",
+  "nau": 19,
+  "gist": "For cloud-top pressures larger than 10^-3 bar, we rule out atmospheric metallicities less than 180-240x solar (depending on the reduction and modeling technique), which corresponds to a mean molecular weight of ~6-8 g/mol.",
   "id": "2502.20501",
   "title": "JWST COMPASS: NIRSpec/G395H Transmission Observations of TOI-776 c, a 2 Rearth M Dwarf Planet",
   "url": "https://arxiv.org/abs/2502.20501",
@@ -2287,6 +2668,9 @@
   "doi": "10.3847/1538-3881/adb975"
  },
  {
+  "au": "Palle",
+  "nau": 11,
+  "gist": "",
   "id": "2502.19932",
   "title": "Exploring the atmosphere of GJ 1132 b with CRIRES+",
   "url": "https://arxiv.org/abs/2502.19932",
@@ -2305,6 +2689,9 @@
   "doi": "10.1051/0004-6361/202453163"
  },
  {
+  "au": "Leung",
+  "nau": 5,
+  "gist": "",
   "id": "2502.13856",
   "title": "Examining the Potential for Methyl Halide Accumulation and Detectability in Possible Hycean-Type Atmospheres",
   "url": "https://arxiv.org/abs/2502.13856",
@@ -2322,6 +2709,9 @@
   "doi": "10.3847/2041-8213/adb558"
  },
  {
+  "au": "Barrier",
+  "nau": 2,
+  "gist": "",
   "id": "2502.12234",
   "title": "A new convection scheme for GCMs of temperate sub-Neptunes",
   "url": "https://arxiv.org/abs/2502.12234",
@@ -2340,6 +2730,9 @@
   "doi": "10.1093/mnras/staf267"
  },
  {
+  "au": "Mitchell",
+  "nau": 2,
+  "gist": "",
   "id": "2502.07872",
   "title": "Prospects for biological evolution on Hycean worlds",
   "url": "https://arxiv.org/abs/2502.07872",
@@ -2356,6 +2749,9 @@
   "doi": "10.1093/mnras/staf094"
  },
  {
+  "au": "Barkaoui",
+  "nau": 122,
+  "gist": "",
   "id": "2502.07074",
   "title": "TOI-2015b: a sub-Neptune in strong gravitational interaction with an outer non-transiting planet",
   "url": "https://arxiv.org/abs/2502.07074",
@@ -2374,6 +2770,9 @@
   "j": "Astronomy and Astrophysics"
  },
  {
+  "au": "Paragas",
+  "nau": 10,
+  "gist": "Models for the bare-rock spectra of these planets often utilize a spectral library from R.",
   "id": "2502.04433",
   "title": "A New Spectral Library for Modeling the Surfaces of Hot, Rocky Exoplanets",
   "url": "https://arxiv.org/abs/2502.04433",
@@ -2392,6 +2791,9 @@
   "doi": "10.3847/1538-4357/ada9eb"
  },
  {
+  "au": "Greklek-McKeon",
+  "nau": 8,
+  "gist": "",
   "id": "2501.18700",
   "title": "Updated Mass, Eccentricity, and Tidal Heating Constraints for the Earth-sized Planet LP 791-18 d",
   "url": "https://arxiv.org/abs/2501.18700",
@@ -2412,6 +2814,9 @@
   "doi": "10.3847/1538-3881/addf2d"
  },
  {
+  "au": "Schmidt",
+  "nau": 16,
+  "gist": "",
   "id": "2501.18477",
   "title": "A Comprehensive Reanalysis of K2-18 b's JWST NIRISS+NIRSpec Transmission Spectrum",
   "url": "https://arxiv.org/abs/2501.18477",
@@ -2430,6 +2835,9 @@
   "doi": "10.3847/1538-3881/ae019a"
  },
  {
+  "au": "Reyes",
+  "nau": 12,
+  "gist": "We interpret this as evidence for a metal-rich atmosphere with suppressed spectral features, possibly due to high-altitude clouds or hazes.",
   "id": "2501.17272",
   "title": "A closer look at LTT 9779b: The ESPRESSO endeavour to pierce the atmospheric veil",
   "url": "https://arxiv.org/abs/2501.17272",
@@ -2448,6 +2856,9 @@
   "doi": "10.1051/0004-6361/202451044"
  },
  {
+  "au": "Alderson",
+  "nau": 18,
+  "gist": "Using picaso forward models, we can rule out metallicities up to at least 100$\\times$ solar with an opaque pressure of 10$^{-3}$ bar to $\\geq$3$σ$ in all cases, however, the exact lower limit varies between the visits, with Visit 1 ruling out $\\lesssim$100$…",
   "id": "2501.14596",
   "title": "JWST COMPASS: NIRSpec/G395H Transmission Observations of the Super-Earth TOI-776b",
   "url": "https://arxiv.org/abs/2501.14596",
@@ -2466,6 +2877,9 @@
   "doi": "10.3847/1538-3881/adad64"
  },
  {
+  "au": "Sahu",
+  "nau": 4,
+  "gist": "",
   "id": "2501.09963",
   "title": "Unveiling the Interior Structure and Thermal Evolution of Super-Earth GJ 486b",
   "url": "https://arxiv.org/abs/2501.09963",
@@ -2484,6 +2898,9 @@
   "doi": "10.3847/1538-4357/adabbe"
  },
  {
+  "au": "Tusay",
+  "nau": 15,
+  "gist": "While the S/N of the spectrum limits our ability to draw firm conclusions, we find that the data: 1) disfavor featureless, iron-dominated core material, 2) are consistent with some form of magnesium silicate minerals, likely from mantle material, and 3) sho…",
   "id": "2501.08301",
   "title": "A Disintegrating Rocky World Shrouded in Dust and Gas: Mid-IR Observations of K2-22b using JWST",
   "url": "https://arxiv.org/abs/2501.08301",
@@ -2502,6 +2919,9 @@
   "doi": "10.3847/2041-8213/addfd0"
  },
  {
+  "au": "Davenport",
+  "nau": 11,
+  "gist": "",
   "id": "2501.01498",
   "title": "TOI-421 b: A Hot Sub-Neptune with a Haze-Free, Low Mean Molecular Weight Atmosphere",
   "url": "https://arxiv.org/abs/2501.01498",
@@ -2520,6 +2940,9 @@
   "doi": "10.3847/2041-8213/adcd76"
  },
  {
+  "au": "Zingales",
+  "nau": 133,
+  "gist": "",
   "id": "2412.05423",
   "title": "A joint effort to discover and characterize two resonant mini Neptunes around TOI-1803 with TESS, HARPS-N and CHEOPS",
   "url": "https://arxiv.org/abs/2412.05423",
@@ -2537,6 +2960,9 @@
   "doi": "10.1051/0004-6361/202451180"
  },
  {
+  "au": "Chatterjee",
+  "nau": 2,
+  "gist": "Recent James Webb Space Telescope observations of cool, rocky exoplanets reveal a probable lack of thick atmospheres, suggesting prevalent escape of the secondary atmospheres formed after losing primordial hydrogen.",
   "id": "2412.05188",
   "title": "Novel Physics of Escaping Secondary Atmospheres May Shape the Cosmic Shoreline",
   "url": "https://arxiv.org/abs/2412.05188",
@@ -2554,6 +2980,9 @@
   "doi": "10.3847/1538-4357/ae2ffa"
  },
  {
+  "au": "Luque",
+  "nau": 12,
+  "gist": "The emission spectrum is featureless and consistent with a blackbody-like brightness temperature, helping rule out thick atmospheres with high mean molecular weight.",
   "id": "2412.03411",
   "title": "A dark, bare rock for TOI-1685 b from a JWST NIRSpec G395H phase curve",
   "url": "https://arxiv.org/abs/2412.03411",
@@ -2572,6 +3001,9 @@
   "doi": "10.3847/1538-3881/addb40"
  },
  {
+  "au": "Alam",
+  "nau": 17,
+  "gist": "We compare the transmission spectrum of L 168-9 b to a grid of 1D thermochemical equilibrium forward models, and rule out atmospheric metallicities of less than 100x solar (mean molecular weights <4 g mol$^{-1}$) to 3-sigma confidence assuming high surface…",
   "id": "2411.03154",
   "title": "JWST COMPASS: The first near- to mid-infrared transmission spectrum of the hot super-Earth L 168-9 b",
   "url": "https://arxiv.org/abs/2411.03154",
@@ -2590,6 +3022,9 @@
   "doi": "10.3847/1538-3881/ad8eb5"
  },
  {
+  "au": "Ohno",
+  "nau": 12,
+  "gist": "",
   "id": "2410.10186",
   "title": "A Possible Metal-Dominated Atmosphere Below the Thick Aerosols of GJ 1214 b Suggested by its JWST Panchromatic Transmission Spectrum",
   "url": "https://arxiv.org/abs/2410.10186",
@@ -2608,6 +3043,9 @@
   "doi": "10.3847/2041-8213/ada02c"
  },
  {
+  "au": "Schlawin",
+  "nau": 17,
+  "gist": "A model containing both these molecules is preferred by 3.3 and 3.6 sigma as compared to a featureless spectrum for two different data analysis pipelines, respectively.",
   "id": "2410.10183",
   "title": "Possible Carbon Dioxide Above the Thick Aerosols of GJ 1214 b",
   "url": "https://arxiv.org/abs/2410.10183",
@@ -2626,6 +3064,9 @@
   "doi": "10.3847/2041-8213/ad7fef"
  },
  {
+  "au": "August",
+  "nau": 21,
+  "gist": "Based on the first observation alone, we can reject the null hypothesis of the dark (zero Bond albedo) no atmosphere bare rock model with a confidence level of 3.3$σ$, though for $A_B=0.2$ the significance decreases to $2.1σ$.",
   "id": "2410.11048",
   "title": "Hot Rocks Survey I : A possible shallow eclipse for LHS 1478 b",
   "url": "https://arxiv.org/abs/2410.11048",
@@ -2644,6 +3085,9 @@
   "doi": "10.1051/0004-6361/202452611"
  },
  {
+  "au": "Cooke",
+  "nau": 2,
+  "gist": "",
   "id": "2410.07313",
   "title": "Considerations for Photochemical Modeling of Possible Hycean Worlds",
   "url": "https://arxiv.org/abs/2410.07313",
@@ -2660,6 +3104,9 @@
   "doi": "10.3847/1538-4357/ad8cda"
  },
  {
+  "au": "Piaulet-Ghorayeb",
+  "nau": 33,
+  "gist": "We detect water in a highly metal-enriched \"steam world\" atmosphere (O/H of $\\sim 4$ by mass and H$_2$O found to be the background gas with a volume mixing ratio of >31%).",
   "id": "2410.03527",
   "title": "JWST/NIRISS reveals the water-rich \"steam world\" atmosphere of GJ 9827 d",
   "url": "https://arxiv.org/abs/2410.03527",
@@ -2678,6 +3125,9 @@
   "doi": "10.3847/2041-8213/ad6f00"
  },
  {
+  "au": "Radica",
+  "nau": 12,
+  "gist": "Jointly retrieving for stellar contamination and a planetary atmosphere reveals that our spectrum can rule out hydrogen-dominated, $\\lesssim$300$\\times$ solar metallicity atmospheres with effective surface pressures down to 10\\,mbar at the 3-$σ$ level.",
   "id": "2409.19333",
   "title": "Promise and Peril: Stellar Contamination and Strict Limits on the Atmosphere Composition of TRAPPIST-1c from JWST NIRISS Transmission Spectra",
   "url": "https://arxiv.org/abs/2409.19333",
@@ -2696,6 +3146,9 @@
   "doi": "10.3847/2041-8213/ada381"
  },
  {
+  "au": "Greklek-McKeon",
+  "nau": 41,
+  "gist": "",
   "id": "2409.16374",
   "title": "Tidally Heated Sub-Neptunes, Refined Planetary Compositions, and Confirmation of a Third Planet in the TOI-1266 System",
   "url": "https://arxiv.org/abs/2409.16374",
@@ -2714,6 +3167,9 @@
   "doi": "10.3847/1538-3881/adc0fe"
  },
  {
+  "au": "Zhang",
+  "nau": 16,
+  "gist": "",
   "id": "2409.08318",
   "title": "Constraining atmospheric composition from the outflow: helium observations reveal the fundamental properties of two planets straddling the radius gap",
   "url": "https://arxiv.org/abs/2409.08318",
@@ -2734,6 +3190,9 @@
   "doi": "10.3847/1538-3881/adb490"
  },
  {
+  "au": "Scarsdale",
+  "nau": 17,
+  "gist": "We find that the transmission spectrum of L 98-59 c is featureless at the precision of our data.",
   "id": "2409.07552",
   "title": "JWST COMPASS: The 3-5 Micron Transmission Spectrum of the Super-Earth L 98-59 c",
   "url": "https://arxiv.org/abs/2409.07552",
@@ -2751,6 +3210,9 @@
   "j": "AJ"
  },
  {
+  "au": "Luu",
+  "nau": 11,
+  "gist": "Recent JWST transmission spectroscopy observations of the canonical sub-Neptune, K2-18 b, revealed ~1% CH4, ~1% CO2, and a non-detection of CO in the atmosphere.",
   "id": "2409.06258",
   "title": "Volatile-rich Sub-Neptunes as Hydrothermal Worlds: The Case of K2-18 b",
   "url": "https://arxiv.org/abs/2409.06258",
@@ -2769,6 +3231,9 @@
   "doi": "10.3847/2041-8213/ad9eb1"
  },
  {
+  "au": "Rigby",
+  "nau": 9,
+  "gist": "",
   "id": "2409.03683",
   "title": "Towards a self-consistent evaluation of gas dwarf scenarios for temperate sub-Neptunes",
   "url": "https://arxiv.org/abs/2409.03683",
@@ -2787,6 +3252,9 @@
   "doi": "10.3847/1538-4357/ad6c38"
  },
  {
+  "au": "Gressier",
+  "nau": 14,
+  "gist": "",
   "id": "2408.15855",
   "title": "Hints of a sulfur-rich atmosphere around the 1.6 R$_{\\oplus}$ Super-Earth L98-59 d from JWST NIRSpec G395H transmission spectroscopy",
   "url": "https://arxiv.org/abs/2408.15855",
@@ -2805,6 +3273,9 @@
   "doi": "10.3847/2041-8213/ad73d1"
  },
  {
+  "au": "Banerjee",
+  "nau": 13,
+  "gist": "",
   "id": "2408.15707",
   "title": "Atmospheric retrievals suggest the presence of a secondary atmosphere and possible sulfur species on L 98-59 d from JWST NIRSpec G395H transmission spectroscopy",
   "url": "https://arxiv.org/abs/2408.15707",
@@ -2823,6 +3294,9 @@
   "doi": "10.3847/2041-8213/ad73d0"
  },
  {
+  "au": "Mansfield",
+  "nau": 11,
+  "gist": "We compared this temperature to the maximum expected temperature for a zero albedo, zero heat redistribution bare rock and derived a temperature ratio of $R=\\frac{T_{p,dayside}}{T_{p,max}}=0.97 \\pm 0.01$.",
   "id": "2408.15123",
   "title": "No Thick Atmosphere on the Terrestrial Exoplanet Gl 486b",
   "url": "https://arxiv.org/abs/2408.15123",
@@ -2839,6 +3313,9 @@
   "ps": "pre"
  },
  {
+  "au": "Patel",
+  "nau": 19,
+  "gist": "The measured brightness temperature at 4.5 μm varies between 873-2256 K and is lower than the expected dayside temperature of bare rock with no heat re-distribution (2500 K) which is indicative of an atmosphere.",
   "id": "2407.12898",
   "title": "JWST reveals a rapid and strong day side variability of 55 Cancri e",
   "url": "https://arxiv.org/abs/2407.12898",
@@ -2855,6 +3332,9 @@
   "doi": "10.1051/0004-6361/202450748"
  },
  {
+  "au": "Nixon",
+  "nau": 10,
+  "gist": "",
   "id": "2407.12079",
   "title": "New insights into the internal structure of GJ 1214 b informed by JWST",
   "url": "https://arxiv.org/abs/2407.12079",
@@ -2873,6 +3353,9 @@
   "doi": "10.3847/2041-8213/ad615b"
  },
  {
+  "au": "Huang",
+  "nau": 8,
+  "gist": "By modeling the atmospheric photochemistry of two canonical sub-Neptunes, K2-18 b and LHS 1140 b, both with and without water condensation and with and without thick atmospheres, we demonstrate that water condensation can significantly affect the predicted…",
   "id": "2407.09009",
   "title": "Probing Cold-to-Temperate Exoplanetary Atmospheres: The Role of Water Condensation on Surface Identification with JWST",
   "url": "https://arxiv.org/abs/2407.09009",
@@ -2893,6 +3376,9 @@
   "doi": "10.3847/1538-4357/ad76ac"
  },
  {
+  "au": "Hejazi",
+  "nau": 12,
+  "gist": "",
   "id": "2407.07869",
   "title": "High-resolution Elemental Abundance Measurements of Cool JWST Planet Hosts Using AutoSpecFit: An Application to the Sub-Neptune K2-18b's Host M dwarf",
   "url": "https://arxiv.org/abs/2407.07869",
@@ -2911,6 +3397,9 @@
   "doi": "10.3847/1538-4357/ad61dc"
  },
  {
+  "au": "Cadieux",
+  "nau": 23,
+  "gist": "We also show through Global Climate Models (GCM) that H$_2$-rich atmospheres of various compositions (100$\\times$, 300$\\times$, 1000$\\times$solar metallicity) are ruled out to $>$10 $σ$.",
   "id": "2406.15136",
   "title": "Transmission Spectroscopy of the Habitable Zone Exoplanet LHS 1140 b with JWST/NIRISS",
   "url": "https://arxiv.org/abs/2406.15136",
@@ -2929,6 +3418,9 @@
   "j": "ApJL"
  },
  {
+  "au": "Madhusudhan",
+  "nau": 1,
+  "gist": "",
   "id": "2406.12794",
   "title": "The Hycean Paradigm in the Search for Life Elsewhere",
   "url": "https://arxiv.org/abs/2406.12794",
@@ -2945,6 +3437,9 @@
   "ps": "pre"
  },
  {
+  "au": "Beatty",
+  "nau": 16,
+  "gist": "Combined with two archival HST/WFC3 transit observations and fifteen archival Spitzer transit observations, we detect water, methane, sulfur dioxide, and carbon dioxide in the atmosphere of GJ 3470 b, each with a significance of >3-sigma.",
   "id": "2406.04450",
   "title": "Sulfur Dioxide and Other Molecular Species in the Atmosphere of the Sub-Neptune GJ 3470 b",
   "url": "https://arxiv.org/abs/2406.04450",
@@ -2962,6 +3457,9 @@
   "j": "ApJL"
  },
  {
+  "au": "Yang",
+  "nau": 2,
+  "gist": "",
   "id": "2406.01955",
   "title": "Chemical mapping of temperate sub-Neptune atmospheres: Constraining the deep-interior H2O/H2 using the atmospheric CO2/CH4",
   "url": "https://arxiv.org/abs/2406.01955",
@@ -2984,6 +3482,9 @@
   "doi": "10.3847/2041-8213/ad6b25"
  },
  {
+  "au": "Melo",
+  "nau": 14,
+  "gist": "",
   "id": "2406.00111",
   "title": "Stellar Characterization and Chemical Abundances of Exoplanet Hosting M dwarfs from APOGEE Spectra: Future JWST Targets",
   "url": "https://arxiv.org/abs/2406.00111",
@@ -3000,6 +3501,9 @@
   "doi": "10.3847/1538-4357/ad5004"
  },
  {
+  "au": "Burt",
+  "nau": 15,
+  "gist": "This planet was previously featured in two contemporaneous discovery papers, but the best-fit planet mass, radius, and bulk density values were discrepant allowing it to be interpreted either as a hot, bare rock or a 50\\% H$_{2}$O / 50\\% MgSiO$_{3}$ water w…",
   "id": "2405.14895",
   "title": "TOI-1685 b is a Hot Rocky Super-Earth: Updates to the Stellar and Planet Parameters of a Popular JWST Cycle 2 Target",
   "url": "https://arxiv.org/abs/2405.14895",
@@ -3018,6 +3522,9 @@
   "doi": "10.3847/2041-8213/ad5b52"
  },
  {
+  "au": "Peng",
+  "nau": 2,
+  "gist": "",
   "id": "2405.08998",
   "title": "Puffy Venuses: the Mass-Radius Impact of Carbon-Rich Atmospheres on Lava Worlds",
   "url": "https://arxiv.org/abs/2405.08998",
@@ -3036,6 +3543,9 @@
   "doi": "10.3847/1538-4357/ad6f03"
  },
  {
+  "au": "Hu",
+  "nau": 17,
+  "gist": "The measurements rule out the scenario where the planet is a lava world shrouded by a tenuous atmosphere made of vaporized rock, and indicate a bona fide volatile atmosphere likely rich in CO2 or CO.",
   "id": "2405.04744",
   "title": "A secondary atmosphere on the rocky exoplanet 55 Cancri e",
   "url": "https://arxiv.org/abs/2405.04744",
@@ -3054,6 +3564,9 @@
   "doi": "10.1038/s41586-024-07432-x"
  },
  {
+  "au": "Timmermans",
+  "nau": 57,
+  "gist": "",
   "id": "2404.12722",
   "title": "TOI-4336 A b: A temperate sub-Neptune ripe for atmospheric characterization in a nearby triple M-dwarf system",
   "url": "https://arxiv.org/abs/2404.12722",
@@ -3072,6 +3585,9 @@
   "doi": "10.1051/0004-6361/202347981"
  },
  {
+  "au": "Wallack",
+  "nau": 16,
+  "gist": "We find a featureless transmission spectrum for this sub-Neptune planet, and are able to rule out atmospheric metallicities $<$175$\\times$ Solar in the absence of aerosols at $\\lesssim$1 millibar.",
   "id": "2404.01264",
   "title": "JWST COMPASS: A NIRSpec/G395H Transmission Spectrum of the Sub-Neptune TOI-836c",
   "url": "https://arxiv.org/abs/2404.01264",
@@ -3090,6 +3606,9 @@
   "doi": "10.3847/1538-3881/ad3917"
  },
  {
+  "au": "Alderson",
+  "nau": 16,
+  "gist": "Combining both visits, we are able to rule out atmospheres with metallicities <250xSolar for an opaque pressure level of 0.1 bar, corresponding to mean molecular weights to <6gmol$^{-1}$.",
   "id": "2404.00093",
   "title": "JWST COMPASS: NIRSpec/G395H Transmission Observations of the Super-Earth TOI-836b",
   "url": "https://arxiv.org/abs/2404.00093",
@@ -3108,6 +3627,9 @@
   "doi": "10.3847/1538-3881/ad32c9"
  },
  {
+  "au": "Cabot",
+  "nau": 7,
+  "gist": "We assess our findings using injection tests with different atmospheric scenarios, and find them to be consistent with a high CH$_4$/NH$_3$ ratio and/or the presence of high-altitude clouds.",
   "id": "2403.18891",
   "title": "High-resolution Spectroscopic Reconnaissance of a Temperate Sub-Neptune",
   "url": "https://arxiv.org/abs/2403.18891",
@@ -3124,6 +3646,9 @@
   "doi": "10.3847/2041-8213/ad3828"
  },
  {
+  "au": "Tsai",
+  "nau": 4,
+  "gist": "",
   "id": "2403.14805",
   "title": "Biogenic sulfur gases as biosignatures on temperate sub-Neptune waterworlds",
   "url": "https://arxiv.org/abs/2403.14805",
@@ -3140,6 +3665,9 @@
   "doi": "10.3847/2041-8213/ad3801"
  },
  {
+  "au": "Mori",
+  "nau": 16,
+  "gist": "We rule out cases with extremely low spot temperatures and large spot covering fractions.",
   "id": "2403.13946",
   "title": "Characterization of starspots on a young M-dwarf K2-25: multi-band observations of stellar photometric variability and planetary transits",
   "url": "https://arxiv.org/abs/2403.13946",
@@ -3158,6 +3686,9 @@
   "doi": "10.1093/mnras/stae841"
  },
  {
+  "au": "Damiano",
+  "nau": 4,
+  "gist": "",
   "id": "2403.13265",
   "title": "LHS 1140 b is a potentially habitable water world",
   "url": "https://arxiv.org/abs/2403.13265",
@@ -3176,6 +3707,9 @@
   "doi": "10.3847/2041-8213/ad5204"
  },
  {
+  "au": "Doyon",
+  "nau": 1,
+  "gist": "",
   "id": "2403.12617",
   "title": "Do Temperate Rocky Planets Around M Dwarfs have an Atmosphere ?",
   "url": "https://arxiv.org/abs/2403.12617",
@@ -3193,6 +3727,9 @@
   "j": "proceedings of the Pontifical Academy of Science workshop on"
  },
  {
+  "au": "Benneke",
+  "nau": 31,
+  "gist": "",
   "id": "2403.03325",
   "title": "JWST Reveals CH$_4$, CO$_2$, and H$_2$O in a Metal-rich Miscible Atmosphere on a Two-Earth-Radius Exoplanet",
   "url": "https://arxiv.org/abs/2403.03325",
@@ -3209,6 +3746,9 @@
   "ps": "pre"
  },
  {
+  "au": "Holmberg",
+  "nau": 2,
+  "gist": "The spectrum reveals strong signatures of CH4 and CO2 at 3.8-4.9$σ$ and 2.9-3.9$σ$ confidence, respectively, and no evidence of NH3.",
   "id": "2403.03244",
   "title": "Possible Hycean conditions in the sub-Neptune TOI-270 d",
   "url": "https://arxiv.org/abs/2403.03244",
@@ -3229,6 +3769,9 @@
   "doi": "10.1051/0004-6361/202348238"
  },
  {
+  "au": "Dyrek",
+  "nau": 7,
+  "gist": "",
   "id": "2403.00676",
   "title": "Transiting exoplanets with the Mid-InfraRed Instrument on board the James Webb Space Telescope: From simulations to observations",
   "url": "https://arxiv.org/abs/2403.00676",
@@ -3245,6 +3788,9 @@
   "doi": "10.1051/0004-6361/202347127"
  },
  {
+  "au": "Radica",
+  "nau": 16,
+  "gist": "The 0.6-2.85$μ$m transmission spectrum shows evidence for muted spectral features, rejecting a perfectly flat line at >5$σ$.",
   "id": "2401.15548",
   "title": "Muted Features in the JWST NIRISS Transmission Spectrum of Hot-Neptune LTT 9779 b",
   "url": "https://arxiv.org/abs/2401.15548",
@@ -3263,6 +3809,9 @@
   "doi": "10.3847/2041-8213/ad20e4"
  },
  {
+  "au": "Wogan",
+  "nau": 6,
+  "gist": "",
   "id": "2401.11082",
   "title": "JWST observations of K2-18b can be explained by a gas-rich mini-Neptune with no habitable surface",
   "url": "https://arxiv.org/abs/2401.11082",
@@ -3281,6 +3830,9 @@
   "doi": "10.3847/2041-8213/ad2616"
  },
  {
+  "au": "Shorttle",
+  "nau": 5,
+  "gist": "Spectral areas that could be used to rule out the magma ocean model include the >4um region, where CO2 and CO features dominate: Magma ocean models suggest a systematically lower CO2/CO ratio than estimated from free chemistry retrieval, indicating that dee…",
   "id": "2401.05864",
   "title": "Distinguishing oceans of water from magma on mini-Neptune K2-18b",
   "url": "https://arxiv.org/abs/2401.05864",
@@ -3299,6 +3851,9 @@
   "doi": "10.3847/2041-8213/ad206e"
  },
  {
+  "au": "Quirino",
+  "nau": 9,
+  "gist": "Like on modern Venus, clouds on LP 890-9 c would create a flat spectrum.",
   "id": "2311.04675",
   "title": "3D Global climate model of an exo-Venus: a modern Venus-like atmosphere for the nearby super-Earth LP 890-9 c",
   "url": "https://arxiv.org/abs/2311.04675",
@@ -3317,6 +3872,9 @@
   "doi": "10.1093/mnrasl/slad045"
  },
  {
+  "au": "Mantovan",
+  "nau": 71,
+  "gist": "",
   "id": "2310.16888",
   "title": "The GAPS programme at TNG XLIX. TOI-5398, the youngest compact multi-planet system composed of an inner sub-Neptune and an outer warm Saturn",
   "url": "https://arxiv.org/abs/2310.16888",
@@ -3334,6 +3892,9 @@
   "j": "Astronomy & Astrophysics"
  },
  {
+  "au": "May",
+  "nau": 22,
+  "gist": "Previous HST WFC3 observations of GJ 1132 b were inconclusive, with evidence reported for either an atmosphere or a featureless spectrum based on analyses of the same dataset.",
   "id": "2310.10711",
   "title": "Double Trouble: Two Transits of the Super-Earth GJ 1132 b Observed with JWST NIRSpec G395H",
   "url": "https://arxiv.org/abs/2310.10711",
@@ -3352,6 +3913,9 @@
   "doi": "10.3847/2041-8213/ad054f"
  },
  {
+  "au": "Wandel",
+  "nau": 1,
+  "gist": "It is argued that the probable recent JWST detection of atmospheric water vapor on the rocky Earth-sized exoplanet GJ 486 b, along with earlier detections of water on other planets orbiting M-dwarf stars gives an empirical answer to the much-argued question…",
   "id": "2310.02452",
   "title": "Extended habitability of exoplanets due to subglacial water",
   "url": "https://arxiv.org/abs/2310.02452",
@@ -3368,6 +3932,9 @@
   "doi": "10.3847/1538-3881/ad0045"
  },
  {
+  "au": "Lim",
+  "nau": 25,
+  "gist": "",
   "id": "2309.07047",
   "title": "Atmospheric Reconnaissance of TRAPPIST-1 b with JWST/NIRISS: Evidence for Strong Stellar Contamination in the Transmission Spectra",
   "url": "https://arxiv.org/abs/2309.07047",
@@ -3386,6 +3953,9 @@
   "doi": "10.3847/2041-8213/acf7c4"
  },
  {
+  "au": "Madhusudhan",
+  "nau": 6,
+  "gist": "The abundant CH4 and CO2 along with the non-detection of ammonia (NH3) are consistent with chemical predictions for an ocean under a temperate H2-rich atmosphere on K2-18 b.",
   "id": "2309.05566",
   "title": "Carbon-bearing Molecules in a Possible Hycean Atmosphere",
   "url": "https://arxiv.org/abs/2309.05566",
@@ -3402,6 +3972,9 @@
   "doi": "10.3847/2041-8213/acf577"
  },
  {
+  "au": "Lowson",
+  "nau": 34,
+  "gist": "",
   "id": "2309.04137",
   "title": "Two mini-Neptunes Transiting the Adolescent K-star HIP 113103 Confirmed with TESS and CHEOPS",
   "url": "https://arxiv.org/abs/2309.04137",
@@ -3422,6 +3995,9 @@
   "doi": "10.1093/mnras/stad2756"
  },
  {
+  "au": "Patel",
+  "nau": 78,
+  "gist": "While most of them are consistent with bare rocks, some show evidence of a heavyweight envelope, which could be a water layer or a secondary metal-rich atmosphere sustained by an outgassing surface.",
   "id": "2308.08687",
   "title": "CHEOPS and TESS view of the ultra-short period super-Earth TOI-561 b",
   "url": "https://arxiv.org/abs/2308.08687",
@@ -3440,6 +4016,9 @@
   "doi": "10.1051/0004-6361/202244946"
  },
  {
+  "au": "Valdés",
+  "nau": 90,
+  "gist": "",
   "id": "2307.06085",
   "title": "Investigating the visible phase-curve variability of 55 Cnc e",
   "url": "https://arxiv.org/abs/2307.06085",
@@ -3458,6 +4037,9 @@
   "doi": "10.1051/0004-6361/202346050"
  },
  {
+  "au": "Barkaoui",
+  "nau": 70,
+  "gist": "",
   "id": "2306.15095",
   "title": "TOI-2084 b and TOI-4184 b: two new sub-Neptunes around M dwarf stars",
   "url": "https://arxiv.org/abs/2306.15095",
@@ -3477,6 +4059,9 @@
   "j": "A&A"
  },
  {
+  "au": "Edwards",
+  "nau": 30,
+  "gist": "",
   "id": "2306.13645",
   "title": "Characterising a World Within the Hot Neptune Desert: Transit Observations of LTT 9779 b with HST WFC3",
   "url": "https://arxiv.org/abs/2306.13645",
@@ -3495,6 +4080,9 @@
   "doi": "10.3847/1538-3881/acea77"
  },
  {
+  "au": "Barrientos",
+  "nau": 3,
+  "gist": "",
   "id": "2306.11826",
   "title": "A Venus in the Making? Predictions for JWST Observations of the Ultracool M-Dwarf planet LP 890-9 c",
   "url": "https://arxiv.org/abs/2306.11826",
@@ -3513,6 +4101,9 @@
   "doi": "10.1093/mnrasl/slad056"
  },
  {
+  "au": "Piette",
+  "nau": 7,
+  "gist": "",
   "id": "2306.10100",
   "title": "Rocky planet or water world? Observability of low-density lava world atmospheres",
   "url": "https://arxiv.org/abs/2306.10100",
@@ -3535,6 +4126,9 @@
   "doi": "10.3847/1538-4357/acdef2"
  },
  {
+  "au": "Dai",
+  "nau": 51,
+  "gist": "",
   "id": "2306.08179",
   "title": "A Mini-Neptune Orbiting the Metal-poor K Dwarf BD+29 2654",
   "url": "https://arxiv.org/abs/2306.08179",
@@ -3553,6 +4147,9 @@
   "doi": "10.3847/1538-3881/acdee8"
  },
  {
+  "au": "Deeg",
+  "nau": 52,
+  "gist": "",
   "id": "2305.18542",
   "title": "TOI-1416: A system with a super-Earth planet with a 1.07d period",
   "url": "https://arxiv.org/abs/2305.18542",
@@ -3571,6 +4168,9 @@
   "doi": "10.1051/0004-6361/202346370"
  },
  {
+  "au": "Kempton",
+  "nau": 33,
+  "gist": "However, the measured spectra are featureless, and thus inconclusive, due to the presence of high-altitude aerosols in the planet's atmosphere.",
   "id": "2305.06240",
   "title": "A reflective, metal-rich atmosphere for GJ 1214b from its JWST phase curve",
   "url": "https://arxiv.org/abs/2305.06240",
@@ -3589,6 +4189,9 @@
   "doi": "10.1038/s41586-023-06159-5"
  },
  {
+  "au": "Gao",
+  "nau": 15,
+  "gist": "The near-infrared transmission spectrum of the warm sub-Neptune exoplanet GJ 1214 b has been observed to be flat and featureless, implying a high metallicity atmosphere with abundant aerosols.",
   "id": "2305.05697",
   "title": "The Hazy and Metal-Rich Atmosphere of GJ 1214 b Constrained by Near and Mid-Infrared Transmission Spectroscopy",
   "url": "https://arxiv.org/abs/2305.05697",
@@ -3607,6 +4210,9 @@
   "doi": "10.3847/1538-4357/acd16f"
  },
  {
+  "au": "Moran",
+  "nau": 24,
+  "gist": "",
   "id": "2305.00868",
   "title": "High Tide or Riptide on the Cosmic Shoreline? A Water-Rich Atmosphere or Stellar Contamination for the Warm Super-Earth GJ~486b from JWST Observations",
   "url": "https://arxiv.org/abs/2305.00868",
@@ -3625,6 +4231,9 @@
   "doi": "10.3847/2041-8213/accb9c"
  },
  {
+  "au": "Santos",
+  "nau": 4,
+  "gist": "",
   "id": "2304.07792",
   "title": "Observing atmospheric escape in sub-Jovian worlds with JWST",
   "url": "https://arxiv.org/abs/2304.07792",
@@ -3642,6 +4251,9 @@
   "doi": "10.3847/1538-3881/accf10"
  },
  {
+  "au": "Henry",
+  "nau": 2,
+  "gist": "Although most previous transmission spectroscopy measurements have revealed a frustratingly featureless spectrum, JWST observations are expected to give new insights to this benchmark planet.",
   "id": "2302.07874",
   "title": "C14 Automatic Imaging Telescope Photometry of GJ1214",
   "url": "https://arxiv.org/abs/2302.07874",
@@ -3658,6 +4270,9 @@
   "ps": "pre"
  },
  {
+  "au": "Barclay",
+  "nau": 35,
+  "gist": "",
   "id": "2301.10866",
   "title": "The transmission spectrum of the potentially rocky planet L 98-59 c",
   "url": "https://arxiv.org/abs/2301.10866",
@@ -3676,6 +4291,9 @@
   "doi": "10.3847/1538-3881/ada5f6"
  },
  {
+  "au": "Bouwman",
+  "nau": 24,
+  "gist": "",
   "id": "2211.16123",
   "title": "Spectroscopic time series performance of the Mid-Infrared Instrument on the JWST",
   "url": "https://arxiv.org/abs/2211.16123",
@@ -3694,6 +4312,9 @@
   "doi": "10.1088/1538-3873/acbc49"
  },
  {
+  "au": "Demory",
+  "nau": 76,
+  "gist": "",
   "id": "2211.03582",
   "title": "55 Cancri e's occultation captured with CHEOPS",
   "url": "https://arxiv.org/abs/2211.03582",
@@ -3710,6 +4331,9 @@
   "doi": "10.1051/0004-6361/202244894"
  },
  {
+  "au": "Diamond-Lowe",
+  "nau": 4,
+  "gist": "We rule out this atmospheric case with a surface pressure of 10 bars to $3.2 σ$ confidence, and with a surface pressure of 1 bar to $3.1 σ$ confidence.",
   "id": "2210.11809",
   "title": "Ground-based Optical Transmission Spectroscopy of the Nearby Terrestrial Exoplanet LTT 1445Ab",
   "url": "https://arxiv.org/abs/2210.11809",
@@ -3728,6 +4352,9 @@
   "doi": "10.3847/1538-3881/acbf39"
  },
  {
+  "au": "Luque",
+  "nau": 48,
+  "gist": "",
   "id": "2208.07287",
   "title": "Precise mass determination for the keystone sub-Neptune planet transiting the mid-type M dwarf G 9-40",
   "url": "https://arxiv.org/abs/2208.07287",
@@ -3748,6 +4375,9 @@
   "doi": "10.1051/0004-6361/202244426"
  },
  {
+  "au": "Cadieux",
+  "nau": 56,
+  "gist": "",
   "id": "2208.06333",
   "title": "TOI-1452 b: SPIRou and TESS reveal a super-Earth in a temperate orbit transiting an M4 dwarf",
   "url": "https://arxiv.org/abs/2208.06333",
@@ -3768,6 +4398,9 @@
   "doi": "10.3847/1538-3881/ac7cea"
  },
  {
+  "au": "Constantinou",
+  "nau": 2,
+  "gist": "High-altitude clouds however threaten to impede their atmospheric characterisation by muting spectral features.",
   "id": "2205.01690",
   "title": "Characterising Atmospheres of Cloudy Temperate Mini-Neptunes with JWST",
   "url": "https://arxiv.org/abs/2205.01690",
@@ -3784,6 +4417,9 @@
   "doi": "10.1093/mnras/stac1277"
  },
  {
+  "au": "Luque",
+  "nau": 67,
+  "gist": "",
   "id": "2204.10261",
   "title": "The HD 260655 system: Two rocky worlds transiting a bright M dwarf at 10 pc",
   "url": "https://arxiv.org/abs/2204.10261",
@@ -3804,6 +4440,9 @@
   "doi": "10.1051/0004-6361/202243834"
  },
  {
+  "au": "Guzmán-Mesa",
+  "nau": 4,
+  "gist": "",
   "id": "2204.05971",
   "title": "Chemical diversity of the atmospheres and interiors of sub-Neptunes: a case study of GJ 436 b",
   "url": "https://arxiv.org/abs/2204.05971",
@@ -3822,6 +4461,9 @@
   "doi": "10.1093/mnras/stac1066"
  },
  {
+  "au": "Rustamkulov",
+  "nau": 4,
+  "gist": "",
   "id": "2203.04173",
   "title": "Analysis of a JWST NIRSpec Lab Time Series: Characterizing Systematics, Recovering Exoplanet Transit Spectroscopy, and Constraining a Noise Floor",
   "url": "https://arxiv.org/abs/2203.04173",
@@ -3840,6 +4482,9 @@
   "doi": "10.3847/2041-8213/ac5b6f"
  },
  {
+  "au": "Lammer",
+  "nau": 9,
+  "gist": "Magma ocean degassed silicate atmospheres or thin gaseous envelopes from planetary building blocks, airless bodies in the inner Solar System, and close-in magmatic rocky exoplanets such as CoRot-7b, HD219134b and 55 Cnc e are addressed.",
   "id": "2203.01656",
   "title": "The Exosphere as a Boundary: Origin and Evolution of Airless Bodies in the Inner Solar System and Beyond Including Planets with Silicate Atmospheres",
   "url": "https://arxiv.org/abs/2203.01656",
@@ -3857,6 +4502,9 @@
   "doi": "10.1007/s11214-022-00876-5"
  },
  {
+  "au": "Zieba",
+  "nau": 14,
+  "gist": "",
   "id": "2203.00370",
   "title": "K2 and Spitzer phase curves of the rocky ultra-short-period planet K2-141 b hint at a tenuous rock vapor atmosphere",
   "url": "https://arxiv.org/abs/2203.00370",
@@ -3877,6 +4525,9 @@
   "doi": "10.1051/0004-6361/202142912"
  },
  {
+  "au": "Kemmer",
+  "nau": 67,
+  "gist": "",
   "id": "2202.00970",
   "title": "Discovery and mass measurement of the hot, transiting, Earth-sized planet GJ 3929 b",
   "url": "https://arxiv.org/abs/2202.00970",
@@ -3895,6 +4546,9 @@
   "doi": "10.1051/0004-6361/202142653"
  },
  {
+  "au": "Piette",
+  "nau": 3,
+  "gist": "This includes confident detections of CO_2 and H_2O in the case of a cloud-free CO_2-rich composition, besides ruling out a bare rock scenario.",
   "id": "2112.05059",
   "title": "HyDRo: Atmospheric Retrieval of Rocky Exoplanets in Thermal Emission",
   "url": "https://arxiv.org/abs/2112.05059",
@@ -3917,6 +4571,9 @@
   "doi": "10.1093/mnras/stab3612"
  },
  {
+  "au": "Anisman",
+  "nau": 8,
+  "gist": "",
   "id": "2110.00403",
   "title": "Cross-sections for heavy atmospheres: H$_2$O continuum",
   "url": "https://arxiv.org/abs/2110.00403",
@@ -3936,6 +4593,9 @@
   "doi": "10.1016/j.jqsrt.2021.108013"
  },
  {
+  "au": "Demangeon",
+  "nau": 45,
+  "gist": "",
   "id": "2108.03323",
   "title": "Warm terrestrial planet with half the mass of Venus transiting a nearby star",
   "url": "https://arxiv.org/abs/2108.03323",
@@ -3954,6 +4614,9 @@
   "doi": "10.1051/0004-6361/202140728"
  },
  {
+  "au": "Rimmer",
+  "nau": 5,
+  "gist": "",
   "id": "2107.13097",
   "title": "Detectable Abundance of Cyanoacetylene (HC$_3$N) Predicted on Reduced Nitrogen-Rich Super-Earth Atmospheres",
   "url": "https://arxiv.org/abs/2107.13097",
@@ -3970,6 +4633,9 @@
   "doi": "10.3847/2041-8213/ac2f3a"
  },
  {
+  "au": "Burt",
+  "nau": 62,
+  "gist": "",
   "id": "2105.08077",
   "title": "TOI-1231 b: A Temperate, Neptune-Sized Planet Transiting the Nearby M3 Dwarf NLTT 24399",
   "url": "https://arxiv.org/abs/2105.08077",
@@ -3989,6 +4655,9 @@
   "doi": "10.3847/1538-3881/ac0432"
  },
  {
+  "au": "Mugnai",
+  "nau": 28,
+  "gist": "Instead, GJ 1132 b could have a cloudy hydrogen-dominated envelope, a very enriched secondary atmosphere, be airless, or have a tenuous atmosphere that has not been detected.",
   "id": "2104.01873",
   "title": "ARES V: No Evidence For Molecular Absorption in the HST WFC3 Spectrum of GJ 1132 b",
   "url": "https://arxiv.org/abs/2104.01873",
@@ -4007,6 +4676,9 @@
   "doi": "10.3847/1538-3881/abf3c3"
  },
  {
+  "au": "Soto",
+  "nau": 55,
+  "gist": "",
   "id": "2102.11640",
   "title": "Mass and density of the transiting hot and rocky super-Earth LHS 1478 b (TOI-1640 b)",
   "url": "https://arxiv.org/abs/2102.11640",
@@ -4025,6 +4697,9 @@
   "doi": "10.1051/0004-6361/202140618"
  },
  {
+  "au": "Wunderlich",
+  "nau": 7,
+  "gist": "",
   "id": "2012.11426",
   "title": "Detectability of biosignatures on LHS 1140 b",
   "url": "https://arxiv.org/abs/2012.11426",
@@ -4043,6 +4718,9 @@
   "doi": "10.1051/0004-6361/202039663"
  },
  {
+  "au": "Edwards",
+  "nau": 10,
+  "gist": "",
   "id": "2011.08815",
   "title": "Hubble WFC3 Spectroscopy of the Habitable-zone Super-Earth LHS 1140 b",
   "url": "https://arxiv.org/abs/2011.08815",
@@ -4061,6 +4739,9 @@
   "doi": "10.3847/1538-3881/abc6a5"
  },
  {
+  "au": "Guilluy",
+  "nau": 30,
+  "gist": "We use the publicly available Iraclis pipeline and TauREx3 atmospheric retrieval code and we detect water vapor in the atmosphere of both planets with an abundance of $\\log_{10}[\\mathrm{H_2O}]=-2.1^{+0.7}_{-1.3}$ ($\\sim$5.68$σ$) and $\\log_{10}[\\mathrm{H_2O}…",
   "id": "2011.03221",
   "title": "ARES IV: Probing the atmospheres of the two warm small planets HD 106315 c and HD 3167 c with the HST/WFC3 camera",
   "url": "https://arxiv.org/abs/2011.03221",
@@ -4081,6 +4762,9 @@
   "doi": "10.3847/1538-3881/abc3c8"
  },
  {
+  "au": "Piette",
+  "nau": 2,
+  "gist": "",
   "id": "2009.11290",
   "title": "On the Temperature Profiles and Emission Spectra of Mini-Neptune Atmospheres",
   "url": "https://arxiv.org/abs/2009.11290",
@@ -4101,6 +4785,9 @@
   "doi": "10.3847/1538-4357/abbfb1"
  },
  {
+  "au": "Luque",
+  "nau": 66,
+  "gist": "",
   "id": "2009.08338",
   "title": "A planetary system with two transiting mini-Neptunes near the radius valley transition around the bright M dwarf TOI-776",
   "url": "https://arxiv.org/abs/2009.08338",
@@ -4121,6 +4808,9 @@
   "doi": "10.1051/0004-6361/202039455"
  },
  {
+  "au": "Herbst",
+  "nau": 10,
+  "gist": "",
   "id": "2006.09941",
   "title": "On the Diversity of M-Star Astrospheres and the Role of Galactic Cosmic Rays Within",
   "url": "https://arxiv.org/abs/2006.09941",
@@ -4137,6 +4827,9 @@
   "doi": "10.3847/2041-8213/ab9df3"
  },
  {
+  "au": "Chouqar",
+  "nau": 6,
+  "gist": "",
   "id": "2004.12475",
   "title": "Properties of Sub-Neptune Atmospheres: TOI-270 System",
   "url": "https://arxiv.org/abs/2004.12475",
@@ -4153,6 +4846,9 @@
   "doi": "10.1093/mnras/staa1198"
  },
  {
+  "au": "Zilinskas",
+  "nau": 4,
+  "gist": "",
   "id": "2003.05354",
   "title": "Atmospheric compositions and observability of nitrogen dominated ultra-short period super-Earths",
   "url": "https://arxiv.org/abs/2003.05354",
@@ -4169,6 +4865,9 @@
   "doi": "10.1093/mnras/staa724"
  },
  {
+  "au": "Nowak",
+  "nau": 100,
+  "gist": "",
   "id": "2003.01140",
   "title": "The CARMENES search for exoplanets around M dwarfs. Two planets on the opposite sides of the radius gap transiting the nearby M dwarf LTT 3780",
   "url": "https://arxiv.org/abs/2003.01140",
@@ -4189,6 +4888,9 @@
   "doi": "10.1051/0004-6361/202037867"
  },
  {
+  "au": "Benneke",
+  "nau": 18,
+  "gist": "Obtained over many years, our data set provides a robust detection of water absorption (>5$σ$) and a thermal emission detection from the lowest irradiated planet to date.",
   "id": "1907.00449",
   "title": "A Sub-Neptune Exoplanet with a Low-Metallicity Methane-Depleted Atmosphere and Mie-Scattering Clouds",
   "url": "https://arxiv.org/abs/1907.00449",
@@ -4207,6 +4909,9 @@
   "doi": "10.1038/s41550-019-0800-5"
  },
  {
+  "au": "Caldas",
+  "nau": 7,
+  "gist": "",
   "id": "1901.09932",
   "title": "Effects of a fully 3D atmospheric structure on exoplanet transmission spectra: retrieval biases due to day-night temperature gradients",
   "url": "https://arxiv.org/abs/1901.09932",
@@ -4223,6 +4928,9 @@
   "doi": "10.1051/0004-6361/201834384"
  },
  {
+  "au": "Ment",
+  "nau": 30,
+  "gist": "",
   "id": "1808.00485",
   "title": "A second terrestrial planet orbiting the nearby M dwarf LHS 1140",
   "url": "https://arxiv.org/abs/1808.00485",
@@ -4240,6 +4948,9 @@
   "doi": "10.3847/1538-3881/aaf1b1"
  },
  {
+  "au": "Lothringer",
+  "nau": 12,
+  "gist": "The optical spectrum also rules out some highly scattering haze models.",
   "id": "1801.00412",
   "title": "An HST/STIS Optical Transmission Spectrum of Warm Neptune GJ 436b",
   "url": "https://arxiv.org/abs/1801.00412",
@@ -4259,6 +4970,9 @@
   "doi": "10.3847/1538-3881/aaa008"
  },
  {
+  "au": "Rodriguez",
+  "nau": 8,
+  "gist": "",
   "id": "1709.01957",
   "title": "A System of Three Super Earths Transiting the Late K-Dwarf GJ 9827 at Thirty Parsecs",
   "url": "https://arxiv.org/abs/1709.01957",
@@ -4275,6 +4989,9 @@
   "doi": "10.3847/1538-3881/aaa292"
  },
  {
+  "au": "Vanderburg",
+  "nau": 13,
+  "gist": "",
   "id": "1607.05248",
   "title": "Two Small Planets Transiting HD 3167",
   "url": "https://arxiv.org/abs/1607.05248",
@@ -4294,6 +5011,9 @@
   "doi": "10.3847/2041-8205/829/1/L9"
  },
  {
+  "au": "Bolmont",
+  "nau": 7,
+  "gist": "",
   "id": "1304.0459",
   "title": "Tidal dissipation and eccentricity pumping: Implications for the depth of the secondary eclipse of 55 Cnc e",
   "url": "https://arxiv.org/abs/1304.0459",
@@ -4312,6 +5032,9 @@
   "doi": "10.1051/0004-6361/201220837"
  },
  {
+  "au": "Shabram",
+  "nau": 4,
+  "gist": "For GJ 436b, the relative coolness of the planet's atmosphere, along with its implied high metallicity, may make it dissimilar in character compared to \"hot Jupiters.\" Some recent observational and modeling efforts suggest low relative abundances of H2O and…",
   "id": "1010.2451",
   "title": "Transmission Spectra of Transiting Planet Atmospheres: Model Validation and Simulations of the Hot Neptune GJ 436b for JWST",
   "url": "https://arxiv.org/abs/1010.2451",
