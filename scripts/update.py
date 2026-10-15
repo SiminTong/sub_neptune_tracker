@@ -460,7 +460,7 @@ def main():
             row["st"] = p.get("auto") or "amb"
             row["auto"] = True   # outcome guessed from the abstract; shown in a different colour
             row["ins"] = "JWST (see paper)"
-            row["res"] = "Auto-classified from the abstract, not yet reviewed: " + p["title"]
+            row["res"] = "Outcome read automatically from the abstract (may be inaccurate): " + p["title"]
             row["ref"] = f"arXiv:{p['id']} ({p['published']})"
             row["url"] = p["url"]
 
