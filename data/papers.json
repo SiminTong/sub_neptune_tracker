@@ -1,5 +1,17 @@
 [
  {
+  "id": "2609.37982",
+  "title": "Improved Constraints on the Surface of LHS 3844 b from its Mid-Infrared Spectrum",
+  "url": "https://arxiv.org/abs/2609.37982",
+  "published": "2026-09-29",
+  "planets": [
+   "LHS 3844 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "acc",
+  "j": "ApJL on October"
+ },
+ {
   "id": "2609.35607",
   "title": "JWST NIRSpec G395H Transmission Spectra of Two Similar Sub-Neptunes in the TOI-125 System",
   "url": "https://arxiv.org/abs/2609.35607",
@@ -8,7 +20,8 @@
    "TOI-125 b",
    "TOI-125 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2609.34635",
@@ -21,7 +34,19 @@
    "TOI-270 d",
    "TOI-776 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2609.36206",
+  "title": "Cool, Cloudy Nights on an Ultrahot Neptune: A Panchromatic NIRISS/NIRSpec Transmission Spectrum of LTT 9779 b",
+  "url": "https://arxiv.org/abs/2609.36206",
+  "published": "2026-09-28",
+  "planets": [
+   "LTT 9779 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2609.17792",
@@ -31,7 +56,8 @@
   "planets": [
    "K2-3 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2609.14704",
@@ -41,7 +67,19 @@
   "planets": [
    "GJ 3090 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2609.09893",
+  "title": "JWST-SUPER I: New insights into irradiated warm Neptunes atmospheres from MIRI observations of HD 106315 c",
+  "url": "https://arxiv.org/abs/2609.09893",
+  "published": "2026-09-09",
+  "planets": [
+   "HD 106315 c"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2609.05264",
@@ -52,7 +90,23 @@
    "K2-18 b",
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae8c2d"
+ },
+ {
+  "id": "2608.24803",
+  "title": "Atmospheric Retrieval of Combined JWST, HST, and Ground-Based Observations Reveals a Featureless Transmission Spectrum for GJ 1132 b",
+  "url": "https://arxiv.org/abs/2608.24803",
+  "published": "2026-08-25",
+  "planets": [
+   "GJ 1132 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag1606"
  },
  {
   "id": "2608.19100",
@@ -62,7 +116,10 @@
   "planets": [
    "GJ 1214 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJ",
+  "doi": "10.3847/1538-4357/ae9a84"
  },
  {
   "id": "2608.13473",
@@ -72,7 +129,19 @@
   "planets": [
    "LHS 1140 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2608.06207",
+  "title": "Veiled in Starlight: Impacts of Stellar Contamination on Retrievals of TRAPPIST-1f's Atmospheric Composition",
+  "url": "https://arxiv.org/abs/2608.06207",
+  "published": "2026-08-06",
+  "planets": [
+   "TRAPPIST-1 f"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2607.00973",
@@ -82,7 +151,10 @@
   "planets": [
    "TOI-1231 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae6507"
  },
  {
   "id": "2607.00950",
@@ -93,7 +165,10 @@
    "K2-18 b",
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae6640"
  },
  {
   "id": "2606.20464",
@@ -105,7 +180,21 @@
    "TOI-270 d",
    "TOI-421 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2606.20249",
+  "title": "Geophysical and atmospheric implications of $f$O$_{2}$-dependent melting on rocky exoplanets",
+  "url": "https://arxiv.org/abs/2606.20249",
+  "published": "2026-06-18",
+  "planets": [
+   "GJ 1132 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Astronomy &amp; Astrophysics",
+  "doi": "10.1051/0004-6361/202660017"
  },
  {
   "id": "2606.06691",
@@ -116,7 +205,23 @@
    "GJ 1214 b",
    "LHS 1140 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJ",
+  "doi": "10.3847/1538-4357/ae6cdb"
+ },
+ {
+  "id": "2606.03740",
+  "title": "KRONOS I: The $1{-}2.8μ$m JWST Transmission Spectrum of the 23 Myr V1298 Tau c",
+  "url": "https://arxiv.org/abs/2606.03740",
+  "published": "2026-06-02",
+  "planets": [
+   "V1298 Tau c"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae7a32"
  },
  {
   "id": "2605.17803",
@@ -126,7 +231,21 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2605.15003",
+  "title": "JWST COMPASS Program: The 3--5$μ$m transmission spectrum of LTT 1445 A b",
+  "url": "https://arxiv.org/abs/2605.15003",
+  "published": "2026-05-14",
+  "planets": [
+   "LTT 1445 A b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae6c26"
  },
  {
   "id": "2605.08752",
@@ -137,7 +256,10 @@
    "K2-18 b",
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJ",
+  "doi": "10.3847/1538-4357/ae6917"
  },
  {
   "id": "2605.02036",
@@ -147,7 +269,10 @@
   "planets": [
    "TOI-1130 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae5f8b"
  },
  {
   "id": "2604.15891",
@@ -158,7 +283,10 @@
    "TOI-421 b",
    "pi Men c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag1489"
  },
  {
   "id": "2604.15292",
@@ -168,7 +296,10 @@
   "planets": [
    "GJ 1214 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Astronomy &amp; Astrophysics",
+  "doi": "10.1051/0004-6361/202558512"
  },
  {
   "id": "2604.11911",
@@ -178,7 +309,10 @@
   "planets": [
    "HD 3167 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae7f23"
  },
  {
   "id": "2604.07987",
@@ -188,7 +322,23 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag780"
+ },
+ {
+  "id": "2604.02332",
+  "title": "Hot Rocks Survey V: Secondary Eclipse Photometry of GJ 3473 b with JWST/MIRI",
+  "url": "https://arxiv.org/abs/2604.02332",
+  "published": "2026-04-02",
+  "planets": [
+   "GJ 3473 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae4c45"
  },
  {
   "id": "2603.29700",
@@ -198,7 +348,20 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
+ },
+ {
+  "id": "2603.28238",
+  "title": "Mass determination of the ultra-short-period planet LHS 3844 b. First K-band radial velocity measurements with CRIRES+",
+  "url": "https://arxiv.org/abs/2603.28238",
+  "published": "2026-03-30",
+  "planets": [
+   "LHS 3844 b"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "acc",
+  "j": "A&A"
  },
  {
   "id": "2603.26474",
@@ -208,7 +371,10 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202659251"
  },
  {
   "id": "2603.19803",
@@ -218,7 +384,8 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2603.18923",
@@ -228,7 +395,10 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae6864"
  },
  {
   "id": "2603.02209",
@@ -238,7 +408,10 @@
   "planets": [
    "L 98-59 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag484"
  },
  {
   "id": "2602.22830",
@@ -248,7 +421,10 @@
   "planets": [
    "TOI-451 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae82f1"
  },
  {
   "id": "2602.22329",
@@ -258,7 +434,10 @@
   "planets": [
    "TOI-260 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae472f"
  },
  {
   "id": "2602.22327",
@@ -268,7 +447,10 @@
   "planets": [
    "HD 15337 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae2d12"
  },
  {
   "id": "2602.14343",
@@ -278,7 +460,10 @@
   "planets": [
    "GJ 1214 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Astronomy &amp; Astrophysics",
+  "doi": "10.1051/0004-6361/202558426"
  },
  {
   "id": "2602.10330",
@@ -288,7 +473,10 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Astronomy &amp; Astrophysics",
+  "doi": "10.1051/0004-6361/202659009"
  },
  {
   "id": "2602.09553",
@@ -298,7 +486,10 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae448e"
  },
  {
   "id": "2602.07127",
@@ -308,7 +499,10 @@
   "planets": [
    "GJ 876 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "AJ",
+  "doi": "10.3847/1538-3881/ae8adf"
  },
  {
   "id": "2601.22115",
@@ -320,7 +514,25 @@
    "LHS 1140 b",
    "TOI-4336 A b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202558308"
+ },
+ {
+  "id": "2601.21774",
+  "title": "Hidden Gems in TESS: sherlock finds two new rocky planets around nearby M dwarfs",
+  "url": "https://arxiv.org/abs/2601.21774",
+  "published": "2026-01-29",
+  "planets": [
+   "TOI-237 b",
+   "TOI-237 c",
+   "TOI-4336 A c"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag710"
  },
  {
   "id": "2601.18769",
@@ -330,7 +542,8 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2601.18606",
@@ -340,7 +553,10 @@
   "planets": [
    "K2-290 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJ",
+  "doi": "10.3847/1538-4357/ae3d35"
  },
  {
   "id": "2601.15927",
@@ -350,7 +566,10 @@
   "planets": [
    "55 Cnc e"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag180"
  },
  {
   "id": "2601.14254",
@@ -362,7 +581,10 @@
    "TOI-776 b",
    "TOI-776 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag1043"
  },
  {
   "id": "2512.10876",
@@ -374,7 +596,10 @@
    "LP 791-18 c",
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Nature Astronomy",
+  "doi": "10.1038/s41550-025-02723-3"
  },
  {
   "id": "2512.06817",
@@ -385,7 +610,10 @@
    "TOI-2094 b",
    "TOI-7166 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/stag367"
  },
  {
   "id": "2511.19013",
@@ -395,7 +623,10 @@
   "planets": [
    "TOI-776 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/staf2066"
  },
  {
   "id": "2511.16722",
@@ -405,7 +636,10 @@
   "planets": [
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "MNRAS",
+  "doi": "10.1093/mnras/staf1969"
  },
  {
   "id": "2511.13830",
@@ -415,7 +649,10 @@
   "planets": [
    "TOI-270 d"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "Astronomy &amp; Astrophysics",
+  "doi": "10.1051/0004-6361/202452192"
  },
  {
   "id": "2510.24224",
@@ -425,7 +662,10 @@
   "planets": [
    "K2-18 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJ",
+  "doi": "10.3847/1538-4357/ae18d7"
  },
  {
   "id": "2510.18098",
@@ -436,7 +676,8 @@
    "K2-18 b",
    "K2-18 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pre"
  },
  {
   "id": "2510.14927",
@@ -446,7 +687,10 @@
   "planets": [
    "TOI-756 b"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202555684"
  },
  {
   "id": "2510.11490",
@@ -456,6 +700,22 @@
   "planets": [
    "TOI-5789 c"
   ],
-  "first_seen": "2026-10-15"
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202557662"
+ },
+ {
+  "id": "2510.11397",
+  "title": "Reanalysis of the eclipses of LHS 1140 c: No evidence of an atmosphere and implications for the internal structure of the planet",
+  "url": "https://arxiv.org/abs/2510.11397",
+  "published": "2025-10-13",
+  "planets": [
+   "LHS 1140 c"
+  ],
+  "first_seen": "2026-10-15",
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ae3da3"
  }
 ]

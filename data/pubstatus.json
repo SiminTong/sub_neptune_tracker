@@ -20,6 +20,13 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2403.03325": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
  "2404.01264": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-3881/ad3917",
@@ -64,10 +71,10 @@
  },
  "2502.20501": {
   "checked": "2026-10-15",
-  "doi": null,
+  "doi": "10.3847/1538-3881/adb975",
   "j": "AJ",
-  "ps": "acc",
-  "src": "manual check 2026-10-15"
+  "ps": "pub",
+  "src": "Crossref"
  },
  "2504.12267": {
   "checked": "2026-10-15",
@@ -83,12 +90,152 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2510.11397": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae3da3",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2510.11490": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202557662",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2510.14927": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202555684",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2510.18098": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2510.24224": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae18d7",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2511.13830": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202452192",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2511.16722": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf1969",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2511.19013": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/staf2066",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2512.06817": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag367",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2512.10876": {
+  "checked": "2026-10-15",
+  "doi": "10.1038/s41550-025-02723-3",
+  "j": "Nature Astronomy",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
  "2512.15844": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/ae247d",
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2601.14254": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag1043",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2601.15927": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag180",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2601.18606": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae3d35",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2601.18769": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2601.21774": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag710",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2601.22115": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202558308",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2602.07127": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae8adf",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2602.09553": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae448e",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2602.10330": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202659009",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2602.14343": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202558426",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
  },
  "2602.22327": {
   "checked": "2026-10-15",
@@ -97,11 +244,249 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
+ "2602.22329": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae472f",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2602.22830": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae82f1",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2603.02209": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag484",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2603.18923": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae6864",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2603.19803": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2603.26474": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202659251",
+  "j": "A&A",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2603.28238": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "A&A",
+  "ps": "acc",
+  "src": "arXiv comment"
+ },
+ "2603.29700": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2604.02332": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae4c45",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2604.07987": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag780",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2604.11911": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae7f23",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2604.15292": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202558512",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2604.15891": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag1489",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2605.02036": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae5f8b",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2605.08752": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae6917",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2605.15003": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae6c26",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2605.17803": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2606.03740": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-3881/ae7a32",
+  "j": "AJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2606.06691": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae6cdb",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "arXiv metadata"
+ },
+ "2606.20249": {
+  "checked": "2026-10-15",
+  "doi": "10.1051/0004-6361/202660017",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2606.20464": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2607.00950": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae6640",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
  "2607.00973": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/ae6507",
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
+ },
+ "2608.06207": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2608.13473": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2608.19100": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/1538-4357/ae9a84",
+  "j": "ApJ",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2608.24803": {
+  "checked": "2026-10-15",
+  "doi": "10.1093/mnras/stag1606",
+  "j": "MNRAS",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2609.05264": {
+  "checked": "2026-10-15",
+  "doi": "10.3847/2041-8213/ae8c2d",
+  "j": "ApJL",
+  "ps": "pub",
+  "src": "Crossref"
+ },
+ "2609.09893": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.14704": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.17792": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.34635": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.35607": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.36206": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": null,
+  "ps": "pre",
+  "src": "no journal version found"
+ },
+ "2609.37982": {
+  "checked": "2026-10-15",
+  "doi": null,
+  "j": "ApJL on October",
+  "ps": "acc",
+  "src": "arXiv comment"
  }
 }
