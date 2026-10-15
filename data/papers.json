@@ -1,1 +1,461 @@
-[]
+[
+ {
+  "id": "2609.35607",
+  "title": "JWST NIRSpec G395H Transmission Spectra of Two Similar Sub-Neptunes in the TOI-125 System",
+  "url": "https://arxiv.org/abs/2609.35607",
+  "published": "2026-09-28",
+  "planets": [
+   "TOI-125 b",
+   "TOI-125 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2609.34635",
+  "title": "Beyond gas dwarfs and water worlds: hybrid envelopes among the M-dwarf sub-Neptunes characterised with JWST",
+  "url": "https://arxiv.org/abs/2609.34635",
+  "published": "2026-09-28",
+  "planets": [
+   "LHS 1140 b",
+   "LP 791-18 c",
+   "TOI-270 d",
+   "TOI-776 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2609.17792",
+  "title": "Uncovering temperate worlds: an updated look at the K2-3 system with ESPRESSO",
+  "url": "https://arxiv.org/abs/2609.17792",
+  "published": "2026-09-15",
+  "planets": [
+   "K2-3 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2609.14704",
+  "title": "WINERED Detects a Strong Atmospheric Outflow on the Sub-Neptune GJ 3090b",
+  "url": "https://arxiv.org/abs/2609.14704",
+  "published": "2026-09-13",
+  "planets": [
+   "GJ 3090 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2609.05264",
+  "title": "A Homogeneous Survey of JWST MIRI Transmission Spectra of 10 Exoplanets",
+  "url": "https://arxiv.org/abs/2609.05264",
+  "published": "2026-09-04",
+  "planets": [
+   "K2-18 b",
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2608.19100",
+  "title": "Wet Removal and Cloud Enhancement: The Microphysics of Cloud-Haze Interactions on Sub-Neptunes",
+  "url": "https://arxiv.org/abs/2608.19100",
+  "published": "2026-08-19",
+  "planets": [
+   "GJ 1214 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2608.13473",
+  "title": "No Helium Detected in LHS 1140 b from Four JWST NIRISS/SOSS Transits",
+  "url": "https://arxiv.org/abs/2608.13473",
+  "published": "2026-08-13",
+  "planets": [
+   "LHS 1140 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2607.00973",
+  "title": "Transmission Spectrum of the Benchmark Temperate Exo-Neptune TOI-1231 b",
+  "url": "https://arxiv.org/abs/2607.00973",
+  "published": "2026-07-01",
+  "planets": [
+   "TOI-1231 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2607.00950",
+  "title": "The Mid-Infrared Transmission Spectrum of the Temperate Sub-Neptune TOI-270 d",
+  "url": "https://arxiv.org/abs/2607.00950",
+  "published": "2026-07-01",
+  "planets": [
+   "K2-18 b",
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2606.20464",
+  "title": "Atmospheric diversity of sub-Neptunes from formation with rock, water, and soot",
+  "url": "https://arxiv.org/abs/2606.20464",
+  "published": "2026-06-18",
+  "planets": [
+   "K2-18 b",
+   "TOI-270 d",
+   "TOI-421 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2606.06691",
+  "title": "Ultraviolet Radiation Effects on the Optical Properties of Water-Dominated Exoplanet Hazes",
+  "url": "https://arxiv.org/abs/2606.06691",
+  "published": "2026-06-04",
+  "planets": [
+   "GJ 1214 b",
+   "LHS 1140 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2605.17803",
+  "title": "A Hycean Interpretation of K2-18b Supported by Photochemical Atmospheric Compositional",
+  "url": "https://arxiv.org/abs/2605.17803",
+  "published": "2026-05-18",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2605.08752",
+  "title": "Coupling magma-ocean and atmospheres in spectral retrievals of sub-Neptunes",
+  "url": "https://arxiv.org/abs/2605.08752",
+  "published": "2026-05-09",
+  "planets": [
+   "K2-18 b",
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2605.02036",
+  "title": "JWST unveils a high mean molecular weight atmosphere for mini-Neptune TOI-1130b: Evidence for formation beyond the water ice line",
+  "url": "https://arxiv.org/abs/2605.02036",
+  "published": "2026-05-03",
+  "planets": [
+   "TOI-1130 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2604.15891",
+  "title": "Beyond the mass-radius plane: Integrated radiative-convective and interior structure simulations of the exoplanet continuum",
+  "url": "https://arxiv.org/abs/2604.15891",
+  "published": "2026-04-17",
+  "planets": [
+   "TOI-421 b",
+   "pi Men c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2604.15292",
+  "title": "Cloudy with a chance of metals: Indications of CO$_2$ in the atmosphere of GJ 1214 b from high-resolution K-band spectroscopy",
+  "url": "https://arxiv.org/abs/2604.15292",
+  "published": "2026-04-16",
+  "planets": [
+   "GJ 1214 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2604.11911",
+  "title": "Evidence for an Atmosphere on the Ultra-Short Period super-Earth HD 3167 b",
+  "url": "https://arxiv.org/abs/2604.11911",
+  "published": "2026-04-13",
+  "planets": [
+   "HD 3167 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2604.07987",
+  "title": "Three-dimensional transport-induced chemistry on temperate sub-Neptune K2-18b, Part II: the combined effects of atmospheric dynamics and chemical reactions",
+  "url": "https://arxiv.org/abs/2604.07987",
+  "published": "2026-04-09",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2603.29700",
+  "title": "First Detection of Exoplanetary Cannabinoids: Evidence for THC and CBD in the Atmosphere of K2-18b",
+  "url": "https://arxiv.org/abs/2603.29700",
+  "published": "2026-03-31",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2603.26474",
+  "title": "The atmosphere of K2-18 b: The role of hazes, clouds and photoelectrons",
+  "url": "https://arxiv.org/abs/2603.26474",
+  "published": "2026-03-27",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2603.19803",
+  "title": "Three outstanding physical questions for K2-18 b and other temperate sub-Neptunes",
+  "url": "https://arxiv.org/abs/2603.19803",
+  "published": "2026-03-20",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2603.18923",
+  "title": "Organosulfur Chemistry on sub-Neptunes: Implications for hazes and biosignatures",
+  "url": "https://arxiv.org/abs/2603.18923",
+  "published": "2026-03-19",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2603.02209",
+  "title": "Ground-based Atmospheric Characterization of Super-Earth L 98-59 d at High Spectral Resolution",
+  "url": "https://arxiv.org/abs/2603.02209",
+  "published": "2026-03-02",
+  "planets": [
+   "L 98-59 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.22830",
+  "title": "Probing the Atmospheres of Young Long-Period Sub-Neptune Progenitors with ELT/ANDES",
+  "url": "https://arxiv.org/abs/2602.22830",
+  "published": "2026-02-26",
+  "planets": [
+   "TOI-451 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.22329",
+  "title": "JWST COMPASS: A NIRSpec G395H Transmission Spectrum of Radius Valley-Dweller TOI-260 b",
+  "url": "https://arxiv.org/abs/2602.22329",
+  "published": "2026-02-25",
+  "planets": [
+   "TOI-260 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.22327",
+  "title": "JWST COMPASS: NIRSpec/G395H Transmission Observations of the Sub-Neptune HD 15337 c",
+  "url": "https://arxiv.org/abs/2602.22327",
+  "published": "2026-02-25",
+  "planets": [
+   "HD 15337 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.14343",
+  "title": "Atmospheric constraints on GJ 1214 b from CRIRES+ and prospects for characterisation with ANDES",
+  "url": "https://arxiv.org/abs/2602.14343",
+  "published": "2026-02-15",
+  "planets": [
+   "GJ 1214 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.10330",
+  "title": "Efficient reduction of stellar contamination and noise in planetary transmission spectra using neural networks",
+  "url": "https://arxiv.org/abs/2602.10330",
+  "published": "2026-02-10",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.09553",
+  "title": "A Narrowband Technosignature Search Toward the Hycean Candidate K2-18b Using the VLA and MeerKAT",
+  "url": "https://arxiv.org/abs/2602.09553",
+  "published": "2026-02-10",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2602.07127",
+  "title": "A New Strategy for Using Spectroscopic Phase Curves to Characterize Non-Transiting Planets",
+  "url": "https://arxiv.org/abs/2602.07127",
+  "published": "2026-02-06",
+  "planets": [
+   "GJ 876 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2601.22115",
+  "title": "Densities of small planets around the M dwarfs TOI-4336 A and TOI-4342 with ESPRESSO: Three sub-Neptunes, one super-Earth, and a Neptune-mass candidate",
+  "url": "https://arxiv.org/abs/2601.22115",
+  "published": "2026-01-29",
+  "planets": [
+   "K2-18 b",
+   "LHS 1140 b",
+   "TOI-4336 A b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2601.18769",
+  "title": "The Role of Intrinsic Temperature and Vertical Mixing in Characterizing Sub-Neptune Atmospheres",
+  "url": "https://arxiv.org/abs/2601.18769",
+  "published": "2026-01-26",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2601.18606",
+  "title": "Atmospheric Circulation of High-Obliquity Mini-Neptunes",
+  "url": "https://arxiv.org/abs/2601.18606",
+  "published": "2026-01-26",
+  "planets": [
+   "K2-290 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2601.15927",
+  "title": "Hot and cloudy: High temperature clouds in super-Earths and sub-Neptunes",
+  "url": "https://arxiv.org/abs/2601.15927",
+  "published": "2026-01-22",
+  "planets": [
+   "55 Cnc e"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2601.14254",
+  "title": "Using observations of escaping H/He to constrain the atmospheric composition of sub-Neptunes",
+  "url": "https://arxiv.org/abs/2601.14254",
+  "published": "2026-01-20",
+  "planets": [
+   "K2-18 b",
+   "TOI-776 b",
+   "TOI-776 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2512.10876",
+  "title": "Diversity in the haziness and chemistry of temperate sub-Neptunes",
+  "url": "https://arxiv.org/abs/2512.10876",
+  "published": "2025-12-11",
+  "planets": [
+   "K2-18 b",
+   "LP 791-18 c",
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2512.06817",
+  "title": "Multicolour Validation of Two Temperate Mini-Neptunes Around M-dwarf Habitable Zones",
+  "url": "https://arxiv.org/abs/2512.06817",
+  "published": "2025-12-07",
+  "planets": [
+   "TOI-2094 b",
+   "TOI-7166 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2511.19013",
+  "title": "Resolving the flat-spectrum conundrum: clumpy aerosol distributions in sub-Neptune atmospheres",
+  "url": "https://arxiv.org/abs/2511.19013",
+  "published": "2025-11-24",
+  "planets": [
+   "TOI-776 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2511.16722",
+  "title": "The Surface and Interior Conditions of Temperate Sub-Neptune TOI-270 d",
+  "url": "https://arxiv.org/abs/2511.16722",
+  "published": "2025-11-20",
+  "planets": [
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2511.13830",
+  "title": "The atmospheric composition of TOI-270 d",
+  "url": "https://arxiv.org/abs/2511.13830",
+  "published": "2025-11-17",
+  "planets": [
+   "TOI-270 d"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2510.24224",
+  "title": "Bistability, Oscillations, and Multistability on Hycean Planets",
+  "url": "https://arxiv.org/abs/2510.24224",
+  "published": "2025-10-28",
+  "planets": [
+   "K2-18 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2510.18098",
+  "title": "The Atmospheric Composition of Sub-Neptune K2-18 b and Implications for its Formation",
+  "url": "https://arxiv.org/abs/2510.18098",
+  "published": "2025-10-20",
+  "planets": [
+   "K2-18 b",
+   "K2-18 c"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2510.14927",
+  "title": "NIRPS and TESS reveal a peculiar system around the M dwarf TOI-756: A transiting sub-Neptune and a cold eccentric giant",
+  "url": "https://arxiv.org/abs/2510.14927",
+  "published": "2025-10-16",
+  "planets": [
+   "TOI-756 b"
+  ],
+  "first_seen": "2026-10-15"
+ },
+ {
+  "id": "2510.11490",
+  "title": "The GAPS programme at TNG LXXI. A sub-Neptune suitable for atmospheric characterization in a multiplanet and mutually inclined system orbiting the bright K dwarf TOI-5789 (HIP 99452)",
+  "url": "https://arxiv.org/abs/2510.11490",
+  "published": "2025-10-13",
+  "planets": [
+   "TOI-5789 c"
+  ],
+  "first_seen": "2026-10-15"
+ }
+]
