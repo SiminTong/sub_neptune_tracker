@@ -20,13 +20,6 @@
   "ps": "pub",
   "src": "manual check 2026-10-15"
  },
- "2403.03325": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
  "2404.01264": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-3881/ad3917",
@@ -111,13 +104,6 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
- "2510.18098": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
  "2510.24224": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-4357/ae18d7",
@@ -187,13 +173,6 @@
   "j": "ApJ",
   "ps": "pub",
   "src": "Crossref"
- },
- "2601.18769": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
  },
  "2601.21774": {
   "checked": "2026-10-15",
@@ -272,13 +251,6 @@
   "ps": "pub",
   "src": "arXiv metadata"
  },
- "2603.19803": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
  "2603.26474": {
   "checked": "2026-10-15",
   "doi": "10.1051/0004-6361/202659251",
@@ -292,13 +264,6 @@
   "j": "A&A",
   "ps": "acc",
   "src": "arXiv comment"
- },
- "2603.29700": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
  },
  "2604.02332": {
   "checked": "2026-10-15",
@@ -356,13 +321,6 @@
   "ps": "pub",
   "src": "Crossref"
  },
- "2605.17803": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
  "2606.03740": {
   "checked": "2026-10-15",
   "doi": "10.3847/1538-3881/ae7a32",
@@ -384,13 +342,6 @@
   "ps": "pub",
   "src": "Crossref"
  },
- "2606.20464": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
  "2607.00950": {
   "checked": "2026-10-15",
   "doi": "10.3847/2041-8213/ae6640",
@@ -404,20 +355,6 @@
   "j": "ApJL",
   "ps": "pub",
   "src": "manual check 2026-10-15"
- },
- "2608.06207": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2608.13473": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
  },
  "2608.19100": {
   "checked": "2026-10-15",
@@ -439,48 +376,6 @@
   "j": "ApJL",
   "ps": "pub",
   "src": "Crossref"
- },
- "2609.09893": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2609.14704": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2609.17792": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2609.34635": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2609.35607": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
- },
- "2609.36206": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": null,
-  "ps": "pre",
-  "src": "no journal version found"
  },
  "2609.37982": {
   "checked": "2026-10-15",

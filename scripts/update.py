@@ -343,12 +343,18 @@ def annotate(rows, papers, status):
     def pick(i):
         st = status.get(i) or {}
         return {k: v for k, v in (("ps", st.get("ps")), ("j", st.get("j")), ("doi", st.get("doi"))) if v}
+    def clear(o):
+        for k in ("ps", "j", "doi"):
+            o.pop(k, None)
     for r in rows:
         for ref in r.get("refs") or []:
+            clear(ref)
             ref.update(pick(arxiv_id(ref.get("u"))))
         if not r.get("refs") and arxiv_id(r.get("url")):
+            clear(r)
             r.update(pick(arxiv_id(r["url"])))
     for p in papers:
+        clear(p)
         p.update(pick(p["id"]))
 
 
