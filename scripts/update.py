@@ -3,7 +3,9 @@
 
 1. Pulls every planet with R_MIN <= R <= R_MAX Earth radii (see below) from the NASA Exoplanet Archive (TAP).
 2. Searches arXiv (astro-ph.EP) for recent JWST papers and matches them to catalog planets by name.
-3. Merges everything with the hand-reviewed results in data/jwst_results.json and writes data/data.json.
+3. Checks whether each cited arXiv paper has a journal version (NASA ADS if a token is set, then
+   arXiv metadata, then Crossref) and records it in data/pubstatus.json.
+4. Merges everything with the hand-reviewed results in data/jwst_results.json and writes data/data.json.
 
 Papers found automatically are marked status "new" (unreviewed). To promote one, add a row to
 data/jwst_results.json with its composition and status (mol / flat / amb).
@@ -11,7 +13,9 @@ data/jwst_results.json with its composition and status (mol / flat / amb).
 Usage: python scripts/update.py [--offline]   (offline skips all network calls)
 """
 import datetime
+import difflib
 import json
+import os
 import re
 import sys
 import time
@@ -36,7 +40,7 @@ ARXIV_QUERY = (
     "(abs:\"sub-Neptune\" OR abs:\"mini-Neptune\" OR abs:\"exo-Neptune\" OR abs:\"super-Earth\" "
     "OR abs:\"sub-Neptunes\" OR abs:\"transmission spectrum\")"
 )
-ATOM = {"a": "http://www.w3.org/2005/Atom"}
+ATOM = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
 
 
 def norm(s):
@@ -117,6 +121,181 @@ def get_papers(catalog_names):
     return papers
 
 
+# ---------------------------------------------------------------------------
+# Peer-review status of cited arXiv papers
+#   "pub" = a journal version exists, "acc" = accepted/in press, "pre" = preprint only (none found)
+# Order of evidence: NASA ADS (needs ADS_API_TOKEN; counts publisher full-text links or the REFEREED
+# flag), then arXiv's own journal_ref / DOI / "accepted" comment, then a Crossref title match.
+# Results live in data/pubstatus.json; a "pub" result is final, everything else is re-checked weekly.
+# ---------------------------------------------------------------------------
+ADS_TOKEN = os.environ.get("ADS_API_TOKEN", "").strip()
+JOURNALS = {
+    "The Astrophysical Journal Letters": "ApJL", "The Astrophysical Journal": "ApJ",
+    "The Astronomical Journal": "AJ", "Monthly Notices of the Royal Astronomical Society": "MNRAS",
+    "Astronomy & Astrophysics": "A&A", "Astronomy and Astrophysics": "A&A",
+    "The Planetary Science Journal": "PSJ", "Nature Astronomy": "Nature Astronomy",
+    "Publications of the Astronomical Society of the Pacific": "PASP",
+}
+DOI_JOURNAL = [
+    ("10.3847/2041-8213", "ApJL"), ("10.3847/1538-4357", "ApJ"), ("10.3847/1538-3881", "AJ"),
+    ("10.3847/psj", "PSJ"), ("10.1093/mnras", "MNRAS"), ("10.1051/0004-6361", "A&A"),
+    ("10.1038/s41586", "Nature"), ("10.1038/s41550", "Nature Astronomy"),
+    ("10.1126/science", "Science"), ("10.1088/1538-3873", "PASP"),
+]
+ACC_RE = re.compile(
+    r"(accepted|in press|to appear|published)\s+(?:for publication\s+)?(?:in|by|at)\s+(?:the\s+)?([A-Za-z&. ]{2,60})", re.I)
+ARXIV_ID_RE = re.compile(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
+
+
+def arxiv_id(url):
+    m = ARXIV_ID_RE.search(url or "")
+    return m.group(1) if m else None
+
+
+def short_journal(name=None, doi=None):
+    if name:
+        return JOURNALS.get(name.strip(), name.strip())
+    for pre, j in DOI_JOURNAL:
+        if (doi or "").lower().startswith(pre):
+            return j
+    return None
+
+
+def norm_title(t):
+    return re.sub(r"[^a-z0-9]", "", (t or "").lower())
+
+
+def arxiv_meta(ids):
+    out = {}
+    for i in range(0, len(ids), 40):
+        chunk = ids[i:i + 40]
+        url = ARXIV + "?" + urllib.parse.urlencode({"id_list": ",".join(chunk), "max_results": len(chunk)})
+        root = ET.fromstring(fetch(url))
+        for e in root.findall("a:entry", ATOM):
+            aid = re.sub(r"v\d+$", "", e.findtext("a:id", "", ATOM).rsplit("/abs/", 1)[-1])
+            first = e.findtext("a:author/a:name", "", ATOM).split()
+            out[aid] = {
+                "title": " ".join(e.findtext("a:title", "", ATOM).split()),
+                "author": first[-1] if first else "",
+                "journal_ref": (e.findtext("x:journal_ref", "", ATOM) or "").strip(),
+                "doi": (e.findtext("x:doi", "", ATOM) or "").strip(),
+                "comment": " ".join((e.findtext("x:comment", "", ATOM) or "").split()),
+            }
+        time.sleep(3)
+    return out
+
+
+def meta_status(m):
+    if m.get("doi") or m.get("journal_ref"):
+        j = short_journal(doi=m.get("doi")) or (m.get("journal_ref") or "").split(",")[0].strip() or None
+        return {"ps": "pub", "j": j, "doi": m.get("doi") or None, "src": "arXiv metadata"}
+    c = ACC_RE.search(m.get("comment") or "")
+    if c:
+        return {"ps": "acc", "j": c.group(2).strip().rstrip(".,; "), "doi": None, "src": "arXiv comment"}
+    return None
+
+
+def ads_status(aid):
+    q = urllib.parse.urlencode({"q": f"identifier:arXiv:{aid}", "rows": 1,
+                                "fl": "bibcode,doctype,pub,doi,esources,property"})
+    req = urllib.request.Request("https://api.adsabs.harvard.edu/v1/search/query?" + q,
+                                 headers={**UA, "Authorization": f"Bearer {ADS_TOKEN}"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        docs = json.loads(r.read()).get("response", {}).get("docs", [])
+    if not docs:
+        return None
+    d = docs[0]
+    # Publisher full text (PUB_PDF / PUB_HTML) or the REFEREED flag means a journal version exists;
+    # a preprint-only record has just EPRINT_* sources.
+    pub = bool(set(d.get("esources") or []) & {"PUB_PDF", "PUB_HTML"}) or "REFEREED" in (d.get("property") or [])
+    doi = (d.get("doi") or [None])[0]
+    if pub:
+        return {"ps": "pub", "j": short_journal(d.get("pub"), doi), "doi": doi, "src": "NASA ADS"}
+    return {"ps": "pre", "j": None, "doi": None, "src": "NASA ADS"}
+
+
+def crossref_status(m):
+    if not m.get("title"):
+        return None
+    url = "https://api.crossref.org/works?" + urllib.parse.urlencode({
+        "query.bibliographic": m["title"], "rows": 3, "select": "title,DOI,container-title,type,author"})
+    items = json.loads(fetch(url)).get("message", {}).get("items", [])
+    want, fa = norm_title(m["title"]), (m.get("author") or "").lower()
+    for it in items:
+        if it.get("type") != "journal-article":
+            continue
+        if difflib.SequenceMatcher(None, want, norm_title((it.get("title") or [""])[0])).ratio() < 0.9:
+            continue
+        cont = (it.get("container-title") or [""])[0]
+        if not cont or "arxiv" in cont.lower():
+            continue
+        fam = [(a.get("family") or "").lower() for a in (it.get("author") or [])[:3]]
+        if fa and fam and fa not in fam:
+            continue
+        return {"ps": "pub", "j": short_journal(cont, it.get("DOI")), "doi": it.get("DOI"), "src": "Crossref"}
+    return None
+
+
+def update_pubstatus(ids, offline, today):
+    path = DATA / "pubstatus.json"
+    cache = load_json(path, {})
+    todo = [i for i in ids if (cache.get(i) or {}).get("ps") != "pub"]
+    if offline or not todo:
+        return cache
+    try:
+        meta = arxiv_meta(todo)
+    except Exception as e:  # noqa: BLE001
+        print(f"WARNING: arXiv metadata lookup failed: {e}", file=sys.stderr)
+        meta = {}
+    for i in todo:
+        m, found, errors = meta.get(i, {}), [], 0
+        steps = []
+        if ADS_TOKEN:
+            steps.append(lambda i=i: ads_status(i))
+        steps.append(lambda m=m: meta_status(m) if m else None)
+        for step in steps:
+            try:
+                r = step()
+                if r:
+                    found.append(r)
+            except Exception as e:  # noqa: BLE001
+                errors += 1
+                print(f"WARNING: status check failed for {i}: {e}", file=sys.stderr)
+        if not any(r["ps"] == "pub" for r in found) and m:
+            try:
+                r = crossref_status(m)
+                if r:
+                    found.append(r)
+            except Exception as e:  # noqa: BLE001
+                errors += 1
+                print(f"WARNING: Crossref check failed for {i}: {e}", file=sys.stderr)
+            time.sleep(1)
+        best = next((r for r in found if r["ps"] == "pub"), None) or next((r for r in found if r["ps"] == "acc"), None)
+        if best is None and found:
+            best = found[0]
+        if best is None:
+            if errors and i in cache:
+                continue  # every check failed: keep the earlier result
+            best = {"ps": "pre", "j": None, "doi": None, "src": "no journal version found"}
+        cache[i] = {**best, "checked": today}
+    path.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True))
+    return cache
+
+
+def annotate(rows, papers, status):
+    """Copy ps/j/doi from the status cache onto refs, rows and papers."""
+    def pick(i):
+        st = status.get(i) or {}
+        return {k: v for k, v in (("ps", st.get("ps")), ("j", st.get("j")), ("doi", st.get("doi"))) if v}
+    for r in rows:
+        for ref in r.get("refs") or []:
+            ref.update(pick(arxiv_id(ref.get("u"))))
+        if not r.get("refs") and arxiv_id(r.get("url")):
+            r.update(pick(arxiv_id(r["url"])))
+    for p in papers:
+        p.update(pick(p["id"]))
+
+
 def main():
     offline = "--offline" in sys.argv
     today = datetime.date.today().isoformat()
@@ -157,6 +336,12 @@ def main():
             row["res"] = "New JWST paper, not yet reviewed: " + p["title"]
             row["ref"] = f"arXiv:{p['id']} ({p['published']})"
             row["url"] = p["url"]
+
+    ids = sorted({i for r in rows.values()
+                  for i in [arxiv_id(x.get("u")) for x in (r.get("refs") or [])] + [arxiv_id(r.get("url"))] if i}
+                 | {p["id"] for p in papers})
+    status = update_pubstatus(ids, offline, today)
+    annotate(rows.values(), papers, status)
 
     out_rows = sorted(rows.values(), key=lambda r: (r.get("st") is None, r["n"]))
     out = {

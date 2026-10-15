@@ -120,7 +120,7 @@
 "res": "Evidence for CH4 (~1% mixing ratio) in an H2-rich atmosphere; no NH3 or HCN.",
 "refs": [
 {
-"t": "arXiv:2512.15844 (Dec 2025)",
+"t": "Rigby+2025",
 "u": "https://arxiv.org/abs/2512.15844"
 }
 ],
@@ -137,7 +137,7 @@
 "res": "Strong CH4, moderate-to-strong CO2; no significant sulfur species. Consistent with a deep H2-rich atmosphere.",
 "refs": [
 {
-"t": "arXiv:2607.00973 (Jul 2026)",
+"t": "Sarkar+2026",
 "u": "https://arxiv.org/abs/2607.00973"
 }
 ],
@@ -154,7 +154,7 @@
 "res": "No molecular features detected in the 3-5 um spectrum; rules out metallicities below ~180-240x solar for cloud tops above 1 mbar. Planet may sit near the threshold where small-planet atmospheric features become detectable.",
 "refs": [
 {
-"t": "COMPASS team 2025",
+"t": "Teske+2025 (COMPASS)",
 "u": "https://arxiv.org/abs/2502.20501"
 }
 ],

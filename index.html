@@ -21,6 +21,7 @@ th{cursor:pointer;color:var(--mut);font-weight:600;white-space:nowrap;user-selec
 tr:last-child td{border-bottom:0}td.n{white-space:nowrap}.pl{font-weight:600}.host{color:var(--mut);font-size:12px}
 .src{white-space:nowrap;min-width:160px}td.fnd{min-width:260px}
 .cls small{color:var(--mut)}td.cls{min-width:150px}
+.pr{font-size:12px;line-height:1.3}.pr.ok,.pr.ok a{color:var(--ok)}.pr.acc{color:var(--flat)}.pr.pre{color:var(--mut)}
 .pill{display:inline-block;border-radius:99px;padding:1px 9px;font-size:12px;font-weight:600;background:var(--tag);white-space:nowrap}
 .pill.mol{color:var(--ok)}.pill.flat{color:var(--flat)}.pill.new{color:var(--new)}.pill.none{color:var(--mut)}
 a{color:var(--acc)}.note{color:var(--mut);font-size:12.5px;margin-top:14px}
@@ -33,12 +34,14 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 <div class="stat"><b id="s1">–</b><span>planets with JWST results</span></div>
 <div class="stat"><b id="s2">–</b><span>molecules detected</span></div>
 <div class="stat"><b id="s3">–</b><span>featureless / aerosols</span></div>
+<div class="stat"><b id="s7">–</b><span>planets with a journal-published paper</span></div>
 <div class="stat"><b id="s4">–</b><span>new papers to review</span></div>
 <div class="stat"><b id="s5">–</b><span>catalog planets (<span class="rg">1.6–4</span> R⊕)</span></div>
 </div>
 <div class="bar">
 <input type="search" id="q" placeholder="Search planet, host, molecule (e.g. CH4, K2-18)…">
 <select id="f"><option value="">All results</option><option value="mol">Molecules detected</option><option value="flat">Featureless / aerosols</option><option value="amb">Ambiguous / debated</option><option value="new">New paper (unreviewed)</option></select>
+<select id="prf"><option value="">Any publication status</option><option value="pub">Has a journal-published paper</option><option value="pre">Not confirmed as journal-published</option></select>
 <select id="rr"><option value="">Any radius</option><option value="a">&lt; 1.6 R⊕ (super-Earth)</option><option value="b">1.6–4 R⊕ (sub-Neptune)</option><option value="c">&gt; 4 R⊕ (Neptune-size and larger)</option></select>
 <select id="pub"><option value="pub">With published JWST results</option><option value="none">No published JWST results</option><option value="all">All planets</option></select>
 </div>
@@ -47,6 +50,7 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 <p class="note" id="foot"></p>
 <details><summary>How this works</summary>
 <p class="note" style="margin-top:8px">Every Monday a GitHub Action downloads all planets of <span class="rg">1.6–4</span> R⊕ from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" rel="noopener">NASA Exoplanet Archive</a> and searches arXiv (astro-ph.EP) for new JWST papers that name those planets. Hand-reviewed results (instruments, composition, source) come from <code>data/jwst_results.json</code>. A planet flagged <b>New paper</b> was found automatically and has not been reviewed yet; its composition is not summarized until someone adds it to that file.</p>
+<p class="note"><b>Publication status:</b> each cited paper is checked for a journal version. “Published” means NASA ADS lists publisher full text or a refereed record, or the arXiv entry or Crossref shows a journal article and DOI (the badge links to it when a DOI is known). “Accepted” comes from the authors' arXiv comment. “No journal version found” means none of those sources shows one yet, so treat the paper as a preprint. Preprints are checked again every week.</p>
 <p class="note"><b>Classification:</b> for the reviewed planets this is the label used in the cited paper's title or abstract (see Source). For all other planets no per-planet label exists in the catalog, so the page shows a size class from the radius alone: &lt;1.25 R⊕ Earth-size, 1.25–1.6 super-Earth (likely rocky), 1.6–4 sub-Neptune, 4–6 Neptune-size. These are conventional cut-offs, not a measurement of composition, and a planet's literature label can differ.</p>
 <p class="note">“No published result in tracker” only means this tracker has no reviewed paper for that planet. Some curated masses and temperatures are rounded; verify against the cited source before relying on a row.</p></details>
 </main>
@@ -54,27 +58,31 @@ details{margin-top:18px;background:var(--card);border:1px solid var(--line);bord
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const cols=[['n','Planet'],['r','R (R⊕)'],['m','M (M⊕)'],['t','Teq (K)'],['cl','Classification'],['st','JWST outcome'],['ins','Instruments'],['res','Composition / finding'],['ref','Source']];
 const lab={mol:['Molecules detected','mol'],flat:['Featureless / aerosols','flat'],amb:['Ambiguous / debated','none'],new:['New paper (unreviewed)','new']};
+const doiOk=d=>/^10\.\d{4,9}\/\S+$/.test(d||'');
+const badge=r=>{const j=esc(r.j||'journal'),l=doiOk(r.doi)?`<a href="https://doi.org/${encodeURI(r.doi)}" target="_blank" rel="noopener">✓ Published · ${j}</a>`:`✓ Published · ${j}`;
+ return r.ps==='pub'?`<br><span class="pr ok">${l}</span>`:r.ps==='acc'?`<br><span class="pr acc">Accepted · ${j}</span>`:r.ps==='pre'?'<br><span class="pr pre">Preprint · no journal version found</span>':/arxiv\.org/.test(r.u||r.url||'')?'<br><span class="pr pre">Journal status not checked yet</span>':''};
+const pstat=x=>x.refs&&x.refs.length?x.refs.map(r=>r.ps):[x.ps];
 const sizeClass=r=>r==null?'Unknown size':r<1.25?'Earth-size':r<1.6?'Super-Earth (likely rocky)':r<=4?'Sub-Neptune':r<=6?'Neptune-size':'Larger than Neptune';
 let D=null,sk='n',sd=1,limit=200;
 $('hd').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
 $('hd').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sd=sk===k?-sd:1;sk=k;limit=200;draw()};
-['q','f','rr','pub'].forEach(i=>$(i).oninput=()=>{limit=200;draw()});
+['q','f','prf','rr','pub'].forEach(i=>$(i).oninput=()=>{limit=200;draw()});
 $('more').onclick=()=>{limit+=300;draw()};
 function draw(){
  if(!D)return;
- const q=$('q').value.toLowerCase(),f=$('f').value,pub=$('pub').value;
+ const q=$('q').value.toLowerCase(),f=$('f').value,pub=$('pub').value,prf=$('prf').value;
  const rr=$('rr').value,inr=x=>!rr||x.r!=null&&(rr==='a'?x.r<1.6:rr==='b'?x.r>=1.6&&x.r<=4:x.r>4);
- let a=D.rows.filter(x=>(pub==='all'||(pub==='none'?!x.st:!!x.st))&&(!f||x.st===f)&&inr(x)&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
+ let a=D.rows.filter(x=>(pub==='all'||(pub==='none'?!x.st:!!x.st))&&(!f||x.st===f)&&inr(x)&&(!prf||(prf==='pub'?pstat(x).includes('pub'):x.st&&!pstat(x).includes('pub')))&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
  a.sort((x,y)=>{const u=x[sk],v=y[sk];if(u==null)return 1;if(v==null)return -1;return (u>v?1:u<v?-1:0)*sd});
  const shown=a.slice(0,limit),n=v=>v==null?'—':v;
- $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,lk=(t,u)=>/^https:\/\//.test(u||'')?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`:esc(t),src=x.refs&&x.refs.length?x.refs.map(r=>lk(r.t,r.u)).join('<br>'):x.ref?lk(x.ref,x.url):'—';
+ $('tb').innerHTML=shown.map(x=>{const l=x.st?lab[x.st]:null,lk=(t,u)=>/^https:\/\//.test(u||'')?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`:esc(t),src=x.refs&&x.refs.length?x.refs.map(r=>lk(r.t,r.u)+badge(r)).join('<br>'):x.ref?lk(x.ref,x.url)+badge(x):'—';
  return `<tr><td class="n"><div class="pl">${esc(x.n)}</div><div class="host">${esc(x.h)}</div></td><td class="n">${n(x.r)}</td><td class="n">${n(x.m)}</td><td class="n">${n(x.t)}</td><td class="cls">${x.cls?`<b>${esc(x.cls)}</b><br><small>from literature</small>`:`${esc(x.cl)}<br><small>by radius</small>`}</td><td>${l?`<span class="pill ${l[1]}">${l[0]}</span>`:'<span class="pill none">No published result in tracker</span>'}</td><td>${esc(x.ins||'—')}</td><td class="fnd">${esc(x.res||'—')}</td><td class="src">${src}</td></tr>`}).join('')||'<tr><td colspan="9">No matches.</td></tr>';
  $('more').hidden=a.length<=limit;
  $('foot').textContent=`Showing ${shown.length} of ${a.length}. Click a column header to sort.`;
 }
 fetch('data/data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
  D=d;d.rows.forEach(x=>{x.cl=x.cls||sizeClass(x.r)});const R=d.rows,c=s=>R.filter(x=>x.st===s).length;
- $('asof').textContent=d.asof;const rg=(d.r_range||[1.6,4]).join('–');document.querySelectorAll('.rg').forEach(e=>e.textContent=rg);$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');
+ $('asof').textContent=d.asof;const rg=(d.r_range||[1.6,4]).join('–');document.querySelectorAll('.rg').forEach(e=>e.textContent=rg);$('s1').textContent=R.filter(x=>x.st).length;$('s2').textContent=c('mol');$('s3').textContent=c('flat');$('s4').textContent=c('new');$('s7').textContent=R.filter(x=>pstat(x).includes('pub')).length;
  $('s5').textContent=d.catalog_count?d.catalog_count:'not loaded yet';draw();
 }).catch(()=>{$('tb').innerHTML='<tr><td colspan="9">Could not load data/data.json.</td></tr>'});
 </script></body></html>

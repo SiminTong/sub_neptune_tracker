@@ -17,6 +17,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Refresh catalog and papers
+        env:
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}   # optional; see README
         run: python scripts/update.py
       - name: Commit changes
         run: |
