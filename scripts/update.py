@@ -114,6 +114,24 @@ MOL_RE = re.compile(r"detect(?:ion|ed|s|ing)? (?:of )?(?:\w+,? ){0,4}?(?:H2O|wat
                     r"thick (?:volatile )?atmosphere|(?:H2O|CH4|CO2|SO2|NH3) (?:and|,) (?:H2O|CH4|CO2|SO2|NH3)", re.I)
 
 
+def gist(abstract):
+    """The abstract sentence that states the outcome (first one matching the molecule/featureless wording)."""
+    sents = re.split(r"(?<=[.!?])\s+(?=[A-Z])", abstract)
+    for rx in (MOL_RE, FLAT_RE):
+        for t in sents:
+            if rx.search(t):
+                return t if len(t) <= 260 else t[:257].rstrip() + "…"
+    return ""
+
+
+def ref_label(p):
+    """First author's surname + year, e.g. 'Hu+2024' ('Hu 2024' for a single author)."""
+    au, yr = p.get("au") or "", (p.get("published") or "")[:4]
+    if not au:
+        return f"arXiv:{p['id']}"
+    return f"{au}+{yr}" if (p.get("nau") or 2) > 1 else f"{au} {yr}"
+
+
 def auto_class(abstract):
     """Rough, unreviewed outcome from abstract wording: mol / flat / amb."""
     mol, flat = bool(MOL_RE.search(abstract)), bool(FLAT_RE.search(abstract))
@@ -139,7 +157,9 @@ def parse_entries(root, regexes):
         obs = bool(OBS_RE.search(abstract)) and not (THEORY_RE.search(abstract) and not in_title)
         if len(hits) > 6 and not in_title:      # survey/population papers: don't flag individual planets
             hits = []
+        names = [" ".join((a.findtext("a:name", "", ATOM)).split()) for a in e.findall("a:author", ATOM)]
         papers.append({
+            "au": names[0].split()[-1] if names else "", "nau": len(names), "gist": gist(abstract),
             "id": aid, "title": title, "url": f"https://arxiv.org/abs/{aid}",
             "published": (e.findtext("a:published", "", ATOM) or "")[:10], "planets": hits,
             "subject": in_title or (hits if obs else []), "obs": obs, "auto": auto_class(abstract),
@@ -152,6 +172,26 @@ def arxiv_query(q, regexes, n=100, start=0):
         "search_query": q, "sortBy": "submittedDate", "sortOrder": "descending",
         "max_results": n, "start": start})
     return parse_entries(ET.fromstring(fetch(url)), regexes)
+
+
+def backfill(papers, regexes):
+    """Papers saved by an older version lack author/abstract-derived fields: fetch them by id (100 per call)."""
+    todo = [p for p in papers.values() if "au" not in p]
+    for i in range(0, len(todo), 100):
+        chunk = todo[i:i + 100]
+        url = ARXIV + "?" + urllib.parse.urlencode({"id_list": ",".join(p["id"] for p in chunk), "max_results": 100})
+        try:
+            new = {q["id"]: q for q in parse_entries(ET.fromstring(fetch(url)), regexes)}
+        except Exception as e:  # noqa: BLE001
+            print("backfill failed:", e)
+            break
+        for p in chunk:
+            q = new.get(p["id"])
+            if q:
+                p.update({k: q[k] for k in ("au", "nau", "gist", "subject", "obs", "auto")})
+            else:
+                p.setdefault("au", "")  # not retrievable; falls back to the arXiv id
+        time.sleep(3)
 
 
 def get_papers(catalog_names, tracked_hosts=()):
@@ -424,6 +464,8 @@ def main():
             old = seen.get(p["id"])
             p["first_seen"] = (old or {}).get("first_seen", today)
             seen[p["id"]] = p
+    if not offline:
+        backfill(seen, [(v["n"], name_regex(v["n"])) for v in catalog.values()])
     papers = sorted(seen.values(), key=lambda p: p["published"], reverse=True)
 
     rows = {k: dict(v) for k, v in catalog.items()}
@@ -451,17 +493,17 @@ def main():
             if k in reviewed:
                 have = {arxiv_id(x.get("u")) for x in row.get("refs") or []}
                 if p["id"] not in have:
-                    short = p["title"][:70] + ("…" if len(p["title"]) > 70 else "")
                     row.setdefault("refs", []).append(
-                        {"t": f"New, unreviewed ({p['published']}): {short}", "u": p["url"]})
+                        {"t": ref_label(p), "u": p["url"], "ti": p["title"]})
                 continue
             if row.get("auto"):
                 continue
             row["st"] = p.get("auto") or "amb"
             row["auto"] = True   # outcome guessed from the abstract; shown in a different colour
             row["ins"] = "JWST (see paper)"
-            row["res"] = "Outcome read automatically from the abstract (may be inaccurate): " + p["title"]
-            row["ref"] = f"arXiv:{p['id']} ({p['published']})"
+            row["res"] = p.get("gist") or p["title"]
+            row["ref"] = ref_label(p)
+            row["ti"] = p["title"]
             row["url"] = p["url"]
 
     ids = sorted({i for r in rows.values()
