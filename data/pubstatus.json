@@ -259,7 +259,7 @@
   "src": "OpenAlex"
  },
  "2302.07874": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -329,11 +329,11 @@
   "src": "Crossref"
  },
  "2306.15095": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": "A&A",
-  "ps": "acc",
-  "src": "arXiv comment"
+  "checked": "2026-10-19",
+  "doi": "10.1051/0004-6361/202346838",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Semantic Scholar"
  },
  "2307.06085": {
   "checked": "2026-10-15",
@@ -385,7 +385,7 @@
   "src": "arXiv metadata"
  },
  "2310.16888": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": "Astronomy & Astrophysics",
   "ps": "acc",
@@ -434,14 +434,14 @@
   "src": "OpenAlex"
  },
  "2403.03325": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2403.12617": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": "proceedings of the Pontifical Academy of Science workshop on",
   "ps": "acc",
@@ -538,7 +538,7 @@
   "src": "seed"
  },
  "2406.12794": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -580,7 +580,7 @@
   "src": "arXiv metadata"
  },
  "2408.15123": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -761,11 +761,11 @@
   "src": "OpenAlex"
  },
  "2502.07074": {
-  "checked": "2026-10-15",
-  "doi": null,
-  "j": "Astronomy and Astrophysics",
-  "ps": "acc",
-  "src": "arXiv comment"
+  "checked": "2026-10-19",
+  "doi": "10.1051/0004-6361/202452916",
+  "j": "Astronomy &amp; Astrophysics",
+  "ps": "pub",
+  "src": "Semantic Scholar"
  },
  "2502.07872": {
   "checked": "2026-10-15",
@@ -964,7 +964,7 @@
   "src": "Crossref"
  },
  "2507.12622": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1173,7 +1173,7 @@
   "src": "arXiv metadata"
  },
  "2510.18098": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1292,7 +1292,7 @@
   "src": "Crossref"
  },
  "2601.18769": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1390,7 +1390,7 @@
   "src": "arXiv metadata"
  },
  "2603.19803": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1411,7 +1411,7 @@
   "src": "Semantic Scholar"
  },
  "2603.29700": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1481,7 +1481,7 @@
   "src": "Crossref"
  },
  "2605.17803": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1515,7 +1515,7 @@
   "src": "seed"
  },
  "2606.11866": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1529,7 +1529,7 @@
   "src": "Crossref"
  },
  "2606.20464": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1550,7 +1550,7 @@
   "src": "manual check 2026-10-15"
  },
  "2608.06207": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1564,7 +1564,7 @@
   "src": "OpenAlex"
  },
  "2608.13473": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1592,7 +1592,7 @@
   "src": "Crossref"
  },
  "2608.19120": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1613,7 +1613,7 @@
   "src": "Crossref"
  },
  "2609.03144": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
@@ -1627,63 +1627,63 @@
   "src": "Crossref"
  },
  "2609.09893": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.14704": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.17792": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.34635": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.35607": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.35721": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.36206": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.37722": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": null,
   "ps": "pre",
   "src": "OpenAlex"
  },
  "2609.37982": {
-  "checked": "2026-10-15",
+  "checked": "2026-10-19",
   "doi": null,
   "j": "ApJL on October",
   "ps": "acc",
