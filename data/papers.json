@@ -37,8 +37,9 @@
   "obs": true,
   "auto": "amb",
   "first_seen": "2026-10-15",
-  "ps": "acc",
-  "j": "ApJL on October"
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/aeb00b"
  },
  {
   "au": "Rathcke",
