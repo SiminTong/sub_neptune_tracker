@@ -135,7 +135,8 @@
   "obs": true,
   "auto": "amb",
   "first_seen": "2026-10-15",
-  "ps": "pre"
+  "ps": "acc",
+  "j": "A&A"
  },
  {
   "au": "Srivastava",
@@ -1529,7 +1530,9 @@
   "obs": true,
   "auto": "amb",
   "first_seen": "2026-10-15",
-  "ps": "pre"
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202557718"
  },
  {
   "au": "Parc",
@@ -3312,7 +3315,9 @@
   "obs": true,
   "auto": "flat",
   "first_seen": "2026-10-15",
-  "ps": "pre"
+  "ps": "pub",
+  "j": "ApJL",
+  "doi": "10.3847/2041-8213/ad8161"
  },
  {
   "au": "Patel",
@@ -3890,8 +3895,9 @@
   "obs": true,
   "auto": "amb",
   "first_seen": "2026-10-15",
-  "ps": "acc",
-  "j": "Astronomy & Astrophysics"
+  "ps": "pub",
+  "j": "A&A",
+  "doi": "10.1051/0004-6361/202347472"
  },
  {
   "au": "May",
